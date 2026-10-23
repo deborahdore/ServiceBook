@@ -1,0 +1,323 @@
+{
+  "id": "ford-fiesta-mk7-petrol",
+  "make": "Ford",
+  "model": "Fiesta",
+  "aliases": [
+    "fiesta",
+    "fiesta mk7",
+    "fiesta 7",
+    "fiesta vii",
+    "fiesta mk6",
+    "fiesta ecoboost",
+    "fiesta duratec"
+  ],
+  "generation": "Mk7 (2008–2017) — petrol",
+  "yearFrom": 2008,
+  "yearTo": 2017,
+  "kind": "car",
+  "fuel": "petrol",
+  "source": "Ford Europe service schedules (Fiesta), Ford Fiesta owner's manual, Haynes maintenance guide",
+  "sourceURLs": [
+    "https://www.newtonnet.co.uk/fiesta/serviceschedule-1yr12500mi.pdf",
+    "https://www.newtonnet.co.uk/fiesta/serviceschedule-3yr37500mi.pdf",
+    "https://haynes.com/en-gb/tips-tutorials/ford-fiesta-routine-maintenance-guide-2013-2017-models"
+  ],
+  "disclaimer": "Based on Ford's official 2013 Fiesta 1.0 EcoBoost service sheets. Intervals are 'whichever comes first'.",
+  "tasks": [
+    {
+      "title": "Regular service: engine oil & filter",
+      "action": "replace",
+      "category": "oil",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "notes": "Ford Europe regular service: every year or 20,000 km, whichever first. If you mostly do short trips or towing, Haynes suggests every 10,000 km / 6 months. Reset the oil change indicator afterwards.",
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Cabin (pollen / odour) filter",
+      "action": "replace",
+      "category": "filters",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Brakes: pads, discs & rear drums",
+      "action": "inspect",
+      "category": "brakes",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "notes": "More often under severe duty (city traffic, mountains, towing).",
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Brake fluid level & leaks",
+      "action": "check",
+      "category": "brakes",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Tyres: wear, condition & tread depth",
+      "action": "inspect",
+      "category": "tyres",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "notes": "Legal minimum in the EU: 1.6 mm. Record tread depth for each tyre.",
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Steering, suspension, ball joints & driveshaft gaiters",
+      "action": "inspect",
+      "category": "suspension",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Engine, transmission & underbody leaks",
+      "action": "inspect",
+      "category": "engine",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Pipes, hoses, wiring & exhaust",
+      "action": "inspect",
+      "category": "chassis",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Underbody PVC coating",
+      "action": "inspect",
+      "category": "body",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Coolant antifreeze concentration & fluid levels",
+      "action": "check",
+      "category": "cooling",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Battery (leaks, condition)",
+      "action": "inspect",
+      "category": "electrical",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Lights, instruments, warning lamps & horn",
+      "action": "check",
+      "category": "electrical",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Windscreen, wipers & washers",
+      "action": "check",
+      "category": "body",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Headlamp alignment",
+      "action": "check",
+      "category": "electrical",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Handbrake & clutch operation",
+      "action": "check",
+      "category": "controls",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Seat belts, buckles & stalks",
+      "action": "check",
+      "category": "safety",
+      "intervalKm": 20000,
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Safety kit (warning triangle, vest, first aid kit)",
+      "action": "check",
+      "category": "safety",
+      "intervalMonths": 12,
+      "notes": "Check the first aid kit expiry date. A vest and warning triangle are mandatory in France and Italy.",
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Tyre sealant kit expiry (if fitted)",
+      "action": "check",
+      "category": "tyres",
+      "intervalMonths": 12,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)"
+    },
+    {
+      "title": "Brake fluid",
+      "action": "replace",
+      "category": "brakes",
+      "intervalMonths": 24,
+      "spec": "DOT 4 LV High Performance (WSS-M6C65-A2)",
+      "sourceRef": "Ford service schedule — Extended Period Maintenance"
+    },
+    {
+      "title": "Air conditioning: performance & lines",
+      "action": "inspect",
+      "category": "climate",
+      "intervalMonths": 36,
+      "sourceRef": "Ford service schedule — Extended Period Maintenance"
+    },
+    {
+      "title": "Coolant: drain, flush & refill",
+      "action": "replace",
+      "category": "cooling",
+      "intervalMonths": 120,
+      "notes": "10 years if Ford Super Plus has been used from new. Haynes recommends every 2 years if the coolant type is unknown.",
+      "spec": "Ford Super Plus Premium (WSS-M97B44-D)",
+      "sourceRef": "Ford service schedule — Extended Period Maintenance"
+    },
+    {
+      "title": "Manual transmission oil level",
+      "action": "check",
+      "category": "transmission",
+      "intervalMonths": 24,
+      "sourceRef": "Haynes routine maintenance guide, Fiesta Mk7 (2013–2017)"
+    },
+    {
+      "title": "Remote key battery",
+      "action": "replace",
+      "category": "electrical",
+      "intervalMonths": 24,
+      "sourceRef": "Haynes routine maintenance guide, Fiesta Mk7 (2013–2017)"
+    },
+    {
+      "title": "Brake hoses",
+      "action": "inspect",
+      "category": "brakes",
+      "intervalKm": 60000,
+      "intervalMonths": 36,
+      "sourceRef": "Haynes routine maintenance guide, Fiesta Mk7 (2013–2017)"
+    },
+    {
+      "title": "Air filter (induction)",
+      "action": "replace",
+      "category": "filters",
+      "intervalKm": 60000,
+      "intervalMonths": 36,
+      "notes": "More often in dusty or polluted conditions.",
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet) (3 yr / 37,500 mi sheet)"
+    },
+    {
+      "title": "Monthly owner checks",
+      "action": "check",
+      "category": "owner",
+      "intervalMonths": 1,
+      "notes": "Engine oil level · coolant level · brake fluid level · pipes, hoses & reservoirs for leaks · A/C operation · parking brake · horn · wheel nut tightness.",
+      "sourceRef": "Ford Fiesta owner's manual (CG3654, 2021) — Maintenance, General information"
+    },
+    {
+      "title": "Tyre pressures & condition (when refuelling)",
+      "action": "check",
+      "category": "tyres",
+      "intervalMonths": 1,
+      "notes": "Also check washer fluid. Pressures are on the label in the driver's door frame.",
+      "sourceRef": "Ford Fiesta owner's manual (CG3654, 2021) — Maintenance, General information"
+    },
+    {
+      "title": "Roadworthiness test (contrôle technique / MOT / revisione)",
+      "action": "inspect",
+      "category": "legal",
+      "intervalMonths": 24,
+      "firstMonths": 48,
+      "notes": "Depends on your country. France & Italy: first at 4 years, then every 2 years. UK MOT: first at 3 years, then yearly. Edit this item to match your country."
+    },
+    {
+      "title": "Spark plugs",
+      "action": "replace",
+      "category": "ignition",
+      "intervalKm": 60000,
+      "intervalMonths": 36,
+      "sourceRef": "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet) (3 yr / 37,500 mi sheet)"
+    },
+    {
+      "title": "Timing belt, tensioner & idlers",
+      "action": "replace",
+      "category": "engine",
+      "intervalKm": 240000,
+      "intervalMonths": 120,
+      "notes": "1.0 EcoBoost (wet belt): Ford 150,000 mi / 10 years. Other engines differ — 1.25 Duratec: 160,000 km / 8 years; 1.4 / 1.6 Duratec: about 200,000 km / 10 years. Edit this item for your engine.",
+      "sourceRef": "Ford service schedule — Extended Period Maintenance"
+    },
+    {
+      "title": "Auxiliary drive belt",
+      "action": "replace",
+      "category": "engine",
+      "intervalKm": 240000,
+      "intervalMonths": 120,
+      "sourceRef": "Ford service schedule — Extended Period Maintenance"
+    },
+    {
+      "title": "Valve clearances",
+      "action": "check",
+      "category": "engine",
+      "intervalKm": 240000,
+      "intervalMonths": 120,
+      "sourceRef": "Ford service schedule — Extended Period Maintenance"
+    }
+  ],
+  "specs": [
+    {
+      "group": "Fluids",
+      "title": "Engine oil (1.0 EcoBoost)",
+      "value": "SAE 5W-20 to Ford WSS-M2C948-B"
+    },
+    {
+      "group": "Fluids",
+      "title": "Brake fluid",
+      "value": "DOT 4 (Ford Super DOT 4 / LV)"
+    },
+    {
+      "group": "Fluids",
+      "title": "Coolant",
+      "value": "Ford Super Plus (purple) — do not mix with other coolants"
+    },
+    {
+      "group": "Owner checks",
+      "title": "Daily",
+      "value": "Exterior lamps · interior lamps · warning lamps and indicators"
+    },
+    {
+      "group": "Owner checks",
+      "title": "When refuelling",
+      "value": "Washer fluid · tyre pressures · tyre condition"
+    },
+    {
+      "group": "Owner checks",
+      "title": "Monthly",
+      "value": "Engine oil, coolant & brake fluid levels · leaks · A/C · parking brake · horn · wheel nut tightness"
+    },
+    {
+      "group": "Tyres",
+      "title": "Tyre pressures",
+      "value": "See the label on the driver's door B-pillar (depends on tyre size and load)"
+    }
+  ]
+}
