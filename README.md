@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/icon.png" width="128" alt="ServiceBook app icon">
+</p>
+
 # ServiceBook — vehicle maintenance tracker for iOS
 
 [![Build](https://github.com/deborahdore/vehicle-maintenance/actions/workflows/build.yml/badge.svg)](https://github.com/deborahdore/vehicle-maintenance/actions/workflows/build.yml)
