@@ -73,6 +73,7 @@ struct VehicleListView: View {
             }
             .sheet(isPresented: $showSettings) { SettingsView() }
         }
+        .onAppear { ReminderScheduler.reschedule(context: context) }
         .onChange(of: scenePhase) { _, phase in
             if phase == .active { ReminderScheduler.reschedule(context: context) }
         }

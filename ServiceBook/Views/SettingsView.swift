@@ -12,6 +12,14 @@ struct SettingsView: View {
         NavigationStack {
             Form {
                 Section {
+                    Picker("Language", selection: Binding(get: { AppLanguage.selected }, set: { AppLanguage.select($0) })) {
+                        ForEach(AppLanguage.allCases) { Text($0.nativeName).tag($0) }
+                    }
+                } footer: {
+                    Text("Photos, the document scanner and other system screens switch language the next time you open the app.")
+                }
+
+                Section {
                     NavigationLink {
                         AIConnectionView()
                     } label: {

@@ -24,7 +24,7 @@ struct RecordDetailView: View {
 
             if !record.partPosition.isEmpty || !record.partBrand.isEmpty || !record.partSize.isEmpty || !record.partDetails.isEmpty {
                 Section(record.kind == .tyres ? "Tyres" : "Part") {
-                    if !record.partPosition.isEmpty { LabeledContent(record.kind == .tyres ? "Position" : "Part", value: record.partPosition) }
+                    if !record.partPosition.isEmpty { LabeledContent(record.kind == .tyres ? "Position" : "Part", value: L(record.partPosition)) }
                     if !record.partBrand.isEmpty { LabeledContent("Brand & model", value: record.partBrand) }
                     if !record.partSize.isEmpty { LabeledContent(record.kind == .tyres ? "Size" : "Part number", value: record.partSize) }
                     if !record.partDetails.isEmpty { Text(record.partDetails).font(.callout) }
@@ -98,7 +98,7 @@ struct TaskDetailView: View {
                         VStack(alignment: .leading, spacing: 4) {
                             StatusPill(status: info.status)
                             if !info.dueText.isEmpty, info.status != .completed {
-                                Text("Due " + info.dueText).font(.subheadline)
+                                Text(L("Due %@", info.dueText)).font(.subheadline)
                             }
                         }
                     }
@@ -121,7 +121,7 @@ struct TaskDetailView: View {
                 LabeledContent("Interval", value: task.intervalText)
                 if !task.oneTime, task.firstKm != nil || task.firstMonths != nil {
                     LabeledContent("First time", value: [task.firstKm.map { Fmt.km($0) }, task.firstMonths.map { Fmt.months($0) }]
-                        .compactMap { $0 }.joined(separator: " or "))
+                        .compactMap { $0 }.joined(separator: " \(L("or")) "))
                 }
                 Toggle("Show in schedule", isOn: $task.isEnabled)
             }
@@ -203,7 +203,7 @@ struct TaskEditView: View {
                     }
                     Picker("Category", selection: $category) {
                         ForEach(Self.categories, id: \.self) { c in
-                            Label(c.capitalized, systemImage: TaskCategory.symbol(for: c)).tag(c)
+                            Label(L(c.capitalized), systemImage: TaskCategory.symbol(for: c)).tag(c)
                         }
                     }
                 }
@@ -211,12 +211,12 @@ struct TaskEditView: View {
                     Toggle("Only once", isOn: $oneTime)
                     if oneTime {
                         NumberField(title: "At", text: $firstKmText, suffix: "km")
-                        NumberField(title: "Or after", text: $firstMonthsText, suffix: "months")
+                        NumberField(title: "Or after", text: $firstMonthsText, suffix: L("months"))
                     } else {
                         NumberField(title: "Every", text: $kmText, suffix: "km")
-                        NumberField(title: "Or every", text: $monthsText, suffix: "months")
+                        NumberField(title: "Or every", text: $monthsText, suffix: L("months"))
                         NumberField(title: "First at", text: $firstKmText, suffix: "km")
-                        NumberField(title: "Or first after", text: $firstMonthsText, suffix: "months")
+                        NumberField(title: "Or first after", text: $firstMonthsText, suffix: L("months"))
                     }
                 } header: {
                     Text("Interval — whichever comes first")
@@ -380,7 +380,7 @@ struct BuiltInSchedulePicker: View {
             VStack(alignment: .leading, spacing: 3) {
                 Text("\(t.make) \(t.model)").font(.headline).foregroundStyle(.primary)
                 if let g = t.generation { Text(g).font(.caption).foregroundStyle(.secondary) }
-                Text("\(t.tasks.count) items · \(t.specs?.count ?? 0) specs").font(.caption2).foregroundStyle(.secondary)
+                Text(L("%lld items", t.tasks.count) + " · " + L("%lld specs", t.specs?.count ?? 0)).font(.caption2).foregroundStyle(.secondary)
             }
         }
     }

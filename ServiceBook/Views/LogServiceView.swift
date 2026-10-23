@@ -58,7 +58,7 @@ struct LogServiceView: View {
                         if kind == .tyres {
                             Picker("Position", selection: $position) {
                                 Text("—").tag("")
-                                ForEach(Self.tyrePositions, id: \.self) { Text($0).tag($0) }
+                                ForEach(Self.tyrePositions, id: \.self) { Text(L($0)).tag($0) }
                             }
                         } else {
                             TextField("Part (e.g. battery, chain kit)", text: $position)
@@ -73,7 +73,7 @@ struct LogServiceView: View {
                     NavigationLink {
                         TaskPickerView(vehicle: vehicle, selection: $selected)
                     } label: {
-                        LabeledContent("Items done", value: selected.isEmpty ? "None" : "\(selected.count)")
+                        LabeledContent("Items done", value: selected.isEmpty ? L("None") : "\(selected.count)")
                     }
                     ForEach(vehicle.tasks.filter { selected.contains($0.id) }.sorted { $0.sortOrder < $1.sortOrder }) { t in
                         Label(t.title, systemImage: "checkmark").font(.callout)
@@ -134,7 +134,7 @@ struct LogServiceView: View {
             .fullScreenCover(isPresented: $showScanner) {
                 DocumentScannerView { data in
                     if let data {
-                        pending.append(PendingAttachment(filename: "Receipt \(Fmt.date(Date())).pdf",
+                        pending.append(PendingAttachment(filename: L("Receipt %@.pdf", Fmt.date(Date())),
                                                          typeIdentifier: UTType.pdf.identifier, data: data))
                     }
                     showScanner = false
@@ -146,7 +146,7 @@ struct LogServiceView: View {
                     for item in items {
                         if let data = try? await item.loadTransferable(type: Data.self) {
                             let jpeg = UIImage(data: data)?.jpegData(compressionQuality: 0.8) ?? data
-                            pending.append(PendingAttachment(filename: "Photo \(pending.count + 1).jpg",
+                            pending.append(PendingAttachment(filename: L("Photo %lld.jpg", pending.count + 1),
                                                              typeIdentifier: UTType.jpeg.identifier, data: jpeg))
                         }
                     }
@@ -159,12 +159,12 @@ struct LogServiceView: View {
 
     private var titlePlaceholder: String {
         switch kind {
-        case .service: "Title (e.g. Annual service)"
-        case .tyres: "Title (e.g. New rear tyre)"
-        case .part: "Title (e.g. New battery)"
-        case .repair: "Title (e.g. Clutch cable replaced)"
-        case .inspection: "Title (e.g. Contrôle technique)"
-        case .other: "Title"
+        case .service: L("Title (e.g. Annual service)")
+        case .tyres: L("Title (e.g. New rear tyre)")
+        case .part: L("Title (e.g. New battery)")
+        case .repair: L("Title (e.g. Clutch cable replaced)")
+        case .inspection: L("Title (e.g. Contrôle technique)")
+        case .other: L("Title")
         }
     }
 

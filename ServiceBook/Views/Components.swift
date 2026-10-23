@@ -66,7 +66,7 @@ struct TaskRow: View {
                         Text("Skipped (before tracking started)").font(.caption).foregroundStyle(.secondary)
                     }
                 } else if !info.dueText.isEmpty {
-                    Text("Due " + info.dueText)
+                    Text(L("Due %@", info.dueText))
                         .font(.caption)
                         .foregroundStyle(info.status == .upcoming ? Color.secondary : info.status.color)
                 }
@@ -83,7 +83,7 @@ struct TaskRow: View {
 
 /// Numeric text field bound to a String (keeps editing simple and locale-agnostic).
 struct NumberField: View {
-    let title: String
+    let title: LocalizedStringKey
     @Binding var text: String
     var suffix: String = ""
 
@@ -217,7 +217,7 @@ struct DocumentScannerView: UIViewControllerRepresentable {
 }
 
 struct EmptyHint: View {
-    let text: String
+    let text: LocalizedStringKey
     var body: some View {
         Text(text).font(.subheadline).foregroundStyle(.secondary)
     }

@@ -73,14 +73,14 @@ struct TaskTemplate: Codable, Hashable, Identifiable {
     var intervalText: String {
         if oneTime == true {
             var p: [String] = []
-            if let k = firstKm { p.append("at \(Fmt.km(k))") }
+            if let k = firstKm { p.append(L("at %@", Fmt.km(k))) }
             if let m = firstMonths { p.append(Fmt.months(m)) }
-            return "Once, " + p.joined(separator: " or ")
+            return L("Once, %@", p.joined(separator: " \(L("or")) "))
         }
         var p: [String] = []
         if let k = intervalKm { p.append(Fmt.km(k)) }
         if let m = intervalMonths { p.append(Fmt.months(m)) }
-        return p.isEmpty ? "No interval" : "Every " + p.joined(separator: " or ")
+        return p.isEmpty ? L("No interval") : L("Every %@", p.joined(separator: " \(L("or")) "))
     }
 }
 

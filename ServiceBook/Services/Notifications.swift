@@ -23,7 +23,7 @@ enum ReminderScheduler {
                 let info = t.dueInfo(state, now: now)
                 guard let due = info.dueDate, info.status != .completed else { continue }
                 // Remind one week before and on the due day, at 9:00.
-                for (offset, label) in [(-7, "due in one week"), (0, "due today")] {
+                for (offset, label) in [(-7, L("due in one week")), (0, L("due today"))] {
                     guard let day = Calendar.current.date(byAdding: .day, value: offset, to: due),
                           let fire = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: day),
                           fire > now else { continue }

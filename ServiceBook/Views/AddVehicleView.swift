@@ -138,7 +138,7 @@ struct AddVehicleView: View {
         context.insert(vehicle)
 
         let km = kmText.intValue ?? 0
-        let reading = OdometerReading(km: km, note: "Starting mileage")
+        let reading = OdometerReading(km: km, note: L("Starting mileage"))
         context.insert(reading)
         reading.vehicle = vehicle
 

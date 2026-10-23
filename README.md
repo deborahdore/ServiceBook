@@ -18,6 +18,7 @@ ServiceBook is a free, open-source iPhone/iPad app that turns your vehicle's **o
 - **Receipts and documents**: attach PDFs and photos, or **scan paper receipts** with the camera. Keep the owner's manual, insurance and registration papers with the vehicle. Everything previews in-app with Quick Look and can be shared.
 - **Mileage log** with history.
 - **Reminders**: optional notifications for date-based items (one week before, and on the day).
+- **Languages**: English, Italiano, Français, Español and Português. The app follows the iPhone's language, or pick one in **Settings → Language** (it applies right away). AI imports are written in the chosen language too; built-in schedules are in English.
 - **Private by default**: all data stays on the device (SwiftData). The only network traffic is the AI import, sent to Anthropic with *your* API key.
 
 ## Requirements

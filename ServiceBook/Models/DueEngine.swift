@@ -11,11 +11,11 @@ enum DueStatus: Int, Comparable, CaseIterable {
 
     var label: String {
         switch self {
-        case .overdue: "Overdue"
-        case .dueSoon: "Due soon"
-        case .upcoming: "Upcoming"
-        case .noInterval: "As needed"
-        case .completed: "Done"
+        case .overdue: L("Overdue")
+        case .dueSoon: L("Due soon")
+        case .upcoming: L("Upcoming")
+        case .noInterval: L("As needed")
+        case .completed: L("Done (completed)")
         }
     }
 }
@@ -43,26 +43,26 @@ struct DueInfo {
         var parts: [String] = []
         if let k = dueKm {
             if let r = remainingKm {
-                parts.append(r >= 0 ? "at \(Fmt.km(k)) · in \(Fmt.km(r))" : "at \(Fmt.km(k)) · \(Fmt.km(-r)) ago")
+                parts.append(r >= 0 ? L("at %@ · in %@", Fmt.km(k), Fmt.km(r)) : L("at %@ · %@ ago", Fmt.km(k), Fmt.km(-r)))
             } else {
-                parts.append("at \(Fmt.km(k))")
+                parts.append(L("at %@", Fmt.km(k)))
             }
         }
         if let d = dueDate {
-            var text = "on \(Fmt.date(d))"
+            var text = L("on %@", Fmt.date(d))
             if let days = remainingDays { text += " · " + Self.relative(days) }
             parts.append(text)
         }
-        return parts.joined(separator: "\nor ")
+        return parts.joined(separator: "\n\(L("or")) ")
     }
 
     static func relative(_ days: Int) -> String {
         switch days {
-        case 0: return "today"
-        case 1...60: return "in \(days) days"
-        case 61...: return "in \(days / 30) months"
-        case -60 ... -1: return "\(-days) days ago"
-        default: return "\(-days / 30) months ago"
+        case 0: return L("today")
+        case 1...60: return L("in %lld days", days)
+        case 61...: return L("in %lld months", days / 30)
+        case -60 ... -1: return L("%lld days ago", -days)
+        default: return L("%lld months ago", -days / 30)
         }
     }
 }

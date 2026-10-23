@@ -27,9 +27,9 @@ struct AIUsage: Codable, Equatable, Sendable {
     }
 
     var summary: String {
-        var parts = ["\(Self.compact(inputTokens)) input + \(Self.compact(outputTokens)) output tokens"]
-        if webSearches > 0 { parts.append("\(webSearches) search\(webSearches == 1 ? "" : "es")") }
-        if webFetches > 0 { parts.append("\(webFetches) page\(webFetches == 1 ? "" : "s") read") }
+        var parts = [L("%@ input + %@ output tokens", Self.compact(inputTokens), Self.compact(outputTokens))]
+        if webSearches > 0 { parts.append(L("%lld searches", webSearches)) }
+        if webFetches > 0 { parts.append(L("%lld pages read", webFetches)) }
         return parts.joined(separator: " · ")
     }
 
@@ -205,19 +205,19 @@ struct ClaudeClient {
 
         var errorDescription: String? {
             switch self {
-            case .invalidKey: "Your Claude API key was rejected. Check it in Settings → Claude connection."
-            case .permission(let m): "This API key isn't allowed to do that: \(m)"
-            case .noCredit: "Your Anthropic account has no credit left. Add credit at console.anthropic.com, then try again."
-            case .modelUnavailable(let m): "The model “\(m)” isn't available for your key. Pick another one in Settings → Claude connection."
-            case .rateLimited: "Too many requests right now. Wait a minute and try again."
-            case .overloaded: "Claude is overloaded at the moment. Try again in a few minutes."
-            case .tooLarge: "The request is too large. Try a smaller PDF (only the maintenance chapter)."
-            case .badRequest(let m): "The Claude API refused the request: \(m)"
-            case .server(let code, let m): "Claude API error \(code): \(m)"
-            case .truncated: "The answer was cut off because it was too long. Try again, or choose a model with a larger output limit."
-            case .refused: "Claude declined to answer this request."
-            case .badResponse: "Unexpected response from the Claude API."
-            case .network(let m): "Network problem: \(m)"
+            case .invalidKey: L("Your Claude API key was rejected. Check it in Settings → Claude connection.")
+            case .permission(let m): L("This API key isn't allowed to do that: %@", m)
+            case .noCredit: L("Your Anthropic account has no credit left. Add credit at console.anthropic.com, then try again.")
+            case .modelUnavailable(let m): L("The model “%@” isn't available for your key. Pick another one in Settings → Claude connection.", m)
+            case .rateLimited: L("Too many requests right now. Wait a minute and try again.")
+            case .overloaded: L("Claude is overloaded at the moment. Try again in a few minutes.")
+            case .tooLarge: L("The request is too large. Try a smaller PDF (only the maintenance chapter).")
+            case .badRequest(let m): L("The Claude API refused the request: %@", m)
+            case .server(let code, let m): L("Claude API error %lld: %@", code, m)
+            case .truncated: L("The answer was cut off because it was too long. Try again, or choose a model with a larger output limit.")
+            case .refused: L("Claude declined to answer this request.")
+            case .badResponse: L("Unexpected response from the Claude API.")
+            case .network(let m): L("Network problem: %@", m)
             }
         }
 
@@ -323,7 +323,7 @@ struct ClaudeClient {
                     messages.append(["role": "user", "content": [["type": "text",
                         "text": "Now call \(finalTool) with everything you found. Leave out anything you could not confirm."]]])
                     forced = true
-                    onEvent(.status("Writing the schedule…"))
+                    onEvent(.status(L("Writing the schedule…")))
                 } else {
                     return Outcome(text: message.finalText, toolInput: nil, usage: usage)
                 }
@@ -393,7 +393,7 @@ struct ClaudeClient {
             default: throw ClientError.server(500, acc.errorMessage ?? type)
             }
         }
-        guard acc.stopReason != nil else { throw ClientError.network("The connection closed before Claude finished.") }
+        guard acc.stopReason != nil else { throw ClientError.network(L("The connection closed before Claude finished.")) }
         return acc
     }
 

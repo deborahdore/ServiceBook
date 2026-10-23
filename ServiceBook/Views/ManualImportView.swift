@@ -168,7 +168,7 @@ struct ManualImportView: View {
                 HStack(spacing: 14) {
                     ProgressView().controlSize(.large)
                     VStack(alignment: .leading, spacing: 4) {
-                        Text(status.isEmpty ? "Working…" : status).font(.headline)
+                        Text(status.isEmpty ? L("Working…") : status).font(.headline)
                         TimelineView(.periodic(from: started, by: 1)) { ctx in
                             let s = Int(ctx.date.timeIntervalSince(started))
                             Text(String(format: "%d:%02d", s / 60, s % 60) + statsText)
@@ -179,7 +179,7 @@ struct ManualImportView: View {
                 .padding(.vertical, 6)
                 if let n = writing {
                     ProgressView(value: Double(min(n, 40)), total: 40) {
-                        Text("Writing the schedule — \(n) item\(n == 1 ? "" : "s")").font(.caption)
+                        Text(L("Writing the schedule — %lld items", n)).font(.caption)
                     }
                 }
             }
@@ -204,8 +204,8 @@ struct ManualImportView: View {
 
     private var statsText: String {
         var parts: [String] = []
-        if searches > 0 { parts.append("\(searches) search\(searches == 1 ? "" : "es")") }
-        if pages > 0 { parts.append("\(pages) page\(pages == 1 ? "" : "s") read") }
+        if searches > 0 { parts.append(L("%lld searches", searches)) }
+        if pages > 0 { parts.append(L("%lld pages read", pages)) }
         return parts.isEmpty ? "" : " · " + parts.joined(separator: " · ")
     }
 
@@ -378,28 +378,28 @@ struct ManualImportView: View {
             status = s
         case .searching(let q):
             searches += 1
-            status = "Searching the web…"
+            status = L("Searching the web…")
             activity.append(Activity(symbol: "magnifyingglass", text: q))
         case .reading(let u):
             pages += 1
-            status = "Reading a page…"
+            status = L("Reading a page…")
             let url = URL(string: u)
             activity.append(Activity(symbol: u.lowercased().contains(".pdf") ? "doc.richtext" : "doc.text",
                                      text: (url?.host() ?? u) + (url.map { $0.path.count > 1 ? $0.path : "" } ?? "")))
         case .results(let n):
-            activity.append(Activity(symbol: "list.bullet", text: "\(n) results"))
+            activity.append(Activity(symbol: "list.bullet", text: L("%lld results", n)))
         case .writing(let n):
-            status = "Writing the schedule…"
+            status = L("Writing the schedule…")
             writing = n
         case .retrying(let seconds, let reason):
-            status = "Retrying in \(seconds) s…"
+            status = L("Retrying in %lld s…", seconds)
             activity.append(Activity(symbol: "arrow.clockwise", text: reason))
         }
     }
 
     private func show(_ result: ManualImporter.Result) {
         if result.template.tasks.isEmpty {
-            phase = .failed("No maintenance items were found. Try a more precise model description, or import the manual PDF.")
+            phase = .failed(L("No maintenance items were found. Try a more precise model description, or import the manual PDF."))
             return
         }
         selected = Set(result.template.tasks.indices)
@@ -414,7 +414,7 @@ struct ManualImportView: View {
                 await MainActor.run {
                     let name = URL(string: s)?.lastPathComponent ?? "Manual.pdf"
                     let a = Attachment(filename: name.lowercased().hasSuffix(".pdf") ? name : name + ".pdf",
-                                       typeIdentifier: UTType.pdf.identifier, data: data, label: "Owner's manual")
+                                       typeIdentifier: UTType.pdf.identifier, data: data, label: L("Owner's manual"))
                     context.insert(a)
                     a.vehicle = vehicle
                     savedPDFs.insert(s)
@@ -431,7 +431,7 @@ struct ManualImportView: View {
         ScheduleApplier.apply(result.template, tasks: chosen, to: vehicle, in: context,
                               replace: replace && !vehicle.tasks.isEmpty)
         if let file = pickedFile, !vehicle.documents.contains(where: { $0.data.count == file.data.count && $0.filename == file.filename }) {
-            let a = Attachment(filename: file.filename, typeIdentifier: UTType.pdf.identifier, data: file.data, label: "Owner's manual")
+            let a = Attachment(filename: file.filename, typeIdentifier: UTType.pdf.identifier, data: file.data, label: L("Owner's manual"))
             context.insert(a)
             a.vehicle = vehicle
         }

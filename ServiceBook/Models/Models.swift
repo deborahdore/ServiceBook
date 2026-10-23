@@ -8,11 +8,11 @@ enum VehicleKind: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     var label: String {
         switch self {
-        case .car: "Car"
-        case .motorcycle: "Motorcycle"
-        case .scooter: "Scooter"
-        case .van: "Van"
-        case .other: "Other"
+        case .car: L("Car")
+        case .motorcycle: L("Motorcycle")
+        case .scooter: L("Scooter")
+        case .van: L("Van")
+        case .other: L("Other")
         }
     }
     var symbol: String {
@@ -29,13 +29,13 @@ enum VehicleKind: String, CaseIterable, Identifiable {
 enum FuelType: String, CaseIterable, Identifiable {
     case petrol, diesel, hybrid, electric, other
     var id: String { rawValue }
-    var label: String { rawValue.capitalized }
+    var label: String { L(rawValue.capitalized) }
 }
 
 enum TaskAction: String, CaseIterable, Identifiable {
     case inspect, check, replace, lubricate, clean, adjust, service
     var id: String { rawValue }
-    var label: String { rawValue.capitalized }
+    var label: String { L(rawValue.capitalized) }
 }
 
 enum RecordKind: String, CaseIterable, Identifiable {
@@ -43,12 +43,12 @@ enum RecordKind: String, CaseIterable, Identifiable {
     var id: String { rawValue }
     var label: String {
         switch self {
-        case .service: "Service / maintenance"
-        case .tyres: "Tyre change"
-        case .part: "Part replacement"
-        case .repair: "Repair"
-        case .inspection: "Inspection / test"
-        case .other: "Other"
+        case .service: L("Service / maintenance")
+        case .tyres: L("Tyre change")
+        case .part: L("Part replacement")
+        case .repair: L("Repair")
+        case .inspection: L("Inspection / test")
+        case .other: L("Other")
         }
     }
     var symbol: String {
@@ -224,15 +224,15 @@ final class MaintenanceTask {
     var intervalText: String {
         if oneTime {
             var parts: [String] = []
-            if let k = firstKm { parts.append("at \(Fmt.km(k))") }
-            if let m = firstMonths { parts.append("\(Fmt.months(m))") }
-            return "Once, " + parts.joined(separator: " or ")
+            if let k = firstKm { parts.append(L("at %@", Fmt.km(k))) }
+            if let m = firstMonths { parts.append(Fmt.months(m)) }
+            return L("Once, %@", parts.joined(separator: " \(L("or")) "))
         }
         var parts: [String] = []
         if let k = intervalKm { parts.append(Fmt.km(k)) }
         if let m = intervalMonths { parts.append(Fmt.months(m)) }
-        if parts.isEmpty { return "No interval" }
-        return "Every " + parts.joined(separator: " or ")
+        if parts.isEmpty { return L("No interval") }
+        return L("Every %@", parts.joined(separator: " \(L("or")) "))
     }
 
     var lastRecord: ServiceRecord? {
@@ -338,30 +338,19 @@ final class Attachment {
 // MARK: - Formatting helpers
 
 enum Fmt {
-    static let number: NumberFormatter = {
-        let f = NumberFormatter()
-        f.numberStyle = .decimal
-        f.maximumFractionDigits = 0
-        return f
-    }()
-
     static func km(_ value: Int) -> String {
-        (number.string(from: NSNumber(value: value)) ?? String(value)) + " km"
+        value.formatted(.number.locale(AppLanguage.locale)) + " km"
     }
 
     static func months(_ m: Int) -> String {
-        if m % 12 == 0 {
-            let y = m / 12
-            return y == 1 ? "1 year" : "\(y) years"
-        }
-        return m == 1 ? "1 month" : "\(m) months"
+        m % 12 == 0 ? L("%lld years", m / 12) : L("%lld months", m)
     }
 
     static func date(_ d: Date) -> String {
-        d.formatted(date: .abbreviated, time: .omitted)
+        d.formatted(Date.FormatStyle(date: .abbreviated, time: .omitted, locale: AppLanguage.locale))
     }
 
     static func money(_ value: Double, code: String) -> String {
-        value.formatted(.currency(code: code))
+        value.formatted(.currency(code: code).locale(AppLanguage.locale))
     }
 }

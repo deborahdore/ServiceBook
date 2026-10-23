@@ -41,7 +41,7 @@ struct VehicleDetailView: View {
             Section {
                 header
                 Picker("View", selection: $tab) {
-                    ForEach(Tab.allCases) { Text($0.rawValue).tag($0) }
+                    ForEach(Tab.allCases) { Text(L($0.rawValue)).tag($0) }
                 }
                 .pickerStyle(.segmented)
                 .listRowSeparator(.hidden)
@@ -184,7 +184,7 @@ struct VehicleDetailView: View {
                             }
                             .swipeActions(edge: .leading) {
                                 Button { sheet = .log(row.task, .service) } label: {
-                                    Label("Done", systemImage: "checkmark")
+                                    Label(L("Done (completed)"), systemImage: "checkmark")
                                 }
                                 .tint(.green)
                             }
@@ -303,7 +303,7 @@ struct VehicleDetailView: View {
                 } label: {
                     VStack(alignment: .leading) {
                         Text(Fmt.date(r.date))
-                        if !r.note.isEmpty { Text(r.note).font(.caption).foregroundStyle(.secondary) }
+                        if !r.note.isEmpty { Text(L(r.note)).font(.caption).foregroundStyle(.secondary) }
                     }
                 }
             }

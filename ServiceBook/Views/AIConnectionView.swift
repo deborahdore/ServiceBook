@@ -118,7 +118,11 @@ struct AIConnectionView: View {
             } header: {
                 Text("Model")
             } footer: {
-                Text(models.isEmpty ? "Test the connection to load the models your key can use." : "\(models.count) models available to your key.")
+                if models.isEmpty {
+                    Text("Test the connection to load the models your key can use.")
+                } else {
+                    Text("\(models.count) models available to your key.")
+                }
             }
 
             Section {
@@ -128,7 +132,7 @@ struct AIConnectionView: View {
                     VStack(alignment: .leading) {
                         Text("Prefer my country's schedule")
                         if let code = AppSettings.regionCode {
-                            Text(Locale.current.localizedString(forRegionCode: code) ?? code).font(.caption).foregroundStyle(.secondary)
+                            Text(AppLanguage.locale.localizedString(forRegionCode: code) ?? code).font(.caption).foregroundStyle(.secondary)
                         }
                     }
                 }
@@ -141,8 +145,8 @@ struct AIConnectionView: View {
 
             Section {
                 LabeledContent("Imports", value: "\(imports)")
-                LabeledContent("Input tokens", value: Fmt.number.string(from: NSNumber(value: usage.inputTokens)) ?? "0")
-                LabeledContent("Output tokens", value: Fmt.number.string(from: NSNumber(value: usage.outputTokens)) ?? "0")
+                LabeledContent("Input tokens", value: usage.inputTokens.formatted(.number.locale(AppLanguage.locale)))
+                LabeledContent("Output tokens", value: usage.outputTokens.formatted(.number.locale(AppLanguage.locale)))
                 LabeledContent("Web searches", value: "\(usage.webSearches)")
                 LabeledContent("Pages read", value: "\(usage.webFetches)")
                 Button("Reset counters") {
@@ -183,10 +187,10 @@ struct AIConnectionView: View {
     }
 
     private func modelHint(_ id: String) -> String {
-        if id.contains("opus") || id.contains("fable") || id.contains("mythos") { return "Most thorough. Best for hard-to-find manuals, highest cost." }
-        if id.contains("haiku") { return "Fastest and cheapest. Fine for clean PDFs, weaker at finding manuals online." }
-        if id.contains("sonnet") { return "Recommended: good balance of accuracy, speed and cost." }
-        return "Custom model."
+        if id.contains("opus") || id.contains("fable") || id.contains("mythos") { return L("Most thorough. Best for hard-to-find manuals, highest cost.") }
+        if id.contains("haiku") { return L("Fastest and cheapest. Fine for clean PDFs, weaker at finding manuals online.") }
+        if id.contains("sonnet") { return L("Recommended: good balance of accuracy, speed and cost.") }
+        return L("Custom model.")
     }
 
     private func saveModel(_ id: String) {

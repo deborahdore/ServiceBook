@@ -21,9 +21,9 @@ struct ManualImporter {
 
         var errorDescription: String? {
             switch self {
-            case .missingKey: "Set up the Claude connection in Settings to use AI import."
-            case .unreadablePDF: "Could not read any text from this PDF, and it is too large to send as images (over 100 pages). Try a PDF of just the maintenance chapter."
-            case .decode(let msg): "Could not understand the schedule returned by the AI: \(msg)"
+            case .missingKey: L("Set up the Claude connection in Settings to use AI import.")
+            case .unreadablePDF: L("Could not read any text from this PDF, and it is too large to send as images (over 100 pages). Try a PDF of just the maintenance chapter.")
+            case .decode(let msg): L("Could not understand the schedule returned by the AI: %@", msg)
             }
         }
     }
@@ -112,7 +112,7 @@ struct ManualImporter {
         return tool
     }
 
-    private static let rules = """
+    private static var rules: String { """
     Rules for the schedule:
     - Use kilometres. Convert miles to km (1 mi = 1.609 km) and round sensibly (12,500 mi → 20,000 km).
     - List every item of the periodic maintenance chart as its own task (one task per component and action), \
@@ -121,8 +121,8 @@ struct ManualImporter {
     - Put fluid specifications and capacities, tyre sizes and pressures, and owner checks \
     (daily / before riding / monthly) in specs.
     - Never invent numbers. If something is unclear, leave the field out and explain in notes.
-    - Write titles and notes in English.
-    """
+    - Write titles, notes, specs, the summary and the disclaimer in \(AppLanguage.englishName).
+    """ }
 
     let client: ClaudeClient
 
@@ -140,7 +140,7 @@ struct ManualImporter {
         """
         var region = ""
         if AppSettings.useRegion, let code = AppSettings.regionCode {
-            region = " The owner lives in \(Locale.current.localizedString(forRegionCode: code) ?? code) (\(code)): prefer that market's schedule when it differs."
+            region = " The owner lives in \(Locale(identifier: "en").localizedString(forRegionCode: code) ?? code) (\(code)): prefer that market's schedule when it differs."
         }
         let prompt = """
         Vehicle: \(vehicle.text).\(region)
@@ -161,7 +161,7 @@ struct ManualImporter {
         let fetch: [String: Any] = ["type": "web_fetch_20250910", "name": "web_fetch",
                                     "max_uses": max(3, searches * 3 / 4), "max_content_tokens": 60_000]
 
-        onEvent(.status("Asking Claude to find the manual…"))
+        onEvent(.status(L("Asking Claude to find the manual…")))
         let outcome = try await runWithStrictFallback(system: system, content: [["type": "text", "text": prompt]],
                                                       otherTools: [search, fetch], force: false, onEvent: onEvent)
         return try Self.result(from: outcome, vehicle: vehicle, model: client.model)
@@ -170,7 +170,7 @@ struct ManualImporter {
     // MARK: Import PDF
 
     func importPDF(data: Data, vehicle: VehicleDescription, onEvent: @escaping @Sendable (AIEvent) -> Void) async throws -> Result {
-        onEvent(.status("Reading the PDF…"))
+        onEvent(.status(L("Reading the PDF…")))
         let excerpt = Self.relevantText(from: data)
         let system = "You are a vehicle maintenance expert who converts owner's manuals into structured maintenance schedules."
 
@@ -197,7 +197,7 @@ struct ManualImporter {
             throw ImportError.unreadablePDF
         }
 
-        onEvent(.status("Claude is reading the maintenance pages…"))
+        onEvent(.status(L("Claude is reading the maintenance pages…")))
         let outcome = try await runWithStrictFallback(system: system, content: content, otherTools: [], force: true, onEvent: onEvent)
         return try Self.result(from: outcome, vehicle: vehicle, model: client.model)
     }
@@ -212,7 +212,7 @@ struct ManualImporter {
                                         finalTool: Self.toolName, forceFinalTool: force, onEvent: onEvent)
         } catch ClaudeClient.ClientError.badRequest(let message) where message.lowercased().contains("strict")
                                                                     || message.lowercased().contains("schema") {
-            onEvent(.status("Retrying without strict schema…"))
+            onEvent(.status(L("Retrying without strict schema…")))
             return try await client.run(system: system, userContent: content,
                                         tools: otherTools + [Self.submitTool(strict: false)],
                                         finalTool: Self.toolName, forceFinalTool: force, onEvent: onEvent)
@@ -293,9 +293,9 @@ struct ManualImporter {
             generation: env.generation,
             yearFrom: nil, yearTo: nil,
             kind: vehicle.kind, fuel: vehicle.fuel,
-            source: "AI import: " + (env.source ?? "web search"),
+            source: L("AI import: %@", env.source ?? L("web search")),
             sourceURLs: env.sourceURLs,
-            disclaimer: env.disclaimer ?? "Extracted automatically by AI — double-check against your manual.",
+            disclaimer: env.disclaimer ?? L("Extracted automatically by AI — double-check against your manual."),
             tasks: env.tasks.filter { !$0.title.trimmingCharacters(in: .whitespaces).isEmpty },
             specs: env.specs)
         return Result(template: template, manualURLs: env.manualURLs ?? [], summary: env.summary ?? "",
