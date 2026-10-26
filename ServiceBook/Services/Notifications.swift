@@ -27,7 +27,7 @@ enum ReminderScheduler {
                     guard let day = Calendar.current.date(byAdding: .day, value: offset, to: due),
                           let fire = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: day),
                           fire > now else { continue }
-                    items.append((fire, v.displayName, "\(t.title) — \(label)", "\(t.id.uuidString)-\(offset)"))
+                    items.append((fire, v.displayName, "\(LS(t.title)) — \(label)", "\(t.id.uuidString)-\(offset)"))
                 }
             }
         }

@@ -76,7 +76,7 @@ struct LogServiceView: View {
                         LabeledContent("Items done", value: selected.isEmpty ? L("None") : "\(selected.count)")
                     }
                     ForEach(vehicle.tasks.filter { selected.contains($0.id) }.sorted { $0.sortOrder < $1.sortOrder }) { t in
-                        Label(t.title, systemImage: "checkmark").font(.callout)
+                        Label(LS(t.title), systemImage: "checkmark").font(.callout)
                     }
                 } header: {
                     Text("Schedule items")
@@ -241,7 +241,7 @@ struct TaskPickerView: View {
 
     var body: some View {
         let rows = vehicle.scheduleRows().filter {
-            search.isEmpty || $0.task.title.localizedCaseInsensitiveContains(search)
+            search.isEmpty || LS($0.task.title).localizedCaseInsensitiveContains(search)
         }
         List {
             ForEach(rows) { row in
@@ -252,7 +252,7 @@ struct TaskPickerView: View {
                         Image(systemName: selection.contains(row.task.id) ? "checkmark.circle.fill" : "circle")
                             .foregroundStyle(selection.contains(row.task.id) ? Color.accentColor : Color.secondary)
                         VStack(alignment: .leading, spacing: 2) {
-                            Text(row.task.title).foregroundStyle(.primary)
+                            Text(LS(row.task.title)).foregroundStyle(.primary)
                             Text("\(row.task.action.label) · \(row.task.intervalText)")
                                 .font(.caption).foregroundStyle(.secondary)
                         }

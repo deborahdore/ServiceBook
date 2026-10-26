@@ -88,7 +88,7 @@ struct AddVehicleView: View {
                 Section {
                     Picker("Schedule", selection: Binding(get: { effectiveChoice }, set: { choice = $0 })) {
                         ForEach(matches) { t in
-                            Text("Built-in: \(t.model) \(t.generation ?? "")").tag(ScheduleChoice.builtIn(t.id))
+                            Text("Built-in: \(t.model) \(LS(t.generation ?? ""))").tag(ScheduleChoice.builtIn(t.id))
                         }
                         Text("Find the manual online (AI)").tag(ScheduleChoice.online)
                         Text("Import a manual PDF (AI)").tag(ScheduleChoice.pdf)

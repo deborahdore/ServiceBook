@@ -34,7 +34,7 @@ struct RecordDetailView: View {
             if !record.tasks.isEmpty {
                 Section("Items done (\(record.tasks.count))") {
                     ForEach(record.tasks.sorted { $0.sortOrder < $1.sortOrder }) { t in
-                        Label(t.title, systemImage: "checkmark.circle.fill")
+                        Label(LS(t.title), systemImage: "checkmark.circle.fill")
                     }
                 }
             }
@@ -127,13 +127,13 @@ struct TaskDetailView: View {
             }
 
             if !task.spec.isEmpty {
-                Section("Specification") { Text(task.spec).textSelection(.enabled) }
+                Section("Specification") { Text(LS(task.spec)).textSelection(.enabled) }
             }
             if !task.notes.isEmpty {
-                Section("Notes") { Text(task.notes).textSelection(.enabled) }
+                Section("Notes") { Text(LS(task.notes)).textSelection(.enabled) }
             }
             if !task.sourceRef.isEmpty {
-                Section("Source") { Text(task.sourceRef).font(.footnote).foregroundStyle(.secondary) }
+                Section("Source") { Text(LS(task.sourceRef)).font(.footnote).foregroundStyle(.secondary) }
             }
 
             Section("History") {
@@ -148,7 +148,7 @@ struct TaskDetailView: View {
                 Button("Delete item", role: .destructive) { confirmDelete = true }
             }
         }
-        .navigationTitle(task.title)
+        .navigationTitle(LS(task.title))
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) { Button("Edit") { editing = true } }
@@ -159,7 +159,7 @@ struct TaskDetailView: View {
         .sheet(isPresented: $logging) {
             if let v = task.vehicle { LogServiceView(vehicle: v, preselected: [task]) }
         }
-        .confirmationDialog("Delete “\(task.title)”?", isPresented: $confirmDelete, titleVisibility: .visible) {
+        .confirmationDialog("Delete “\(LS(task.title))”?", isPresented: $confirmDelete, titleVisibility: .visible) {
             Button("Delete", role: .destructive) {
                 context.delete(task)
                 try? context.save()
@@ -241,7 +241,7 @@ struct TaskEditView: View {
                 guard !loaded else { return }
                 loaded = true
                 guard let t = task else { return }
-                title = t.title
+                title = LS(t.title)
                 action = t.action
                 category = Self.categories.contains(t.category) ? t.category : "general"
                 kmText = t.intervalKm.map(String.init) ?? ""
@@ -249,8 +249,8 @@ struct TaskEditView: View {
                 oneTime = t.oneTime
                 firstKmText = t.firstKm.map(String.init) ?? ""
                 firstMonthsText = t.firstMonths.map(String.init) ?? ""
-                spec = t.spec
-                notes = t.notes
+                spec = LS(t.spec)
+                notes = LS(t.notes)
             }
         }
     }
@@ -266,7 +266,9 @@ struct TaskEditView: View {
             context.insert(t)
             t.vehicle = vehicle
         }
-        t.title = title.trimmingCharacters(in: .whitespaces)
+        // Unchanged built-in text keeps its English key, so it still follows the app language.
+        let newTitle = title.trimmingCharacters(in: .whitespaces)
+        if newTitle != LS(t.title) { t.title = newTitle }
         t.action = action
         t.category = category
         t.oneTime = oneTime
@@ -274,8 +276,8 @@ struct TaskEditView: View {
         t.intervalMonths = oneTime ? nil : monthsText.intValue
         t.firstKm = firstKmText.intValue
         t.firstMonths = firstMonthsText.intValue
-        t.spec = spec
-        t.notes = notes
+        if spec != LS(t.spec) { t.spec = spec }
+        if notes != LS(t.notes) { t.notes = notes }
         try? context.save()
         dismiss()
     }
@@ -379,7 +381,7 @@ struct BuiltInSchedulePicker: View {
         Button { chosen = t } label: {
             VStack(alignment: .leading, spacing: 3) {
                 Text("\(t.make) \(t.model)").font(.headline).foregroundStyle(.primary)
-                if let g = t.generation { Text(g).font(.caption).foregroundStyle(.secondary) }
+                if let g = t.generation { Text(LS(g)).font(.caption).foregroundStyle(.secondary) }
                 Text(L("%lld items", t.tasks.count) + " · " + L("%lld specs", t.specs?.count ?? 0)).font(.caption2).foregroundStyle(.secondary)
             }
         }

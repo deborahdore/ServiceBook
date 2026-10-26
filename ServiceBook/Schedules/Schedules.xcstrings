@@ -1,0 +1,5255 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "1,200–1,400 rpm (typical; see manual)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.200–1.400 giri/min (tipico; vedi manuale)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 200–1 400 tr/min (typique ; voir le manuel)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.200–1.400 rpm (típico; ver manual)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1200–1400 rpm (típico; ver manual)"
+          }
+        }
+      }
+    },
+    "1.0 EcoBoost (wet belt): Ford 150,000 mi / 10 years. Other engines differ — 1.25 Duratec: 160,000 km / 8 years; 1.4 / 1.6 Duratec: about 200,000 km / 10 years. Edit this item for your engine." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.0 EcoBoost (cinghia a bagno d'olio): Ford 150.000 mi / 10 anni. Altri motori differiscono — 1.25 Duratec: 160.000 km / 8 anni; 1.4 / 1.6 Duratec: circa 200.000 km / 10 anni. Modifica questa voce per il tuo motore."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.0 EcoBoost (courroie à bain d’huile) : Ford 150 000 mi / 10 ans. Les autres moteurs diffèrent — 1.25 Duratec : 160 000 km / 8 ans ; 1.4 / 1.6 Duratec : environ 200 000 km / 10 ans. Modifiez cet élément selon votre moteur."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.0 EcoBoost (correa bañada en aceite): Ford 150.000 mi / 10 años. Otros motores varían — 1.25 Duratec: 160.000 km / 8 años; 1.4 / 1.6 Duratec: unos 200.000 km / 10 años. Edita este elemento según tu motor."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.0 EcoBoost (correia em banho de óleo): Ford 150 000 mi / 10 anos. Outros motores variam — 1.25 Duratec: 160 000 km / 8 anos; 1.4 / 1.6 Duratec: cerca de 200 000 km / 10 anos. Edite este item para o seu motor."
+          }
+        }
+      }
+    },
+    "1.5 / 1.6 TDCi: about 200,000 km / 10 years (Ford Europe figure, as reported by AD). Haynes is more cautious (≈ 90,000 km). Older 1.4 TDCi: 150,000 km / 7 years. Ask a Ford dealer to confirm with your VIN." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.5 / 1.6 TDCi: circa 200.000 km / 10 anni (dato Ford Europa riportato da AD). Haynes è più prudente (≈ 90.000 km). Il vecchio 1.4 TDCi: 150.000 km / 7 anni. Chiedi conferma a un concessionario Ford con il tuo numero di telaio."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.5 / 1.6 TDCi : environ 200 000 km / 10 ans (chiffre Ford Europe, selon AD). Haynes est plus prudent (≈ 90 000 km). Ancien 1.4 TDCi : 150 000 km / 7 ans. Faites confirmer par un concessionnaire Ford avec votre VIN."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.5 / 1.6 TDCi: unos 200.000 km / 10 años (dato de Ford Europa, según AD). Haynes es más prudente (≈ 90.000 km). El antiguo 1.4 TDCi: 150.000 km / 7 años. Pide a un concesionario Ford que lo confirme con tu número de bastidor."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1.5 / 1.6 TDCi: cerca de 200 000 km / 10 anos (valor da Ford Europa, segundo a AD). A Haynes é mais prudente (≈ 90 000 km). O antigo 1.4 TDCi: 150 000 km / 7 anos. Peça a um concessionário Ford que confirme com o seu VIN."
+          }
+        }
+      }
+    },
+    "10 years if Ford Super Plus has been used from new. Haynes recommends every 2 years if the coolant type is unknown." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 anni se è stato usato Ford Super Plus fin dal nuovo. Haynes consiglia ogni 2 anni se il tipo di liquido non è noto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 ans si du Ford Super Plus est utilisé depuis le neuf. Haynes recommande tous les 2 ans si le type de liquide est inconnu."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 años si se ha usado Ford Super Plus desde nuevo. Haynes recomienda cada 2 años si no se conoce el tipo de refrigerante."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10 anos se foi usado Ford Super Plus desde novo. A Haynes recomenda a cada 2 anos se o tipo de líquido for desconhecido."
+          }
+        }
+      }
+    },
+    "110/70R17 M/C 54H · 200 kPa (2.00 bar / 28 psi) cold" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "110/70R17 M/C 54H · 200 kPa (2,00 bar / 28 psi) a freddo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "110/70R17 M/C 54H · 200 kPa (2,00 bar / 28 psi) à froid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "110/70R17 M/C 54H · 200 kPa (2,00 bar / 28 psi) en frío"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "110/70R17 M/C 54H · 200 kPa (2,00 bar / 28 psi) a frio"
+          }
+        }
+      }
+    },
+    "150/60R17 M/C 66H · 225 kPa (2.25 bar / 32 psi) cold" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "150/60R17 M/C 66H · 225 kPa (2,25 bar / 32 psi) a freddo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "150/60R17 M/C 66H · 225 kPa (2,25 bar / 32 psi) à froid"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "150/60R17 M/C 66H · 225 kPa (2,25 bar / 32 psi) en frío"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "150/60R17 M/C 66H · 225 kPa (2,25 bar / 32 psi) a frio"
+          }
+        }
+      }
+    },
+    "17.5 N·m" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "17,5 N·m"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "17,5 N·m"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "17,5 N·m"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "17,5 N·m"
+          }
+        }
+      }
+    },
+    "20–30 mm" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20–30 mm"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20–30 mm"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20–30 mm"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20–30 mm"
+          }
+        }
+      }
+    },
+    "20–30 mm at the middle of the lower run (bike on side stand)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20–30 mm a metà del tratto inferiore (moto sul cavalletto laterale)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20–30 mm au milieu du brin inférieur (moto sur la béquille latérale)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20–30 mm en el centro del tramo inferior (moto en la pata de cabra)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "20–30 mm a meio do troço inferior (mota no descanso lateral)"
+          }
+        }
+      }
+    },
+    "3 L" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 L"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 L"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 L"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "3 L"
+          }
+        }
+      }
+    },
+    "30 N·m" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 N·m"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 N·m"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 N·m"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "30 N·m"
+          }
+        }
+      }
+    },
+    "4.6 L incl. filter · dipstick MIN→MAX = 1 L" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4,6 L con filtro · astina MIN→MAX = 1 L"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4,6 L avec filtre · jauge MIN→MAX = 1 L"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4,6 L con filtro · varilla MIN→MAX = 1 L"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "4,6 L com filtro · vareta MIN→MAX = 1 L"
+          }
+        }
+      }
+    },
+    "40 L" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "40 L"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "40 L"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "40 L"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "40 L"
+          }
+        }
+      }
+    },
+    "42 L" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "42 L"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "42 L"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "42 L"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "42 L"
+          }
+        }
+      }
+    },
+    "6.2 L incl. filter · dipstick MIN→MAX = 1.75 L (2021 manual, 1.5 Duratorq-TDCi — check your handbook for earlier builds)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6,2 L con filtro · astina MIN→MAX = 1,75 L (manuale 2021, 1.5 Duratorq-TDCi — per gli esemplari precedenti controlla il tuo libretto)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6,2 L avec filtre · jauge MIN→MAX = 1,75 L (manuel 2021, 1.5 Duratorq-TDCi — vérifiez votre manuel pour les modèles plus anciens)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6,2 L con filtro · varilla MIN→MAX = 1,75 L (manual de 2021, 1.5 Duratorq-TDCi — consulta tu manual para unidades anteriores)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "6,2 L com filtro · vareta MIN→MAX = 1,75 L (manual de 2021, 1.5 Duratorq-TDCi — consulte o seu manual para unidades anteriores)"
+          }
+        }
+      }
+    },
+    "98 N·m" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "98 N·m"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "98 N·m"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "98 N·m"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "98 N·m"
+          }
+        }
+      }
+    },
+    "After adjusting, align both adjusters and tighten the rear axle nut to 98 N·m." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dopo la regolazione, allinea entrambi i tendicatena e serra il dado del perno ruota posteriore a 98 N·m."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Après réglage, alignez les deux tendeurs et serrez l’écrou d’axe de roue arrière à 98 N·m."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tras ajustarla, alinea ambos tensores y aprieta la tuerca del eje trasero a 98 N·m."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depois de ajustar, alinhe os dois esticadores e aperte a porca do eixo traseiro a 98 N·m."
+          }
+        }
+      }
+    },
+    "Air cleaner element" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elemento filtro aria"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Élément de filtre à air"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elemento del filtro de aire"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elemento do filtro de ar"
+          }
+        }
+      }
+    },
+    "Air conditioning: performance & lines" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Climatizzatore: prestazioni e tubazioni"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Climatisation : performances et conduites"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aire acondicionado: rendimiento y conductos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ar condicionado: desempenho e tubagens"
+          }
+        }
+      }
+    },
+    "Air filter (induction)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro aria (aspirazione)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtre à air (admission)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de aire (admisión)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de ar (admissão)"
+          }
+        }
+      }
+    },
+    "Air suction system" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema di aspirazione aria secondaria"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système d’aspiration d’air"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de aspiración de aire"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de aspiração de ar"
+          }
+        }
+      }
+    },
+    "Also after washing the bike or riding in the rain. Use chain lube for O/X-ring chains." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anche dopo aver lavato la moto o guidato sotto la pioggia. Usa un lubrificante per catene O/X-ring."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aussi après avoir lavé la moto ou roulé sous la pluie. Utilisez un lubrifiant pour chaînes à joints O/X."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "También después de lavar la moto o circular con lluvia. Usa lubricante para cadenas con retenes O/X."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Também depois de lavar a mota ou andar à chuva. Use lubrificante para correntes com o-rings/x-rings."
+          }
+        }
+      }
+    },
+    "Also check washer fluid. Pressures are on the label in the driver's door frame." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla anche il liquido lavavetri. Le pressioni sono sull'etichetta nel montante della portiera del conducente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifiez aussi le lave-glace. Les pressions figurent sur l’étiquette dans l’encadrement de la portière conducteur."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprueba también el líquido limpiaparabrisas. Las presiones están en la etiqueta del marco de la puerta del conductor."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifique também o líquido do lava-vidros. As pressões estão na etiqueta no aro da porta do condutor."
+          }
+        }
+      }
+    },
+    "Auxiliary drive belt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinghia dei servizi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Courroie d’accessoires"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correa de accesorios"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correia de acessórios"
+          }
+        }
+      }
+    },
+    "Based on Ford's official 2013 Fiesta 1.0 EcoBoost service sheets. Intervals are 'whichever comes first'." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basato sulle schede di manutenzione ufficiali Ford della Fiesta 1.0 EcoBoost del 2013. Gli intervalli valgono «a seconda di quale scade prima»."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "D’après les fiches d’entretien officielles Ford de la Fiesta 1.0 EcoBoost de 2013. Les intervalles s’appliquent « au premier des deux termes atteint »."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Basado en las hojas de mantenimiento oficiales de Ford del Fiesta 1.0 EcoBoost de 2013. Los intervalos son «lo que ocurra primero»."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com base nas fichas de manutenção oficiais da Ford para o Fiesta 1.0 EcoBoost de 2013. Os intervalos são «o que ocorrer primeiro»."
+          }
+        }
+      }
+    },
+    "Battery (leaks, condition)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batteria (perdite, condizioni)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterie (fuites, état)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batería (fugas, estado)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bateria (fugas, estado)"
+          }
+        }
+      }
+    },
+    "Before every ride" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prima di ogni uscita"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avant chaque sortie"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antes de cada salida"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antes de cada saída"
+          }
+        }
+      }
+    },
+    "Between LOWER and UPPER marks on both reservoirs. DOT 4 only." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tra i segni LOWER e UPPER su entrambi i serbatoi. Solo DOT 4."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entre les repères LOWER et UPPER sur les deux réservoirs. DOT 4 uniquement."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entre las marcas LOWER y UPPER en ambos depósitos. Solo DOT 4."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entre as marcas LOWER e UPPER em ambos os reservatórios. Apenas DOT 4."
+          }
+        }
+      }
+    },
+    "Brake fluid" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquido freni"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquide de frein"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido de frenos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido dos travões"
+          }
+        }
+      }
+    },
+    "Brake fluid (front & rear)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquido freni (anteriore e posteriore)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquide de frein (avant et arrière)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido de frenos (delantero y trasero)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido dos travões (dianteiro e traseiro)"
+          }
+        }
+      }
+    },
+    "Brake fluid level" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livello liquido freni"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau de liquide de frein"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nivel del líquido de frenos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nível do líquido dos travões"
+          }
+        }
+      }
+    },
+    "Brake fluid level & leaks" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livello e perdite del liquido freni"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau et fuites de liquide de frein"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nivel y fugas del líquido de frenos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nível e fugas do líquido dos travões"
+          }
+        }
+      }
+    },
+    "Brake hoses" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tubi flessibili dei freni"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flexibles de frein"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latiguillos de freno"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tubos flexíveis dos travões"
+          }
+        }
+      }
+    },
+    "Brake light switches" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interruttori della luce di stop"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contacteurs de feu stop"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interruptores de la luz de freno"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Interruptores da luz de travagem"
+          }
+        }
+      }
+    },
+    "Brake master cylinder & caliper rubber parts" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guarnizioni di pompa freno e pinze"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pièces en caoutchouc du maître-cylindre et des étriers"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piezas de goma de la bomba de freno y las pinzas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Borrachas da bomba de travão e das pinças"
+          }
+        }
+      }
+    },
+    "Brake pad wear" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usura pastiglie freno"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usure des plaquettes de frein"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desgaste de las pastillas de freno"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desgaste das pastilhas de travão"
+          }
+        }
+      }
+    },
+    "Brake system (leaks, damage, operation)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impianto frenante (perdite, danni, funzionamento)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système de freinage (fuites, dommages, fonctionnement)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de frenos (fugas, daños, funcionamiento)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de travagem (fugas, danos, funcionamento)"
+          }
+        }
+      }
+    },
+    "Brakes: pads, discs & rear drums" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Freni: pastiglie, dischi e tamburi posteriori"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Freins : plaquettes, disques et tambours arrière"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Frenos: pastillas, discos y tambores traseros"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Travões: pastilhas, discos e tambores traseiros"
+          }
+        }
+      }
+    },
+    "Cabin (pollen / odour) filter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro abitacolo (antipolline / antiodore)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtre d’habitacle (pollen / odeurs)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de habitáculo (polen / olores)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro do habitáculo (pólen / odores)"
+          }
+        }
+      }
+    },
+    "Chain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catena"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaîne"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cadena"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corrente"
+          }
+        }
+      }
+    },
+    "Chain slack" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gioco della catena"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tension de la chaîne"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Holgura de la cadena"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folga da corrente"
+          }
+        }
+      }
+    },
+    "Chassis parts" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parti del telaio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pièces de la partie-cycle"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piezas del chasis"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peças do quadro"
+          }
+        }
+      }
+    },
+    "Check level in the reserve tank with the engine cold, between F and L marks." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla il livello nel serbatoio di espansione a motore freddo, tra i segni F e L."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifiez le niveau dans le vase d’expansion moteur froid, entre les repères F et L."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprueba el nivel en el depósito de expansión con el motor frío, entre las marcas F y L."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifique o nível no depósito de expansão com o motor frio, entre as marcas F e L."
+          }
+        }
+      }
+    },
+    "Check the first aid kit expiry date. A vest and warning triangle are mandatory in France and Italy." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla la scadenza del kit di pronto soccorso. Giubbotto e triangolo sono obbligatori in Francia e in Italia."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifiez la date de péremption de la trousse de secours. Le gilet et le triangle sont obligatoires en France et en Italie."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprueba la fecha de caducidad del botiquín. El chaleco y los triángulos son obligatorios en Francia e Italia."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifique a validade do estojo de primeiros socorros. O colete e o triângulo são obrigatórios em França e Itália."
+          }
+        }
+      }
+    },
+    "Check throttle grip play and smooth return in all steering positions." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlla il gioco della manopola e il ritorno regolare in tutte le posizioni dello sterzo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vérifiez le jeu de la poignée des gaz et son retour en douceur dans toutes les positions du guidon."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprueba la holgura del puño del acelerador y su retorno suave en todas las posiciones del manillar."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifique a folga do punho do acelerador e o retorno suave em todas as posições do guiador."
+          }
+        }
+      }
+    },
+    "Clutch lever free play 2–3 mm." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gioco libero della leva frizione 2–3 mm."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Garde au levier d’embrayage 2–3 mm."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Holgura libre de la maneta de embrague 2–3 mm."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folga livre da manete da embraiagem 2–3 mm."
+          }
+        }
+      }
+    },
+    "Clutch operation & lever play" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funzionamento frizione e gioco della leva"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonctionnement de l’embrayage et garde du levier"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funcionamiento del embrague y holgura de la maneta"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funcionamento da embraiagem e folga da manete"
+          }
+        }
+      }
+    },
+    "Coolant" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquido di raffreddamento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquide de refroidissement"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refrigerante"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido de refrigeração"
+          }
+        }
+      }
+    },
+    "Coolant (1.0 EcoBoost)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquido di raffreddamento (1.0 EcoBoost)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquide de refroidissement (1.0 EcoBoost)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refrigerante (1.0 EcoBoost)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido de refrigeração (1.0 EcoBoost)"
+          }
+        }
+      }
+    },
+    "Coolant antifreeze concentration & fluid levels" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concentrazione dell'antigelo e livelli dei liquidi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concentration d’antigel et niveaux des liquides"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concentración de anticongelante y niveles de líquidos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Concentração do anticongelante e níveis dos líquidos"
+          }
+        }
+      }
+    },
+    "Coolant, radiator hoses & O-rings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquido di raffreddamento, manicotti del radiatore e O-ring"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquide de refroidissement, durites de radiateur et joints toriques"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refrigerante, manguitos del radiador y juntas tóricas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido de refrigeração, mangueiras do radiador e o-rings"
+          }
+        }
+      }
+    },
+    "Coolant: drain, flush & refill" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquido di raffreddamento: scarico, lavaggio e riempimento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquide de refroidissement : vidange, rinçage et remplissage"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Refrigerante: vaciado, lavado y llenado"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido de refrigeração: esvaziar, lavar e encher"
+          }
+        }
+      }
+    },
+    "Cooling system & coolant level" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impianto di raffreddamento e livello del liquido"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Circuit de refroidissement et niveau de liquide"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de refrigeración y nivel de refrigerante"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de refrigeração e nível do líquido"
+          }
+        }
+      }
+    },
+    "DOT 4" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4"
+          }
+        }
+      }
+    },
+    "DOT 4 (Ford Super DOT 4 / LV)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 (Ford Super DOT 4 / LV)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 (Ford Super DOT 4 / LV)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 (Ford Super DOT 4 / LV)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 (Ford Super DOT 4 / LV)"
+          }
+        }
+      }
+    },
+    "DOT 4 LV High Performance (WSS-M6C65-A2)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 LV High Performance (WSS-M6C65-A2)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 LV High Performance (WSS-M6C65-A2)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 LV High Performance (WSS-M6C65-A2)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 LV High Performance (WSS-M6C65-A2)"
+          }
+        }
+      }
+    },
+    "DOT 4 LV High Performance WSS-M6C65-A2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 LV High Performance WSS-M6C65-A2"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 LV High Performance WSS-M6C65-A2"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 LV High Performance WSS-M6C65-A2"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "DOT 4 LV High Performance WSS-M6C65-A2"
+          }
+        }
+      }
+    },
+    "Daily" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogni giorno"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque jour"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A diario"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Diariamente"
+          }
+        }
+      }
+    },
+    "Daily checks" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlli quotidiani"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contrôles quotidiens"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprobaciones diarias"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificações diárias"
+          }
+        }
+      }
+    },
+    "Dealer job: requires removing the cylinder head cover." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lavoro da officina: richiede lo smontaggio del coperchio della testata."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Travail de concessionnaire : nécessite de déposer le couvre-culasse."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trabajo de taller: hay que desmontar la tapa de culata."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trabalho de oficina: exige remover a tampa das válvulas."
+          }
+        }
+      }
+    },
+    "Depends on your country. France & Italy: first at 4 years, then every 2 years. UK MOT: first at 3 years, then yearly. Edit this item to match your country." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dipende dal paese. Francia e Italia: la prima a 4 anni, poi ogni 2 anni. Regno Unito (MOT): la prima a 3 anni, poi ogni anno. Modifica questa voce in base al tuo paese."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dépend du pays. France et Italie : premier à 4 ans, puis tous les 2 ans. Royaume-Uni (MOT) : premier à 3 ans, puis chaque année. Modifiez cet élément selon votre pays."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depende del país. Francia e Italia: la primera a los 4 años, después cada 2 años. Reino Unido (MOT): la primera a los 3 años, después cada año. Edita este elemento según tu país."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depende do país. França e Itália: a primeira aos 4 anos, depois a cada 2 anos. Reino Unido (MOT): a primeira aos 3 anos, depois todos os anos. Edite este item de acordo com o seu país."
+          }
+        }
+      }
+    },
+    "Depends on your country. France (2-wheelers): first at 5 years, then every 3 years. Italy: first at 4 years, then every 2. UK MOT: first at 3 years, then yearly. Edit this item to match your country." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dipende dal paese. Francia (due ruote): la prima a 5 anni, poi ogni 3 anni. Italia: la prima a 4 anni, poi ogni 2. Regno Unito (MOT): la prima a 3 anni, poi ogni anno. Modifica questa voce in base al tuo paese."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dépend du pays. France (deux-roues) : premier à 5 ans, puis tous les 3 ans. Italie : premier à 4 ans, puis tous les 2 ans. Royaume-Uni (MOT) : premier à 3 ans, puis chaque année. Modifiez cet élément selon votre pays."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depende del país. Francia (dos ruedas): la primera a los 5 años, después cada 3 años. Italia: la primera a los 4 años, después cada 2. Reino Unido (MOT): la primera a los 3 años, después cada año. Edita este elemento según tu país."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depende do país. França (duas rodas): a primeira aos 5 anos, depois a cada 3 anos. Itália: a primeira aos 4 anos, depois a cada 2. Reino Unido (MOT): a primeira aos 3 anos, depois todos os anos. Edite este item de acordo com o seu país."
+          }
+        }
+      }
+    },
+    "Diesel particulate filter & AdBlue (if fitted)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro antiparticolato e AdBlue (se presenti)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtre à particules et AdBlue (si équipé)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de partículas y AdBlue (si lo lleva)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de partículas e AdBlue (se existir)"
+          }
+        }
+      }
+    },
+    "Do a regular 20+ minute motorway drive so the DPF can regenerate, especially if you mostly do short trips." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fai regolarmente un tragitto in autostrada di almeno 20 minuti per permettere la rigenerazione del DPF, soprattutto se fai per lo più tragitti brevi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faites régulièrement plus de 20 minutes d’autoroute pour que le FAP se régénère, surtout si vous faites surtout des trajets courts."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haz con regularidad un trayecto de más de 20 minutos por autopista para que el FAP se regenere, sobre todo si haces principalmente trayectos cortos."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faça regularmente um percurso de mais de 20 minutos em autoestrada para o FAP regenerar, sobretudo se faz principalmente trajetos curtos."
+          }
+        }
+      }
+    },
+    "Drive chain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Catena di trasmissione"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaîne de transmission"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cadena de transmisión"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corrente de transmissão"
+          }
+        }
+      }
+    },
+    "Drive chain & sprocket wear" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usura di catena, pignone e corona"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usure de la chaîne et des pignons"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desgaste de la cadena y los piñones"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desgaste da corrente e dos carretos"
+          }
+        }
+      }
+    },
+    "Drive chain guide wear" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usura del pattino guidacatena"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usure du guide-chaîne"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desgaste de la guía de la cadena"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desgaste da guia da corrente"
+          }
+        }
+      }
+    },
+    "Drive chain slack" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gioco della catena"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tension de la chaîne"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Holgura de la cadena"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folga da corrente"
+          }
+        }
+      }
+    },
+    "ER400D (2019–2025) — also applies to Ninja 400" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ER400D (2019–2025) — vale anche per la Ninja 400"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ER400D (2019–2025) — s’applique aussi à la Ninja 400"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ER400D (2019–2025) — también vale para la Ninja 400"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ER400D (2019–2025) — também se aplica à Ninja 400"
+          }
+        }
+      }
+    },
+    "Electrical" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impianto elettrico"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Électricité"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema eléctrico"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema elétrico"
+          }
+        }
+      }
+    },
+    "Electrical system (lights, horn, switches)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impianto elettrico (luci, clacson, comandi)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Circuit électrique (éclairage, avertisseur, commodos)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema eléctrico (luces, claxon, mandos)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema elétrico (luzes, buzina, comandos)"
+          }
+        }
+      }
+    },
+    "Engine oil" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olio motore"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huile moteur"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aceite de motor"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Óleo do motor"
+          }
+        }
+      }
+    },
+    "Engine oil (1.0 EcoBoost)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olio motore (1.0 EcoBoost)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huile moteur (1.0 EcoBoost)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aceite de motor (1.0 EcoBoost)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Óleo do motor (1.0 EcoBoost)"
+          }
+        }
+      }
+    },
+    "Engine oil + filter change, idle speed, and all periodic inspection items. Ride gently and keep revs below 4,000 rpm for the first 800 km, below 6,000 rpm up to 1,600 km." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambio olio motore e filtro, regime del minimo e tutti i controlli periodici. Guida con calma e resta sotto i 4.000 giri/min per i primi 800 km, sotto i 6.000 giri/min fino a 1.600 km."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vidange huile moteur et filtre, régime de ralenti et tous les contrôles périodiques. Roulez en douceur et restez sous 4 000 tr/min les 800 premiers km, sous 6 000 tr/min jusqu’à 1 600 km."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambio de aceite y filtro, régimen de ralentí y todas las inspecciones periódicas. Conduce con suavidad y no pases de 4.000 rpm los primeros 800 km, ni de 6.000 rpm hasta los 1.600 km."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mudança de óleo do motor e filtro, ralenti e todas as inspeções periódicas. Conduza com suavidade e mantenha-se abaixo das 4000 rpm nos primeiros 800 km, abaixo das 6000 rpm até aos 1600 km."
+          }
+        }
+      }
+    },
+    "Engine oil capacity" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacità olio motore"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacité d’huile moteur"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacidad de aceite del motor"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacidade de óleo do motor"
+          }
+        }
+      }
+    },
+    "Engine oil capacity (1.0 EcoBoost)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacità olio motore (1.0 EcoBoost)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacité d’huile moteur (1.0 EcoBoost)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacidad de aceite del motor (1.0 EcoBoost)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacidade de óleo do motor (1.0 EcoBoost)"
+          }
+        }
+      }
+    },
+    "Engine oil level · coolant level · brake fluid level · pipes, hoses & reservoirs for leaks · A/C operation · parking brake · horn · wheel nut tightness." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livello olio motore · livello liquido di raffreddamento · livello liquido freni · perdite da tubi, manicotti e serbatoi · funzionamento del climatizzatore · freno di stazionamento · clacson · serraggio dei bulloni delle ruote."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau d’huile moteur · niveau de liquide de refroidissement · niveau de liquide de frein · fuites des conduites, durites et réservoirs · fonctionnement de la clim · frein de stationnement · avertisseur · serrage des écrous de roue."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nivel de aceite del motor · nivel de refrigerante · nivel de líquido de frenos · fugas en tuberías, manguitos y depósitos · funcionamiento del aire acondicionado · freno de estacionamiento · claxon · apriete de las tuercas de las ruedas."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nível do óleo do motor · nível do líquido de refrigeração · nível do líquido dos travões · fugas em tubagens, mangueiras e reservatórios · funcionamento do ar condicionado · travão de estacionamento · buzina · aperto das porcas das rodas."
+          }
+        }
+      }
+    },
+    "Engine oil, coolant & brake fluid levels · leaks · A/C · parking brake · horn · wheel nut tightness" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livelli di olio motore, liquido di raffreddamento e liquido freni · perdite · climatizzatore · freno di stazionamento · clacson · serraggio dei bulloni delle ruote"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveaux d’huile moteur, de liquide de refroidissement et de frein · fuites · clim · frein de stationnement · avertisseur · serrage des écrous de roue"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveles de aceite del motor, refrigerante y líquido de frenos · fugas · aire acondicionado · freno de estacionamiento · claxon · apriete de las tuercas de las ruedas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Níveis do óleo do motor, líquido de refrigeração e líquido dos travões · fugas · ar condicionado · travão de estacionamento · buzina · aperto das porcas das rodas"
+          }
+        }
+      }
+    },
+    "Engine vacuum synchronization" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronizzazione dei corpi farfallati"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Synchronisation des papillons (dépression)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronización de cuerpos de mariposa"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sincronização dos corpos de borboleta"
+          }
+        }
+      }
+    },
+    "Engine, transmission & underbody leaks" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perdite da motore, cambio e sottoscocca"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuites moteur, boîte de vitesses et soubassement"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fugas de motor, caja de cambios y bajos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fugas do motor, caixa de velocidades e fundo do veículo"
+          }
+        }
+      }
+    },
+    "Ethylene-glycol permanent antifreeze for aluminium engines, 50 % with distilled water" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigelo permanente a base di glicole etilenico per motori in alluminio, al 50 % con acqua distillata"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigel permanent à l’éthylène glycol pour moteurs en aluminium, à 50 % avec de l’eau distillée"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anticongelante permanente de etilenglicol para motores de aluminio, al 50 % con agua destilada"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anticongelante permanente de etilenoglicol para motores de alumínio, a 50 % com água destilada"
+          }
+        }
+      }
+    },
+    "Evaporative emission system" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema di controllo delle emissioni evaporative"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Système antiévaporation"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de control de emisiones evaporativas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de controlo de emissões evaporativas"
+          }
+        }
+      }
+    },
+    "Exterior lamps · interior lamps · warning lamps and indicators" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luci esterne · luci interne · spie e indicatori"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feux extérieurs · éclairage intérieur · témoins et indicateurs"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luces exteriores · luces interiores · testigos e indicadores"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luzes exteriores · luzes interiores · avisadores e indicadores"
+          }
+        }
+      }
+    },
+    "Fiesta Mk8 launched in mid-2017: a 1.5 TDCi registered from late 2017 is almost always a Mk8. Intervals are 'whichever comes first'." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Fiesta Mk8 è uscita a metà 2017: una 1.5 TDCi immatricolata da fine 2017 è quasi sempre una Mk8. Gli intervalli valgono «a seconda di quale scade prima»."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La Fiesta Mk8 est sortie mi-2017 : une 1.5 TDCi immatriculée à partir de fin 2017 est presque toujours une Mk8. Les intervalles s’appliquent « au premier des deux termes atteint »."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El Fiesta Mk8 salió a mediados de 2017: un 1.5 TDCi matriculado desde finales de 2017 es casi siempre un Mk8. Los intervalos son «lo que ocurra primero»."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Fiesta Mk8 foi lançado em meados de 2017: um 1.5 TDCi matriculado a partir do final de 2017 é quase sempre um Mk8. Os intervalos são «o que ocorrer primeiro»."
+          }
+        }
+      }
+    },
+    "Fluids" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquidi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquides"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquidos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquidos"
+          }
+        }
+      }
+    },
+    "Ford Europe regular service: every year or 20,000 km, whichever first. If you mostly do short trips or towing, Haynes suggests every 10,000 km / 6 months. Reset the oil change indicator afterwards." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tagliando ordinario Ford Europa: ogni anno o 20.000 km, a seconda di quale scade prima. Se fai soprattutto tragitti brevi o traini un rimorchio, Haynes consiglia ogni 10.000 km / 6 mesi. Dopo, azzera l'indicatore del cambio olio."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entretien régulier Ford Europe : tous les ans ou tous les 20 000 km, au premier terme atteint. Si vous faites surtout des trajets courts ou tractez une remorque, Haynes conseille tous les 10 000 km / 6 mois. Réinitialisez ensuite l’indicateur de vidange."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenimiento periódico de Ford Europa: cada año o 20.000 km, lo que ocurra primero. Si haces sobre todo trayectos cortos o remolcas, Haynes aconseja cada 10.000 km / 6 meses. Después, reinicia el indicador de cambio de aceite."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisão periódica da Ford Europa: todos os anos ou a cada 20 000 km, o que ocorrer primeiro. Se faz sobretudo trajetos curtos ou reboca, a Haynes sugere a cada 10 000 km / 6 meses. Depois, reponha o indicador de mudança de óleo."
+          }
+        }
+      }
+    },
+    "Ford Europe service schedules (Fiesta), Ford Fiesta owner's manual, Haynes maintenance guide" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piani di manutenzione Ford Europa (Fiesta), libretto d'uso Ford Fiesta, guida alla manutenzione Haynes"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plans d’entretien Ford Europe (Fiesta), manuel du propriétaire Ford Fiesta, guide d’entretien Haynes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planes de mantenimiento de Ford Europa (Fiesta), manual del propietario del Ford Fiesta, guía de mantenimiento Haynes"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Planos de manutenção da Ford Europa (Fiesta), manual do proprietário do Ford Fiesta, guia de manutenção Haynes"
+          }
+        }
+      }
+    },
+    "Ford Fiesta owner's manual (CG3654, 2021) — Maintenance, General information" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libretto d'uso Ford Fiesta (CG3654, 2021) — Manutenzione, Informazioni generali"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuel du propriétaire Ford Fiesta (CG3654, 2021) — Entretien, Informations générales"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual del propietario del Ford Fiesta (CG3654, 2021) — Mantenimiento, Información general"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual do proprietário do Ford Fiesta (CG3654, 2021) — Manutenção, Informações gerais"
+          }
+        }
+      }
+    },
+    "Ford Super Plus (purple) — do not mix with other coolants" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus (viola) — non mescolare con altri liquidi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus (violet) — ne pas mélanger avec d’autres liquides"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus (morado) — no mezclar con otros refrigerantes"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus (roxo) — não misturar com outros líquidos"
+          }
+        }
+      }
+    },
+    "Ford Super Plus Premium (WSS-M97B44-D)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium (WSS-M97B44-D)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium (WSS-M97B44-D)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium (WSS-M97B44-D)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium (WSS-M97B44-D)"
+          }
+        }
+      }
+    },
+    "Ford Super Plus Premium WSS-M97B44-D · 5.8 L" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium WSS-M97B44-D · 5,8 L"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium WSS-M97B44-D · 5,8 L"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium WSS-M97B44-D · 5,8 L"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium WSS-M97B44-D · 5,8 L"
+          }
+        }
+      }
+    },
+    "Ford Super Plus Premium WSS-M97B44-D · 6.1 L" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium WSS-M97B44-D · 6,1 L"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium WSS-M97B44-D · 6,1 L"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium WSS-M97B44-D · 6,1 L"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ford Super Plus Premium WSS-M97B44-D · 6,1 L"
+          }
+        }
+      }
+    },
+    "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piano di manutenzione Ford (Fiesta, scheda 1 anno / 12.500 mi)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plan d’entretien Ford (Fiesta, fiche 1 an / 12 500 mi)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plan de mantenimiento Ford (Fiesta, hoja 1 año / 12.500 mi)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plano de manutenção Ford (Fiesta, ficha 1 ano / 12 500 mi)"
+          }
+        }
+      }
+    },
+    "Ford service schedule (Fiesta, 1 yr / 12,500 mi sheet) (3 yr / 37,500 mi sheet)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piano di manutenzione Ford (Fiesta, scheda 1 anno / 12.500 mi) (scheda 3 anni / 37.500 mi)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plan d’entretien Ford (Fiesta, fiche 1 an / 12 500 mi) (fiche 3 ans / 37 500 mi)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plan de mantenimiento Ford (Fiesta, hoja 1 año / 12.500 mi) (hoja 3 años / 37.500 mi)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plano de manutenção Ford (Fiesta, ficha 1 ano / 12 500 mi) (ficha 3 anos / 37 500 mi)"
+          }
+        }
+      }
+    },
+    "Ford service schedule — Extended Period Maintenance" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piano di manutenzione Ford — manutenzione a lungo intervallo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plan d’entretien Ford — entretien à intervalle long"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plan de mantenimiento Ford — mantenimiento de intervalo largo"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plano de manutenção Ford — manutenção de intervalo alargado"
+          }
+        }
+      }
+    },
+    "Front fork & rear shock (leaks, operation)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forcella e ammortizzatore posteriore (perdite, funzionamento)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fourche et amortisseur arrière (fuites, fonctionnement)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horquilla y amortiguador trasero (fugas, funcionamiento)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forquilha e amortecedor traseiro (fugas, funcionamento)"
+          }
+        }
+      }
+    },
+    "Front lever and rear pedal must both switch the brake light on." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sia la leva anteriore sia il pedale posteriore devono accendere la luce di stop."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le levier avant et la pédale arrière doivent tous deux allumer le feu stop."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanto la maneta delantera como el pedal trasero deben encender la luz de freno."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tanto a manete dianteira como o pedal traseiro devem acender a luz de travagem."
+          }
+        }
+      }
+    },
+    "Front tyre" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneumatico anteriore"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneu avant"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neumático delantero"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneu dianteiro"
+          }
+        }
+      }
+    },
+    "Fuel filter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro carburante"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtre à carburant"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de combustible"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de combustível"
+          }
+        }
+      }
+    },
+    "Fuel filter: drain water" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro gasolio: scarico dell'acqua"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtre à gazole : purge de l’eau"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de combustible: purgar el agua"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de combustível: purgar a água"
+          }
+        }
+      }
+    },
+    "Fuel hoses" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tubi carburante"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Durites de carburant"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tubos de combustible"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tubos de combustível"
+          }
+        }
+      }
+    },
+    "Fuel level · engine oil level · tyre pressure & condition · chain slack & lube · brake lever/pedal feel and fluid level · throttle snaps back · clutch · lights, indicators, horn · steering moves freely · engine stop & side stand switches" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livello carburante · livello olio motore · pressione e condizioni dei pneumatici · gioco e lubrificazione della catena · sensibilità di leva/pedale freno e livello del liquido · ritorno dell'acceleratore · frizione · luci, frecce, clacson · sterzo libero · interruttori di arresto motore e cavalletto laterale"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau de carburant · niveau d’huile moteur · pression et état des pneus · tension et graissage de la chaîne · sensation du levier/de la pédale de frein et niveau de liquide · retour de la poignée des gaz · embrayage · éclairage, clignotants, avertisseur · direction libre · coupe-circuit et contacteur de béquille"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nivel de combustible · nivel de aceite del motor · presión y estado de los neumáticos · holgura y engrase de la cadena · tacto de maneta/pedal de freno y nivel de líquido · retorno del acelerador · embrague · luces, intermitentes, claxon · dirección libre · interruptores de parada del motor y de la pata de cabra"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nível de combustível · nível do óleo do motor · pressão e estado dos pneus · folga e lubrificação da corrente · sensação da manete/pedal de travão e nível do líquido · retorno do acelerador · embraiagem · luzes, piscas, buzina · direção livre · interruptores de corte do motor e do descanso lateral"
+          }
+        }
+      }
+    },
+    "Fuel system (leaks, hose damage)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impianto di alimentazione (perdite, tubi danneggiati)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Circuit de carburant (fuites, durites endommagées)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de combustible (fugas, tubos dañados)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sistema de combustível (fugas, tubos danificados)"
+          }
+        }
+      }
+    },
+    "Fuel tank" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serbatoio carburante"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réservoir de carburant"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depósito de combustible"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depósito de combustível"
+          }
+        }
+      }
+    },
+    "Handbrake & clutch operation" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funzionamento di freno a mano e frizione"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonctionnement du frein à main et de l’embrayage"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funcionamiento del freno de mano y del embrague"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Funcionamento do travão de mão e da embraiagem"
+          }
+        }
+      }
+    },
+    "Haynes routine maintenance guide, Fiesta Mk7 (2013–2017)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guida Haynes alla manutenzione ordinaria, Fiesta Mk7 (2013–2017)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guide d’entretien courant Haynes, Fiesta Mk7 (2013–2017)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guía de mantenimiento rutinario Haynes, Fiesta Mk7 (2013–2017)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guia de manutenção de rotina Haynes, Fiesta Mk7 (2013–2017)"
+          }
+        }
+      }
+    },
+    "Headlamp alignment" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regolazione dei fari"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réglage des phares"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reglaje de faros"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regulação dos faróis"
+          }
+        }
+      }
+    },
+    "Idle speed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regime del minimo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Régime de ralenti"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Régimen de ralentí"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ralenti"
+          }
+        }
+      }
+    },
+    "Initial (run-in) service" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tagliando di rodaggio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Révision de rodage"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisión de rodaje"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisão de rodagem"
+          }
+        }
+      }
+    },
+    "Intervals are 'whichever comes first'. Diesel-specific items come from the Haynes guide; check timing-belt interval with a Ford dealer." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gli intervalli valgono «a seconda di quale scade prima». Le voci specifiche del diesel vengono dalla guida Haynes; verifica l'intervallo della cinghia di distribuzione con un concessionario Ford."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les intervalles s’appliquent « au premier des deux termes atteint ». Les éléments propres au diesel viennent du guide Haynes ; faites confirmer l’intervalle de la courroie de distribution par un concessionnaire Ford."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los intervalos son «lo que ocurra primero». Los elementos propios del diésel proceden de la guía Haynes; confirma el intervalo de la correa de distribución con un concesionario Ford."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os intervalos são «o que ocorrer primeiro». Os itens específicos do gasóleo vêm do guia Haynes; confirme o intervalo da correia de distribuição num concessionário Ford."
+          }
+        }
+      }
+    },
+    "Intervals are 'whichever comes first'. Ride in rain, dust or heavy traffic? Service more often. Always confirm with the manual for your exact bike." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gli intervalli valgono «a seconda di quale scade prima». Guidi sotto la pioggia, nella polvere o nel traffico intenso? Fai la manutenzione più spesso. Verifica sempre con il manuale della tua moto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les intervalles s’appliquent « au premier des deux termes atteint ». Vous roulez sous la pluie, dans la poussière ou en circulation dense ? Entretenez plus souvent. Vérifiez toujours avec le manuel de votre moto."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los intervalos son «lo que ocurra primero». ¿Circulas con lluvia, polvo o mucho tráfico? Haz el mantenimiento más a menudo. Confírmalo siempre con el manual de tu moto."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os intervalos são «o que ocorrer primeiro». Anda à chuva, com pó ou em trânsito intenso? Faça a manutenção mais vezes. Confirme sempre com o manual da sua mota."
+          }
+        }
+      }
+    },
+    "Intervals are 'whichever comes first'. Timing-belt interval depends on the engine — edit it if yours is not a 1.0 EcoBoost." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gli intervalli valgono «a seconda di quale scade prima». L'intervallo della cinghia di distribuzione dipende dal motore: modificalo se il tuo non è un 1.0 EcoBoost."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les intervalles s’appliquent « au premier des deux termes atteint ». L’intervalle de la courroie de distribution dépend du moteur — modifiez-le si le vôtre n’est pas un 1.0 EcoBoost."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los intervalos son «lo que ocurra primero». El intervalo de la correa de distribución depende del motor: edítalo si el tuyo no es un 1.0 EcoBoost."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os intervalos são «o que ocorrer primeiro». O intervalo da correia de distribuição depende do motor — edite-o se o seu não for um 1.0 EcoBoost."
+          }
+        }
+      }
+    },
+    "Kawasaki 16097-0008 (e.g. HiFlo HF303RC) · 17.5 N·m" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kawasaki 16097-0008 (es. HiFlo HF303RC) · 17,5 N·m"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kawasaki 16097-0008 (ex. HiFlo HF303RC) · 17,5 N·m"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kawasaki 16097-0008 (p. ej. HiFlo HF303RC) · 17,5 N·m"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kawasaki 16097-0008 (ex.: HiFlo HF303RC) · 17,5 N·m"
+          }
+        }
+      }
+    },
+    "Kawasaki Z400 owner's manual — Periodic Maintenance Chart (intervals as transcribed by maintenanceschedule.com)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libretto d'uso Kawasaki Z400 — Tabella di manutenzione periodica (intervalli trascritti da maintenanceschedule.com)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuel du propriétaire Kawasaki Z400 — Tableau d’entretien périodique (intervalles transcrits par maintenanceschedule.com)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual del propietario de la Kawasaki Z400 — Tabla de mantenimiento periódico (intervalos transcritos por maintenanceschedule.com)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual do proprietário da Kawasaki Z400 — Tabela de manutenção periódica (intervalos transcritos por maintenanceschedule.com)"
+          }
+        }
+      }
+    },
+    "Kawasaki also lists the initial change at 1,000 km. Check the level in the sight glass before every ride (bike upright, engine off for a few minutes)." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kawasaki indica anche il primo cambio a 1.000 km. Controlla il livello nell'oblò prima di ogni uscita (moto dritta, motore spento da qualche minuto)."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kawasaki indique aussi la première vidange à 1 000 km. Vérifiez le niveau au hublot avant chaque sortie (moto droite, moteur arrêté depuis quelques minutes)."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kawasaki también indica el primer cambio a los 1.000 km. Comprueba el nivel en la mirilla antes de cada salida (moto recta, motor parado unos minutos)."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Kawasaki também indica a primeira mudança aos 1000 km. Verifique o nível no visor antes de cada saída (mota direita, motor desligado há alguns minutos)."
+          }
+        }
+      }
+    },
+    "Legal minimum in the EU: 1.6 mm. Record tread depth for each tyre." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimo di legge nell'UE: 1,6 mm. Annota la profondità del battistrada di ogni pneumatico."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minimum légal dans l’UE : 1,6 mm. Notez la profondeur des sculptures de chaque pneu."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mínimo legal en la UE: 1,6 mm. Anota la profundidad del dibujo de cada neumático."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mínimo legal na UE: 1,6 mm. Registe a profundidade do piso de cada pneu."
+          }
+        }
+      }
+    },
+    "Lever pivots, pedal pivots, side stand pivot, cable ends." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perni delle leve, perni dei pedali, perno del cavalletto laterale, terminali dei cavi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Axes des leviers, axes des pédales, axe de béquille latérale, extrémités des câbles."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ejes de las manetas, ejes de los pedales, eje de la pata de cabra, extremos de los cables."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eixos das manetes, eixos dos pedais, eixo do descanso lateral, pontas dos cabos."
+          }
+        }
+      }
+    },
+    "Lights, instruments, warning lamps & horn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luci, strumentazione, spie e clacson"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Éclairage, instruments, témoins et avertisseur"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luces, instrumentos, testigos y claxon"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Luzes, instrumentos, avisadores e buzina"
+          }
+        }
+      }
+    },
+    "Manual transmission oil level" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livello olio del cambio manuale"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niveau d’huile de boîte manuelle"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nivel de aceite de la caja de cambios manual"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nível do óleo da caixa manual"
+          }
+        }
+      }
+    },
+    "Minimum tread depth: front 1 mm, rear 2 mm (up to 130 km/h) — check local law." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profondità minima del battistrada: anteriore 1 mm, posteriore 2 mm (fino a 130 km/h) — verifica la legge locale."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profondeur minimale des sculptures : avant 1 mm, arrière 2 mm (jusqu’à 130 km/h) — vérifiez la loi locale."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profundidad mínima del dibujo: delantero 1 mm, trasero 2 mm (hasta 130 km/h) — comprueba la normativa local."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profundidade mínima do piso: dianteiro 1 mm, traseiro 2 mm (até 130 km/h) — verifique a lei local."
+          }
+        }
+      }
+    },
+    "Mk7 (2008–2017) — 1.4 / 1.5 / 1.6 TDCi diesel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk7 (2008–2017) — diesel 1.4 / 1.5 / 1.6 TDCi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk7 (2008–2017) — diesel 1.4 / 1.5 / 1.6 TDCi"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk7 (2008–2017) — diésel 1.4 / 1.5 / 1.6 TDCi"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk7 (2008–2017) — gasóleo 1.4 / 1.5 / 1.6 TDCi"
+          }
+        }
+      }
+    },
+    "Mk7 (2008–2017) — petrol" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk7 (2008–2017) — benzina"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk7 (2008–2017) — essence"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk7 (2008–2017) — gasolina"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk7 (2008–2017) — gasolina"
+          }
+        }
+      }
+    },
+    "Mk8 (2017–2023) — 1.0 EcoBoost / 1.1 Duratec petrol" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk8 (2017–2023) — benzina 1.0 EcoBoost / 1.1 Duratec"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk8 (2017–2023) — essence 1.0 EcoBoost / 1.1 Duratec"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk8 (2017–2023) — gasolina 1.0 EcoBoost / 1.1 Duratec"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk8 (2017–2023) — gasolina 1.0 EcoBoost / 1.1 Duratec"
+          }
+        }
+      }
+    },
+    "Mk8 (2017–2023) — 1.5 TDCi / EcoBlue diesel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk8 (2017–2023) — diesel 1.5 TDCi / EcoBlue"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk8 (2017–2023) — diesel 1.5 TDCi / EcoBlue"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk8 (2017–2023) — diésel 1.5 TDCi / EcoBlue"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mk8 (2017–2023) — gasóleo 1.5 TDCi / EcoBlue"
+          }
+        }
+      }
+    },
+    "Monthly" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogni mese"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque mois"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensual"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensalmente"
+          }
+        }
+      }
+    },
+    "Monthly owner checks" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlli mensili del proprietario"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contrôles mensuels du propriétaire"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprobaciones mensuales del propietario"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificações mensais do proprietário"
+          }
+        }
+      }
+    },
+    "More often in dusty or polluted conditions." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più spesso in ambienti polverosi o inquinati."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus souvent en milieu poussiéreux ou pollué."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con más frecuencia en ambientes polvorientos o contaminados."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com mais frequência em ambientes poeirentos ou poluídos."
+          }
+        }
+      }
+    },
+    "More often under severe duty (city traffic, mountains, towing)." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più spesso in condizioni gravose (traffico urbano, montagna, traino)."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus souvent en usage intensif (circulation urbaine, montagne, remorquage)."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con más frecuencia en uso severo (ciudad, montaña, remolque)."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Com mais frequência em utilização severa (cidade, montanha, reboque)."
+          }
+        }
+      }
+    },
+    "NGK LMAR9G · gap 0.7–0.8 mm · 13 N·m" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NGK LMAR9G · distanza elettrodi 0,7–0,8 mm · 13 N·m"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NGK LMAR9G · écartement 0,7–0,8 mm · 13 N·m"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NGK LMAR9G · separación 0,7–0,8 mm · 13 N·m"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NGK LMAR9G · folga 0,7–0,8 mm · 13 N·m"
+          }
+        }
+      }
+    },
+    "NGK LMAR9G, gap 0.7–0.8 mm, 13 N·m" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NGK LMAR9G, distanza elettrodi 0,7–0,8 mm, 13 N·m"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NGK LMAR9G, écartement 0,7–0,8 mm, 13 N·m"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NGK LMAR9G, separación 0,7–0,8 mm, 13 N·m"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "NGK LMAR9G, folga 0,7–0,8 mm, 13 N·m"
+          }
+        }
+      }
+    },
+    "Nuts, bolts & fasteners tightness" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serraggio di dadi, bulloni e fissaggi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serrage des écrous, boulons et fixations"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apriete de tuercas, tornillos y fijaciones"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aperto de porcas, parafusos e fixações"
+          }
+        }
+      }
+    },
+    "Oil drain bolt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tappo di scarico olio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bouchon de vidange"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tapón de vaciado de aceite"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bujão de drenagem do óleo"
+          }
+        }
+      }
+    },
+    "Oil filter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro olio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtre à huile"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de aceite"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filtro de óleo"
+          }
+        }
+      }
+    },
+    "Only on models fitted with the EVAP canister (e.g. some US markets)." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo sui modelli con canister EVAP (es. alcuni mercati USA)."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uniquement sur les modèles équipés du canister EVAP (ex. certains marchés américains)."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Solo en modelos con cánister EVAP (p. ej. algunos mercados de EE. UU.)."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apenas nos modelos com canister EVAP (ex.: alguns mercados dos EUA)."
+          }
+        }
+      }
+    },
+    "Owner checks" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Controlli del proprietario"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contrôles du propriétaire"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprobaciones del propietario"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verificações do proprietário"
+          }
+        }
+      }
+    },
+    "Owner's manual, Periodic Maintenance Chart" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libretto d'uso, Tabella di manutenzione periodica"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuel du propriétaire, Tableau d’entretien périodique"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual del propietario, Tabla de mantenimiento periódico"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual do proprietário, Tabela de manutenção periódica"
+          }
+        }
+      }
+    },
+    "Owner's manual, Periodic Maintenance Chart (periodic inspection)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libretto d'uso, Tabella di manutenzione periodica (controllo periodico)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuel du propriétaire, Tableau d’entretien périodique (contrôle périodique)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual del propietario, Tabla de mantenimiento periódico (inspección periódica)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual do proprietário, Tabela de manutenção periódica (inspeção periódica)"
+          }
+        }
+      }
+    },
+    "Permanent ethylene-glycol antifreeze for aluminium engines (silicate-free), 50 % mix" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigelo permanente a base di glicole etilenico per motori in alluminio (senza silicati), miscela al 50 %"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antigel permanent à l’éthylène glycol pour moteurs en aluminium (sans silicates), mélange à 50 %"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anticongelante permanente de etilenglicol para motores de aluminio (sin silicatos), mezcla al 50 %"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anticongelante permanente de etilenoglicol para motores de alumínio (sem silicatos), mistura a 50 %"
+          }
+        }
+      }
+    },
+    "Pipes, hoses, wiring & exhaust" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tubazioni, manicotti, cablaggi e scarico"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conduites, durites, faisceaux et échappement"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tuberías, manguitos, cableado y escape"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tubagens, mangueiras, cablagens e escape"
+          }
+        }
+      }
+    },
+    "Rear axle nut torque" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coppia del dado perno ruota posteriore"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couple de l’écrou d’axe arrière"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Par de la tuerca del eje trasero"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Binário da porca do eixo traseiro"
+          }
+        }
+      }
+    },
+    "Rear suspension (Uni-Trak)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sospensione posteriore (Uni-Trak)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspension arrière (Uni-Trak)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspensión trasera (Uni-Trak)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suspensão traseira (Uni-Trak)"
+          }
+        }
+      }
+    },
+    "Rear tyre" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneumatico posteriore"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneu arrière"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neumático trasero"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneu traseiro"
+          }
+        }
+      }
+    },
+    "Regular service: engine oil & filter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tagliando ordinario: olio motore e filtro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entretien régulier : huile moteur et filtre"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenimiento periódico: aceite de motor y filtro"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisão periódica: óleo do motor e filtro"
+          }
+        }
+      }
+    },
+    "Remote key battery" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batteria del telecomando"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pile de la télécommande"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pila del mando a distancia"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pilha do comando da chave"
+          }
+        }
+      }
+    },
+    "Replace more often when riding in rain or on dusty roads." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sostituisci più spesso se guidi sotto la pioggia o su strade polverose."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remplacez plus souvent si vous roulez sous la pluie ou sur routes poussiéreuses."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sustitúyelo más a menudo si circulas con lluvia o por carreteras polvorientas."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Substitua com mais frequência se andar à chuva ou em estradas poeirentas."
+          }
+        }
+      }
+    },
+    "Replace pads when the friction material is worn to the wear groove (about 1 mm)." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sostituisci le pastiglie quando il materiale d'attrito è consumato fino alla scanalatura di usura (circa 1 mm)."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remplacez les plaquettes quand la garniture est usée jusqu’à la rainure d’usure (environ 1 mm)."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sustituye las pastillas cuando el material de fricción llegue a la ranura de desgaste (aprox. 1 mm)."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Substitua as pastilhas quando o material de atrito estiver gasto até à ranhura de desgaste (cerca de 1 mm)."
+          }
+        }
+      }
+    },
+    "Roadworthiness test (contrôle technique / MOT / revisione)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revisione periodica (revisione / contrôle technique / MOT)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contrôle technique (CT / MOT / revisione)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inspección técnica (ITV / contrôle technique / MOT / revisione)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inspeção periódica (IPO / contrôle technique / MOT / revisione)"
+          }
+        }
+      }
+    },
+    "SAE 0W-30 to Ford WSS-M2C950-A (top-up: max 1 L of ACEA C2 0W-30 between services)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 0W-30 conforme a Ford WSS-M2C950-A (rabbocco: max 1 L di ACEA C2 0W-30 tra un tagliando e l'altro)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 0W-30 conforme à Ford WSS-M2C950-A (appoint : 1 L max d’ACEA C2 0W-30 entre deux entretiens)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 0W-30 conforme a Ford WSS-M2C950-A (rellenado: máx. 1 L de ACEA C2 0W-30 entre mantenimientos)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 0W-30 conforme Ford WSS-M2C950-A (atesto: máx. 1 L de ACEA C2 0W-30 entre revisões)"
+          }
+        }
+      }
+    },
+    "SAE 10W-40 · API SG–SN · JASO MA/MA1/MA2" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 10W-40 · API SG–SN · JASO MA/MA1/MA2"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 10W-40 · API SG–SN · JASO MA/MA1/MA2"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 10W-40 · API SG–SN · JASO MA/MA1/MA2"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 10W-40 · API SG–SN · JASO MA/MA1/MA2"
+          }
+        }
+      }
+    },
+    "SAE 10W-40, API SG–SN + JASO MA/MA1/MA2 · approx. 2.0 L with filter · drain bolt 30 N·m" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 10W-40, API SG–SN + JASO MA/MA1/MA2 · circa 2,0 L con filtro · tappo di scarico 30 N·m"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 10W-40, API SG–SN + JASO MA/MA1/MA2 · env. 2,0 L avec filtre · bouchon de vidange 30 N·m"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 10W-40, API SG–SN + JASO MA/MA1/MA2 · aprox. 2,0 L con filtro · tapón de vaciado 30 N·m"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 10W-40, API SG–SN + JASO MA/MA1/MA2 · aprox. 2,0 L com filtro · bujão de drenagem 30 N·m"
+          }
+        }
+      }
+    },
+    "SAE 5W-20 to Ford WSS-M2C948-B" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 5W-20 conforme a Ford WSS-M2C948-B"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 5W-20 conforme à Ford WSS-M2C948-B"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 5W-20 conforme a Ford WSS-M2C948-B"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 5W-20 conforme Ford WSS-M2C948-B"
+          }
+        }
+      }
+    },
+    "SAE 5W-20 to Ford WSS-M2C948-B (top-up: max 0.5 L of ACEA A5/B5 5W-20)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 5W-20 conforme a Ford WSS-M2C948-B (rabbocco: max 0,5 L di ACEA A5/B5 5W-20)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 5W-20 conforme à Ford WSS-M2C948-B (appoint : 0,5 L max d’ACEA A5/B5 5W-20)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 5W-20 conforme a Ford WSS-M2C948-B (rellenado: máx. 0,5 L de ACEA A5/B5 5W-20)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAE 5W-20 conforme Ford WSS-M2C948-B (atesto: máx. 0,5 L de ACEA A5/B5 5W-20)"
+          }
+        }
+      }
+    },
+    "Safety kit (warning triangle, vest, first aid kit)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dotazioni di sicurezza (triangolo, giubbotto, kit di pronto soccorso)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kit de sécurité (triangle, gilet, trousse de secours)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kit de seguridad (triángulos, chaleco, botiquín)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kit de segurança (triângulo, colete, estojo de primeiros socorros)"
+          }
+        }
+      }
+    },
+    "Seat belts, buckles & stalks" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinture di sicurezza, fibbie e attacchi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ceintures de sécurité, boucles et ancrages"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinturones de seguridad, hebillas y anclajes"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cintos de segurança, fivelas e fixações"
+          }
+        }
+      }
+    },
+    "See the label on the driver's door B-pillar (depends on tyre size and load)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi l'etichetta sul montante centrale lato conducente (dipende dalla misura dei pneumatici e dal carico)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir l’étiquette sur le montant central côté conducteur (dépend de la taille des pneus et de la charge)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consulta la etiqueta del pilar B del lado del conductor (depende de la medida de los neumáticos y la carga)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consulte a etiqueta no pilar B do lado do condutor (depende da medida dos pneus e da carga)"
+          }
+        }
+      }
+    },
+    "See your owner's handbook — or use 'Import manual PDF' to fill this in automatically" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vedi il libretto d'uso, oppure usa «Importa un manuale PDF» per compilarlo automaticamente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voir le manuel du propriétaire — ou utilisez « Importer un manuel PDF » pour le remplir automatiquement"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consulta el manual del propietario, o usa «Importar un manual PDF» para rellenarlo automáticamente"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consulte o manual do proprietário — ou use «Importar um manual PDF» para preencher automaticamente"
+          }
+        }
+      }
+    },
+    "Spark plug" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Candela"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bougie d’allumage"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bujía"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vela de ignição"
+          }
+        }
+      }
+    },
+    "Spark plugs" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Candele"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bougies d’allumage"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bujías"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Velas de ignição"
+          }
+        }
+      }
+    },
+    "Steering play" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gioco dello sterzo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeu de direction"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Holgura de la dirección"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folga da direção"
+          }
+        }
+      }
+    },
+    "Steering stem bearings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuscinetti del cannotto di sterzo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roulements de colonne de direction"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rodamientos de la pipa de dirección"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rolamentos da coluna de direção"
+          }
+        }
+      }
+    },
+    "Steering, suspension, ball joints & driveshaft gaiters" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sterzo, sospensioni, giunti sferici e cuffie dei semiassi"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direction, suspension, rotules et soufflets de cardan"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dirección, suspensión, rótulas y fuelles de los palieres"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Direção, suspensão, rótulas e foles das transmissões"
+          }
+        }
+      }
+    },
+    "Throttle control system" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comando dell'acceleratore"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Commande des gaz"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mando del acelerador"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comando do acelerador"
+          }
+        }
+      }
+    },
+    "Timing belt, tensioner & idlers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinghia di distribuzione, tenditore e rulli"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Courroie de distribution, tendeur et galets"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correa de distribución, tensor y rodillos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correia de distribuição, tensor e roletes"
+          }
+        }
+      }
+    },
+    "Timing belt, tensioner & water pump" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cinghia di distribuzione, tenditore e pompa dell'acqua"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Courroie de distribution, galet tendeur et pompe à eau"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correa de distribución, tensor y bomba de agua"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correia de distribuição, tensor e bomba de água"
+          }
+        }
+      }
+    },
+    "Torques" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Coppie di serraggio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couples de serrage"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pares de apriete"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Binários de aperto"
+          }
+        }
+      }
+    },
+    "Tyre pressures" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pressione pneumatici"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pression des pneus"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Presión de los neumáticos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pressão dos pneus"
+          }
+        }
+      }
+    },
+    "Tyre pressures & condition (when refuelling)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pressione e condizioni dei pneumatici (al rifornimento)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pression et état des pneus (au plein)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Presión y estado de los neumáticos (al repostar)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pressão e estado dos pneus (ao abastecer)"
+          }
+        }
+      }
+    },
+    "Tyre sealant kit expiry (if fitted)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scadenza del kit di riparazione pneumatici (se presente)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Péremption du kit anti-crevaison (si équipé)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caducidad del kit antipinchazos (si lo lleva)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Validade do kit de reparação de pneus (se existir)"
+          }
+        }
+      }
+    },
+    "Tyres" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneumatici"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneus"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neumáticos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneus"
+          }
+        }
+      }
+    },
+    "Tyres: wear, condition & tread depth" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneumatici: usura, condizioni e profondità del battistrada"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneus : usure, état et profondeur des sculptures"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neumáticos: desgaste, estado y profundidad del dibujo"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pneus: desgaste, estado e profundidade do piso"
+          }
+        }
+      }
+    },
+    "Underbody PVC coating" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rivestimento in PVC del sottoscocca"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revêtement PVC du soubassement"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protección de PVC de los bajos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Revestimento em PVC do fundo do veículo"
+          }
+        }
+      }
+    },
+    "Valve clearance" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gioco valvole"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeu aux soupapes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Holgura de válvulas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folga das válvulas"
+          }
+        }
+      }
+    },
+    "Valve clearances" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gioco valvole"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jeu aux soupapes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Holgura de válvulas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folga das válvulas"
+          }
+        }
+      }
+    },
+    "Washer fluid · tyre pressures · tyre condition" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liquido lavavetri · pressione pneumatici · condizioni dei pneumatici"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lave-glace · pression des pneus · état des pneus"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido limpiaparabrisas · presión de los neumáticos · estado de los neumáticos"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Líquido do lava-vidros · pressão dos pneus · estado dos pneus"
+          }
+        }
+      }
+    },
+    "Washer reservoir" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serbatoio lavavetri"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Réservoir de lave-glace"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Depósito del limpiaparabrisas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reservatório do lava-vidros"
+          }
+        }
+      }
+    },
+    "Wheel bearings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cuscinetti delle ruote"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roulements de roue"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rodamientos de las ruedas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rolamentos das rodas"
+          }
+        }
+      }
+    },
+    "Wheels & tyres (wear, damage)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruote e pneumatici (usura, danni)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roues et pneus (usure, dommages)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ruedas y neumáticos (desgaste, daños)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rodas e pneus (desgaste, danos)"
+          }
+        }
+      }
+    },
+    "When refuelling" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al rifornimento"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Au plein"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Al repostar"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ao abastecer"
+          }
+        }
+      }
+    },
+    "Windscreen, wipers & washers" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parabrezza, tergicristalli e lavavetri"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pare-brise, essuie-glaces et lave-glaces"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parabrisas, limpiaparabrisas y lavaparabrisas"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Para-brisas, escovas e lava-vidros"
+          }
+        }
+      }
+    },
+    "ad.fr Fiesta timing-belt guide; Haynes routine maintenance guide, Fiesta Mk7 (2013–2017)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guida ad.fr sulla cinghia di distribuzione della Fiesta; guida Haynes alla manutenzione ordinaria, Fiesta Mk7 (2013–2017)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guide ad.fr sur la courroie de distribution de la Fiesta ; guide d’entretien courant Haynes, Fiesta Mk7 (2013–2017)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guía de ad.fr sobre la correa de distribución del Fiesta; guía de mantenimiento rutinario Haynes, Fiesta Mk7 (2013–2017)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guia da ad.fr sobre a correia de distribuição do Fiesta; guia de manutenção de rotina Haynes, Fiesta Mk7 (2013–2017)"
+          }
+        }
+      }
+    },
+    "≈ 2.0 L with filter change" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "≈ 2,0 L con cambio filtro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "≈ 2,0 L avec changement de filtre"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "≈ 2,0 L con cambio de filtro"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "≈ 2,0 L com mudança de filtro"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

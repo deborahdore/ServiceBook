@@ -65,6 +65,12 @@ enum AppLanguage: String, CaseIterable, Identifiable {
     }
 }
 
+/// Text from the built-in schedules (Schedules.xcstrings) in the app language. Saved items keep the English
+/// text as their key, so they follow the language too; text the user wrote has no entry and is returned as is.
+func LS(_ text: String) -> String {
+    AppLanguage.bundle.localizedString(forKey: text, value: text, table: "Schedules")
+}
+
 /// Localized text in the app language. The key is the English text; arguments use printf formats (%@, %lld).
 func L(_ key: String, _ args: CVarArg...) -> String {
     let format = AppLanguage.bundle.localizedString(forKey: key, value: key, table: nil)

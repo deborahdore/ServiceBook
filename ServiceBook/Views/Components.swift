@@ -52,7 +52,7 @@ struct TaskRow: View {
                 .background(info.status.color.opacity(0.12), in: RoundedRectangle(cornerRadius: 7))
             VStack(alignment: .leading, spacing: 3) {
                 HStack(alignment: .firstTextBaseline) {
-                    Text(task.title).font(.subheadline.weight(.medium))
+                    Text(LS(task.title)).font(.subheadline.weight(.medium))
                     Spacer(minLength: 4)
                     Text(task.action.label)
                         .font(.caption2)

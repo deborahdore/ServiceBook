@@ -196,7 +196,7 @@ struct VehicleDetailView: View {
             }
             if !vehicle.scheduleDisclaimer.isEmpty {
                 Section {
-                    Text(vehicle.scheduleDisclaimer).font(.footnote).foregroundStyle(.secondary)
+                    Text(LS(vehicle.scheduleDisclaimer)).font(.footnote).foregroundStyle(.secondary)
                 }
             }
         }
@@ -260,11 +260,11 @@ struct VehicleDetailView: View {
 
         let groups = Dictionary(grouping: vehicle.specs, by: \.group)
         ForEach(groups.keys.sorted(), id: \.self) { g in
-            Section(g) {
+            Section(LS(g)) {
                 ForEach((groups[g] ?? []).sorted { $0.sortOrder < $1.sortOrder }) { spec in
                     VStack(alignment: .leading, spacing: 2) {
-                        Text(spec.title).font(.caption).foregroundStyle(.secondary)
-                        Text(spec.value).font(.callout).textSelection(.enabled)
+                        Text(LS(spec.title)).font(.caption).foregroundStyle(.secondary)
+                        Text(LS(spec.value)).font(.callout).textSelection(.enabled)
                     }
                 }
                 .onDelete { offsets in
@@ -315,7 +315,7 @@ struct VehicleDetailView: View {
 
         if !vehicle.scheduleSource.isEmpty {
             Section("Schedule source") {
-                Text(vehicle.scheduleSource).font(.callout)
+                Text(LS(vehicle.scheduleSource)).font(.callout)
                 ForEach(vehicle.scheduleSourceURLs, id: \.self) { s in
                     if let url = URL(string: s) {
                         Link(destination: url) {
@@ -330,7 +330,7 @@ struct VehicleDetailView: View {
         if !hidden.isEmpty {
             Section("Hidden items") {
                 ForEach(hidden) { t in
-                    NavigationLink(value: t) { Text(t.title).foregroundStyle(.secondary) }
+                    NavigationLink(value: t) { Text(LS(t.title)).foregroundStyle(.secondary) }
                 }
             }
         }

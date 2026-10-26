@@ -17,6 +17,22 @@ final class ScheduleTests: XCTestCase {
         }
     }
 
+    /// Every text of the bundled schedules needs an entry in Schedules.xcstrings for each language.
+    func testBundledSchedulesAreTranslated() throws {
+        for lang in ["it", "fr", "es", "pt"] {
+            let path = try XCTUnwrap(Bundle.main.path(forResource: lang, ofType: "lproj"), lang)
+            let bundle = try XCTUnwrap(Bundle(path: path))
+            for t in ScheduleLibrary.shared.templates {
+                var texts = [t.source, t.disclaimer, t.generation].compactMap { $0 }
+                texts += t.tasks.flatMap { [$0.title, $0.notes, $0.spec, $0.sourceRef].compactMap { $0 } }
+                texts += (t.specs ?? []).flatMap { [$0.group, $0.title, $0.value] }
+                for text in texts {
+                    XCTAssertNotEqual(bundle.localizedString(forKey: text, value: "∅", table: "Schedules"), "∅", "\(lang): \(text)")
+                }
+            }
+        }
+    }
+
     func testMatching() {
         let lib = ScheduleLibrary.shared
         XCTAssertEqual(lib.matches(make: "Kawasaki", model: "Z400", year: 2021, fuel: .petrol).first?.id, "kawasaki-z400-2019")

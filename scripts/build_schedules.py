@@ -3,6 +3,10 @@
 Run:  python3 scripts/build_schedules.py
 Output: ServiceBook/Schedules/schedule-*.json
 
+The text is translated in ServiceBook/Schedules/Schedules.xcstrings (key = English
+text). When you add or change text here, add its translations there too:
+ScheduleTests.testBundledSchedulesAreTranslated fails otherwise.
+
 Every schedule lists its sources. Values are transcribed from the
 manufacturer documents named in `source` / `sourceURLs`; where only a
 secondary source was available the task notes say so.

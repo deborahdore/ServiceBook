@@ -20,7 +20,7 @@ struct ScheduleTemplate: Codable, Identifiable, Hashable {
 
     var title: String {
         var t = "\(make) \(model)"
-        if let g = generation, !g.isEmpty { t += " — \(g)" }
+        if let g = generation, !g.isEmpty { t += " — \(LS(g))" }
         return t
     }
 }

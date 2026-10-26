@@ -276,7 +276,7 @@ final class ServiceRecord {
 
     var displayTitle: String {
         if !title.isEmpty { return title }
-        if tasks.count == 1, let t = tasks.first { return t.title }
+        if tasks.count == 1, let t = tasks.first { return LS(t.title) }
         return kind.label
     }
 }
