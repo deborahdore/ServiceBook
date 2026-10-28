@@ -4,7 +4,7 @@
 
 # ServiceBook — vehicle maintenance tracker for iOS
 
-[![Build](https://github.com/deborahdore/vehicle-maintenance/actions/workflows/build.yml/badge.svg)](https://github.com/deborahdore/vehicle-maintenance/actions/workflows/build.yml)
+[![Build](https://github.com/deborahdore/ServiceBook/actions/workflows/build.yml/badge.svg)](https://github.com/deborahdore/ServiceBook/actions/workflows/build.yml)
 
 ServiceBook is a free, open-source iPhone/iPad app that turns your vehicle's **owner's manual** into a live maintenance checklist. Add a car or motorcycle and the app builds the full list of checks from the manufacturer's schedule: intervals in **km and months** ("whichever comes first"), specifications, and the important notes from the manual. It then tells you what is overdue, what is due soon, and what comes next.
 
@@ -34,8 +34,8 @@ ServiceBook is a free, open-source iPhone/iPad app that turns your vehicle's **o
 ## Build and run
 
 ```bash
-git clone https://github.com/deborahdore/vehicle-maintenance.git
-cd vehicle-maintenance
+git clone https://github.com/deborahdore/ServiceBook.git
+cd ServiceBook
 open ServiceBook.xcodeproj
 ```
 

@@ -52,7 +52,7 @@ struct SettingsView: View {
 
                 Section("About") {
                     LabeledContent("Version", value: Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0")
-                    Link("Source code on GitHub", destination: URL(string: "https://github.com/deborahdore/vehicle-maintenance")!)
+                    Link("Source code on GitHub", destination: URL(string: "https://github.com/deborahdore/ServiceBook")!)
                     Text("Schedules are a guide. Always follow your owner's manual and your mechanic's advice — the authors accept no responsibility for missed or incorrect maintenance.")
                         .font(.footnote).foregroundStyle(.secondary)
                 }
