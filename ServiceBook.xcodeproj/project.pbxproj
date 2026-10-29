@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5B3000000000000000000010 /* ServiceBookWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5B3000000000000000000001 /* ServiceBookWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B5000000000000000000021 /* MLXLLM in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5000000000000000000011 /* MLXLLM */; };
+		5B5000000000000000000022 /* MLXLMCommon in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5000000000000000000012 /* MLXLMCommon */; };
+		5B5000000000000000000023 /* Tokenizers in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5000000000000000000013 /* Tokenizers */; };
+		5B5000000000000000000024 /* HuggingFace in Frameworks */ = {isa = PBXBuildFile; productRef = 5B5000000000000000000014 /* HuggingFace */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5B2000000000000000000009 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -14,12 +22,44 @@
 			remoteGlobalIDString = 5B1000000000000000000006;
 			remoteInfo = ServiceBook;
 		};
+		5B3000000000000000000009 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B1000000000000000000009 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B3000000000000000000006;
+			remoteInfo = ServiceBookWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B3000000000000000000011 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B3000000000000000000010 /* ServiceBookWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5B1000000000000000000001 /* ServiceBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B2000000000000000000001 /* ServiceBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B3000000000000000000001 /* ServiceBookWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ServiceBookWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5B3000000000000000000012 /* Exceptions for "ServiceBookWidget" folder in "ServiceBookWidget" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5B3000000000000000000006 /* ServiceBookWidget */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5B1000000000000000000002 /* ServiceBook */ = {
@@ -32,6 +72,19 @@
 			path = ServiceBookTests;
 			sourceTree = "<group>";
 		};
+		5B3000000000000000000002 /* ServiceBookWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5B3000000000000000000012 /* Exceptions for "ServiceBookWidget" folder in "ServiceBookWidget" target */,
+			);
+			path = ServiceBookWidget;
+			sourceTree = "<group>";
+		};
+		5B4000000000000000000002 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,10 +92,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B5000000000000000000021 /* MLXLLM in Frameworks */,
+				5B5000000000000000000022 /* MLXLMCommon in Frameworks */,
+				5B5000000000000000000023 /* Tokenizers in Frameworks */,
+				5B5000000000000000000024 /* HuggingFace in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5B2000000000000000000003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B3000000000000000000003 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -57,6 +121,8 @@
 			children = (
 				5B1000000000000000000002 /* ServiceBook */,
 				5B2000000000000000000002 /* ServiceBookTests */,
+				5B3000000000000000000002 /* ServiceBookWidget */,
+				5B4000000000000000000002 /* Shared */,
 				5B1000000000000000000005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +132,7 @@
 			children = (
 				5B1000000000000000000001 /* ServiceBook.app */,
 				5B2000000000000000000001 /* ServiceBookTests.xctest */,
+				5B3000000000000000000001 /* ServiceBookWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,16 +147,23 @@
 				5B1000000000000000000007 /* Sources */,
 				5B1000000000000000000003 /* Frameworks */,
 				5B1000000000000000000008 /* Resources */,
+				5B3000000000000000000011 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B300000000000000000000A /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				5B1000000000000000000002 /* ServiceBook */,
+				5B4000000000000000000002 /* Shared */,
 			);
 			name = ServiceBook;
 			packageProductDependencies = (
+				5B5000000000000000000011 /* MLXLLM */,
+				5B5000000000000000000012 /* MLXLMCommon */,
+				5B5000000000000000000013 /* Tokenizers */,
+				5B5000000000000000000014 /* HuggingFace */,
 			);
 			productName = ServiceBook;
 			productReference = 5B1000000000000000000001 /* ServiceBook.app */;
@@ -118,6 +192,29 @@
 			productReference = 5B2000000000000000000001 /* ServiceBookTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5B3000000000000000000006 /* ServiceBookWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B300000000000000000000C /* Build configuration list for PBXNativeTarget "ServiceBookWidget" */;
+			buildPhases = (
+				5B3000000000000000000007 /* Sources */,
+				5B3000000000000000000003 /* Frameworks */,
+				5B3000000000000000000008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5B3000000000000000000002 /* ServiceBookWidget */,
+				5B4000000000000000000002 /* Shared */,
+			);
+			name = ServiceBookWidget;
+			packageProductDependencies = (
+			);
+			productName = ServiceBookWidget;
+			productReference = 5B3000000000000000000001 /* ServiceBookWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -135,6 +232,9 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 5B1000000000000000000006;
 					};
+					5B3000000000000000000006 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 				};
 			};
 			buildConfigurationList = 5B100000000000000000000B /* Build configuration list for PBXProject "ServiceBook" */;
@@ -150,6 +250,11 @@
 			);
 			mainGroup = 5B1000000000000000000004;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5B5000000000000000000001 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
+				5B5000000000000000000002 /* XCRemoteSwiftPackageReference "swift-transformers" */,
+				5B5000000000000000000003 /* XCRemoteSwiftPackageReference "swift-huggingface" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5B1000000000000000000005 /* Products */;
 			projectDirPath = "";
@@ -157,6 +262,7 @@
 			targets = (
 				5B1000000000000000000006 /* ServiceBook */,
 				5B2000000000000000000006 /* ServiceBookTests */,
+				5B3000000000000000000006 /* ServiceBookWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -170,6 +276,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5B2000000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B3000000000000000000008 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,6 +306,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B3000000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -200,6 +320,11 @@
 			isa = PBXTargetDependency;
 			target = 5B1000000000000000000006 /* ServiceBook */;
 			targetProxy = 5B2000000000000000000009 /* PBXContainerItemProxy */;
+		};
+		5B300000000000000000000A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B3000000000000000000006 /* ServiceBookWidget */;
+			targetProxy = 5B3000000000000000000009 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -268,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ServiceBook/ServiceBook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZNDB645YBB;
@@ -300,6 +426,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ServiceBook/ServiceBook.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZNDB645YBB;
@@ -365,6 +492,60 @@
 			};
 			name = Release;
 		};
+		5B300000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ServiceBookWidget/ServiceBookWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNDB645YBB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ServiceBookWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ServiceBook;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.deborahdore.ServiceBook.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B300000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ServiceBookWidget/ServiceBookWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZNDB645YBB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ServiceBookWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ServiceBook;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.deborahdore.ServiceBook.Widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -395,7 +576,66 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		5B300000000000000000000C /* Build configuration list for PBXNativeTarget "ServiceBookWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B300000000000000000000D /* Debug */,
+				5B300000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5B5000000000000000000001 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-lm";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.32.3;
+			};
+		};
+		5B5000000000000000000002 /* XCRemoteSwiftPackageReference "swift-transformers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-transformers";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		5B5000000000000000000003 /* XCRemoteSwiftPackageReference "swift-huggingface" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huggingface/swift-huggingface";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5B5000000000000000000011 /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B5000000000000000000001 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLLM;
+		};
+		5B5000000000000000000012 /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B5000000000000000000001 /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+		5B5000000000000000000013 /* Tokenizers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B5000000000000000000002 /* XCRemoteSwiftPackageReference "swift-transformers" */;
+			productName = Tokenizers;
+		};
+		5B5000000000000000000014 /* HuggingFace */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5B5000000000000000000003 /* XCRemoteSwiftPackageReference "swift-huggingface" */;
+			productName = HuggingFace;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5B1000000000000000000009 /* Project object */;
 }

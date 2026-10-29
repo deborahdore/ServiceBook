@@ -219,18 +219,24 @@ struct ManualImporter {
         }
     }
 
+    static let keywords = ["maintenance", "service schedule", "periodic", "interval", "entretien", "manutenzione",
+                           "tagliando", "wartung", "inspection", "replace", "capacit", "specification", "km",
+                           "revisione", "sostituire", "controllare", "vidange", "remplacer", "mantenimiento",
+                           "sustituir", "manutenção", "substituir"]
+
+    /// How much a page talks about maintenance (keyword hits).
+    static func score(_ text: String) -> Int {
+        let lower = text.lowercased()
+        return keywords.reduce(0) { $0 + lower.components(separatedBy: $1).count - 1 }
+    }
+
     /// Picks the manual pages most likely to contain the maintenance schedule and specs.
     static func relevantText(from data: Data, maxCharacters: Int = 150_000) -> String? {
         guard let doc = PDFDocument(data: data), doc.pageCount > 0 else { return nil }
-        let keywords = ["maintenance", "service schedule", "periodic", "interval", "entretien", "manutenzione",
-                        "tagliando", "wartung", "inspection", "replace", "capacit", "specification", "km"]
         var pages: [(index: Int, text: String, score: Int)] = []
         for i in 0..<doc.pageCount {
             guard let text = doc.page(at: i)?.string, !text.isEmpty else { continue }
-            let lower = text.lowercased()
-            var score = 0
-            for k in keywords { score += lower.components(separatedBy: k).count - 1 }
-            pages.append((i, text, score))
+            pages.append((i, text, score(text)))
         }
         guard !pages.isEmpty else { return nil }
 

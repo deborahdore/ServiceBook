@@ -12,9 +12,9 @@ ServiceBook is a free, open-source iPhone/iPad app that turns your vehicle's **o
 
 - **Vehicles**: cars, motorcycles, scooters, vans. Make, model, year, engine, plate, VIN and first registration.
 - **Maintenance schedule from the manual**
-  - **Built-in schedules** researched from manufacturer documents (see [Built-in schedules](#built-in-schedules)).
+  - **Schedule library**: 92 ready-made schedules researched from manufacturer documents, kept in this repository and downloaded only when you pick one (see [Schedule library](#schedule-library)). Model schedules cover the best sellers; a brand-wide plan covers every other model of the brand.
   - **Find the manual online (AI)**: Claude searches the web for the official owner's manual or maintenance chart of *your* vehicle, reads it, and converts every item into the checklist.
-  - **Import a manual PDF (AI)**: pick the manual PDF and the app extracts the maintenance pages for Claude to convert. Scanned PDFs work too, up to 100 pages.
+  - **Upload the manual or service booklet (AI)**: a PDF, photos of the pages or a camera scan. The app picks the maintenance pages and either Claude converts them (scanned PDFs up to 100 pages), or they are **read on the iPhone** — free, offline, nothing leaves the device — by Apple Intelligence (iOS 26, Apple Intelligence iPhone) or by a free open model downloaded once (Qwen3 with Apple's MLX: any recent iPhone, any country).
   - You always **review** the extracted items before they are added. Every item can be edited, hidden or deleted, and you can add your own.
 - **Due tracking**: each item is shown as *Overdue*, *Due soon* or *Upcoming*, with "due at 24,000 km · in 3,200 km" or "due on 12 Mar 2027 · in 4 months" and a progress bar. Run-in services and other one-time items are handled too.
 - **"History unknown" mode** for used vehicles: items you have never logged are counted from today's mileage instead of showing as overdue.
@@ -22,12 +22,14 @@ ServiceBook is a free, open-source iPhone/iPad app that turns your vehicle's **o
 - **Receipts and documents**: attach PDFs and photos, or **scan paper receipts** with the camera. Keep the owner's manual, insurance and registration papers with the vehicle. Everything previews in-app with Quick Look and can be shared.
 - **Mileage log** with history.
 - **Reminders**: optional notifications for date-based items (one week before, and on the day).
-- **Languages**: English, Italiano, Français, Español and Português. The app follows the iPhone's language, or pick one in **Settings → Language** (it applies right away). Built-in schedules are translated too (also on vehicles you already added), and AI imports are written in the chosen language.
-- **Private by default**: all data stays on the device (SwiftData). The only network traffic is the AI import, sent to Anthropic with *your* API key.
+- **Widget** for the Home Screen (small, medium, large) and the Lock Screen: what is overdue and due soon for a vehicle you pick, or for the one that needs attention most. It updates every time you leave the app and turns date-based items due by itself, day after day.
+- **Languages**: English, Italiano, Français, Español and Português. The app follows the iPhone's language, or pick one in **Settings → Language** (it applies right away). Library schedules are translated too (also on vehicles you already added), and AI imports are written in the chosen language.
+- **Private by default**: all data stays on the device (SwiftData). The only network traffic is the schedule library (read from GitHub, nothing is sent), the Claude import, sent to Anthropic with *your* API key, and the one-time download of the open model from Hugging Face; reading on the iPhone sends nothing.
 
 ## Requirements
 
-- Xcode 16 or later. The project uses folder-synchronized groups, so new files dropped into `ServiceBook/` are picked up automatically.
+- Xcode 26.4 or later (Swift 6.3, required by the MLX packages). The project uses folder-synchronized groups, so new files dropped into `ServiceBook/` are picked up automatically.
+- Swift packages (resolved by Xcode on first open): [mlx-swift-lm](https://github.com/ml-explore/mlx-swift-lm), [swift-transformers](https://github.com/huggingface/swift-transformers), [swift-huggingface](https://github.com/huggingface/swift-huggingface).
 - iOS / iPadOS 17 or later.
 - Optional, for AI import: a Claude API key from [console.anthropic.com](https://console.anthropic.com/settings/keys).
 
@@ -41,6 +43,7 @@ open ServiceBook.xcodeproj
 
 1. Select the **ServiceBook** target, open *Signing & Capabilities* and choose your team. A free Apple ID works for running on your own device.
 2. If Xcode complains that the bundle identifier is taken, change it (for example `com.yourname.ServiceBook`).
+   Do the same for the **ServiceBookWidget** target (keep it as `<app id>.Widget`), and change the App Group `group.io.github.deborahdore.ServiceBook` in both targets' *Signing & Capabilities* and in `Shared/WidgetSnapshot.swift`: the app and the widget share data through it.
 3. Run it on a simulator or your iPhone.
 
 ## Setting up the Claude connection
@@ -59,7 +62,9 @@ The key is stored in the iOS Keychain on this device only. It is never synced to
 | Mode | What happens |
 |---|---|
 | Find online | The app streams a Claude Messages API request with the server-side `web_search` and `web_fetch` tools. Your country is passed as the search location when enabled. Claude finds the official manual or maintenance chart for the exact make, model, year and engine, reads it, and submits the schedule. Links to manual PDFs it found can be saved to the vehicle's documents with one tap. |
-| From a PDF | PDFKit extracts the text and keeps the pages about maintenance, intervals and specifications (up to about 150k characters). Image-only PDFs of 100 pages or fewer are sent as a document so Claude can read the page images. |
+| Upload, read by Claude | Photos and scans are combined into a PDF. PDFKit extracts the text and keeps the pages about maintenance, intervals and specifications (up to about 150k characters). Image-only PDFs of 100 pages or fewer are sent as a document so Claude can read the page images. |
+| Upload, read by Apple Intelligence | Uses Apple's on-device model ([Foundation Models](https://developer.apple.com/documentation/foundationmodels), iOS 26+, Apple Intelligence on). Pages without a text layer are read with Vision OCR, keeping table rows on one line. The model has a 4096-token window, so the maintenance pages (all of them for a short upload, the best-scoring ~30 for a full manual) are read in chunks of about 3,000 characters, each in a new session with guided generation (`@Generable`); chunks that overflow are split in half. Items found on several pages are merged. Free and offline, but less accurate than Claude on large tables: review the result carefully. Code: [`OnDeviceReader.swift`](ServiceBook/Services/OnDeviceReader.swift). |
+| Upload, read by the open model | For iPhones without Apple Intelligence. In **Settings → On-device model** you download Qwen3 1.7B (about 1 GB, most iPhones) or Qwen3 4B (about 2.3 GB, 8 GB iPhones) from Hugging Face once; it is stored in Application Support, outside iCloud backups, and can be deleted. It runs with [MLX Swift](https://github.com/ml-explore/mlx-swift-lm). Same page selection and OCR as above, but with chunks of about 6,000 characters; the model answers in the `submit_schedule` JSON shape (thinking off, greedy decoding) and the reply goes through the same tolerant parser as Claude's. Code: [`LocalModel.swift`](ServiceBook/Services/LocalModel.swift). |
 
 Under the hood:
 
@@ -73,19 +78,37 @@ Code: [`ClaudeClient.swift`](ServiceBook/Services/ClaudeClient.swift) (streaming
 
 ## Tests
 
-`ServiceBookTests` covers the stream parser (web search, tool input, errors), the error mapping, the tool schema, decoding of AI output, the bundled schedules, and the due-date engine. CI runs them on an iPhone simulator for every push. To run them locally, press ⌘U in Xcode.
+`ServiceBookTests` covers the stream parser (web search, tool input, errors), the error mapping, the tool schema, decoding of AI output, the schedule catalog (every file decodes, matches the index and is translated into every language), vehicle matching, and the due-date engine. CI runs them on an iPhone simulator for every push. To run them locally, press ⌘U in Xcode.
 
-## Built-in schedules
+## Schedule library
 
-| Vehicle | Items | Main sources |
+The schedules live in [`catalog/`](catalog), not in the app. The app downloads the small `catalog/index.json` to list and match schedules, and a schedule file only when you choose it; both are cached, so they keep working offline. New schedules reach every user as soon as they are pushed to `main`, with no app update.
+
+| Brand | Model schedules | Brand-wide plan |
 |---|---|---|
-| Kawasaki Z400 / Ninja 400 (ER400D, 2018–2025) | 38 | Kawasaki owner's manual periodic maintenance chart (via [maintenanceschedule.com](https://maintenanceschedule.com/kawasaki-z400-er400-maintenance-schedule/)) |
-| Ford Fiesta Mk8 (2017–2023), diesel 1.5 TDCi | 33 | Ford service schedule sheets, [Fiesta owner's manual (2021)](https://www.fordservicecontent.com/Ford_Content/Catalog/owner_information/CG3654en-202012-20201214103157.pdf), Haynes |
-| Ford Fiesta Mk8 (2017–2023), petrol | 32 | same as above |
-| Ford Fiesta Mk7 (2008–2017), diesel | 33 | [Ford service schedule sheets](https://www.newtonnet.co.uk/fiesta/), [Haynes guide](https://haynes.com/en-gb/tips-tutorials/ford-fiesta-routine-maintenance-guide-2013-2017-models) |
-| Ford Fiesta Mk7 (2008–2017), petrol | 32 | same as above |
+| Honda (motorcycles) | XL750 Transalp, CRF1100L Africa Twin, NC750X, CB750 Hornet, CB650R / CBR650R, CB500X / NX500 / CB500F / CBR500R | ✓ |
+| Yamaha | MT-07 (and XSR700, Tracer 7, R7), MT-09 / Tracer 9 / XSR900, Ténéré 700 | ✓ |
+| BMW Motorrad | R 1300 GS, R 1250 GS, F 900 GS, F 750 / 850 GS | ✓ |
+| Kawasaki | Z400 / Ninja 400, Z900, Z650 / Ninja 650, Versys 650 | ✓ |
+| Suzuki | V-Strom 650, V-Strom 800 / GSX-8S / GSX-8R, GSX-S1000 | ✓ |
+| KTM | 390 Duke / Adventure (2013–2023 and 2024+), 790 / 890 Duke & Adventure, 1290 Super Adventure | ✓ |
+| Triumph | Trident 660, Speed / Scrambler 400, Tiger 900, Street Triple 765 | ✓ |
+| Ducati | Multistrada V4, Monster 937, Scrambler 800 | ✓ |
+| Volkswagen | Golf 8, Polo 6, T-Roc, Tiguan (petrol and diesel) | petrol, diesel |
+| Škoda | Octavia IV, Fabia IV | petrol, diesel |
+| Ford | Fiesta Mk7 / Mk8, Puma, Focus Mk4 | petrol, diesel |
+| BMW | 3 Series G20 / G21 | petrol, diesel |
+| Renault | Clio V (petrol and E-Tech), Captur II | petrol, diesel |
+| Dacia | Sandero III, Duster | petrol, diesel |
+| Peugeot | 208 II (petrol and diesel), 2008 II | petrol, diesel |
+| Citroën | C3 III | petrol, diesel |
+| Opel / Vauxhall | Corsa F | petrol, diesel |
+| Toyota | Yaris (XP21), Yaris Cross | hybrid / petrol |
+| Fiat | Panda, 500 | petrol |
 
-Schedules are plain JSON in [`ServiceBook/Schedules`](ServiceBook/Schedules), generated by [`scripts/build_schedules.py`](scripts/build_schedules.py), which documents the source of every value. **Contributions are welcome.** Add your vehicle to the script, run `python3 scripts/build_schedules.py`, and open a pull request with your sources.
+Model schedules rank above the brand-wide plan, which matches any model of the make. Every schedule lists its sources: owner's manual maintenance charts (as transcribed by [maintenanceschedule.com](https://maintenanceschedule.com/)) for motorcycles, [Haynes maintenance plans](https://uk.haynes.com/pages/maintenance-plans-car-volkswagen) and manufacturer service sheets for cars. Where only a secondary source was available, the item's note says so.
+
+The files are generated by [`scripts/build_catalog.py`](scripts/build_catalog.py), with translations in [`scripts/catalog_i18n.py`](scripts/catalog_i18n.py). Each file carries its own Italian, French, Spanish and Portuguese text; the script stops and lists any text that has no translation. **Contributions are welcome**: add your vehicle to the script, run `python3 scripts/build_catalog.py`, and open a pull request with your sources.
 
 ## Project structure
 
@@ -94,11 +117,12 @@ ServiceBook/
   ServiceBookApp.swift        App entry, SwiftData container
   Models/Models.swift         Vehicle, MaintenanceTask, ServiceRecord, OdometerReading, SpecNote, Attachment
   Models/DueEngine.swift      Next-due computation (km / months, whichever first)
-  Schedules/                  Built-in schedule JSON + ScheduleLibrary (matching, applying)
+  Schedules/                  ScheduleLibrary (catalog download, cache, matching, applying)
   Services/                   Claude API client, manual importer, reminders, Keychain
   Views/                      SwiftUI screens
 ServiceBookTests/              Unit tests (stream parser, AI decoding, schedules, due engine)
-scripts/build_schedules.py    Source of the built-in schedules
+catalog/                      Schedule library: index.json + schedules/*.json (downloaded by the app)
+scripts/build_catalog.py      Source of the schedule library (catalog_i18n.py: translations)
 ```
 
 ## Disclaimer
