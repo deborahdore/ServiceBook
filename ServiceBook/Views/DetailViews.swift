@@ -329,35 +329,56 @@ struct MileageView: View {
     }
 }
 
-// MARK: - Built-in schedules
+// MARK: - Schedule library (catalog on GitHub)
 
 struct BuiltInSchedulePicker: View {
     @Environment(\.modelContext) private var context
     @Environment(\.dismiss) private var dismiss
     let vehicle: Vehicle
+    @State private var search = ""
     @State private var chosen: ScheduleTemplate?
-    @State private var replace = true
+    @State private var downloading: String?
+    @State private var downloadError: String?
 
     var body: some View {
         NavigationStack {
             let lib = ScheduleLibrary.shared
-            let matching = lib.matches(make: vehicle.make, model: vehicle.modelName, year: vehicle.year, fuel: vehicle.fuel)
-            let others = lib.templates.filter { t in !matching.contains { $0.id == t.id } }
+            let matching = lib.matches(make: vehicle.make, model: vehicle.modelName, year: vehicle.year,
+                                       fuel: vehicle.fuel, kind: vehicle.kind)
+            let others = lib.entries.filter { t in
+                !matching.contains { $0.id == t.id }
+                    && (search.isEmpty || t.title.localizedCaseInsensitiveContains(search))
+            }.sorted { $0.title < $1.title }
             List {
-                if !matching.isEmpty {
+                if lib.entries.isEmpty {
+                    Section {
+                        if lib.isLoading {
+                            HStack { ProgressView(); Text("Loading the schedule library…") }
+                        } else {
+                            Text("Couldn't load the schedule library. Check your connection and pull down to try again.")
+                                .foregroundStyle(.secondary)
+                        }
+                    }
+                }
+                if !matching.isEmpty && search.isEmpty {
                     Section("Matching your vehicle") {
                         ForEach(matching) { t in row(t) }
                     }
                 }
-                Section(matching.isEmpty ? "Available schedules" : "Other schedules") {
-                    ForEach(others) { t in row(t) }
+                if !others.isEmpty {
+                    Section(matching.isEmpty ? "Available schedules" : "Other schedules") {
+                        ForEach(others) { t in row(t) }
+                    }
                 }
                 Section {
                     Text("Your vehicle isn't listed? Use “Find the manual online (AI)” or “Import a manual PDF (AI)”. Contributions of new schedules are welcome on GitHub.")
                         .font(.footnote).foregroundStyle(.secondary)
                 }
             }
-            .navigationTitle("Built-in schedules")
+            .searchable(text: $search)
+            .refreshable { await lib.refresh(force: true) }
+            .task { await lib.refresh() }
+            .navigationTitle("Schedule library")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("Close") { dismiss() } }
@@ -374,16 +395,38 @@ struct BuiltInSchedulePicker: View {
             } message: {
                 Text("Items you created yourself, and items with history, are always kept.")
             }
+            .alert("Schedule not downloaded", isPresented: Binding(get: { downloadError != nil }, set: { if !$0 { downloadError = nil } })) {
+                Button("OK", role: .cancel) {}
+            } message: {
+                Text(downloadError ?? "")
+            }
         }
     }
 
-    private func row(_ t: ScheduleTemplate) -> some View {
-        Button { chosen = t } label: {
-            VStack(alignment: .leading, spacing: 3) {
-                Text("\(t.make) \(t.model)").font(.headline).foregroundStyle(.primary)
-                if let g = t.generation { Text(LS(g)).font(.caption).foregroundStyle(.secondary) }
-                Text(L("%lld items", t.tasks.count) + " · " + L("%lld specs", t.specs?.count ?? 0)).font(.caption2).foregroundStyle(.secondary)
+    private func row(_ t: CatalogEntry) -> some View {
+        Button { download(t) } label: {
+            HStack {
+                VStack(alignment: .leading, spacing: 3) {
+                    Text("\(t.make) \(LS(t.model))").font(.headline).foregroundStyle(.primary)
+                    if let g = t.generation { Text(LS(g)).font(.caption).foregroundStyle(.secondary) }
+                    Text(L("%lld items", t.tasks) + " · " + L("%lld specs", t.specs)).font(.caption2).foregroundStyle(.secondary)
+                }
+                Spacer()
+                if downloading == t.id { ProgressView() }
             }
+        }
+        .disabled(downloading != nil)
+    }
+
+    private func download(_ entry: CatalogEntry) {
+        downloading = entry.id
+        Task {
+            do {
+                chosen = try await ScheduleLibrary.shared.template(for: entry)
+            } catch {
+                downloadError = error.localizedDescription
+            }
+            downloading = nil
         }
     }
 

@@ -38,6 +38,9 @@ struct DueInfo {
     var progress: Double
     var lastDoneDate: Date?
     var lastDoneKm: Int?
+    /// Distance and days before the due point from which the item counts as "due soon".
+    var soonKm: Int = 0
+    var soonDays: Int = 0
 
     var dueText: String {
         var parts: [String] = []
@@ -133,7 +136,8 @@ extension MaintenanceTask {
 
         return DueInfo(status: status, dueKm: dueKm, dueDate: dueDate,
                        remainingKm: remainingKm, remainingDays: remainingDays,
-                       progress: progress, lastDoneDate: lastDate, lastDoneKm: lastKm)
+                       progress: progress, lastDoneDate: lastDate, lastDoneKm: lastKm,
+                       soonKm: soonKm, soonDays: soonDays)
     }
 }
 

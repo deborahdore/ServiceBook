@@ -20,6 +20,470 @@
         }
       }
     },
+    "A brand-wide plan from the manufacturer's service documents. Check the items that depend on your engine, and edit any item afterwards." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un piano valido per tutta la marca, dai documenti di manutenzione del costruttore. Controlla le voci che dipendono dal tuo motore e modifica qualsiasi voce in seguito."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un plan valable pour toute la marque, issu des documents d’entretien du constructeur. Vérifiez les éléments qui dépendent de votre moteur et modifiez n’importe quel élément ensuite."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un plan válido para toda la marca, basado en los documentos de mantenimiento del fabricante. Revisa los elementos que dependen de tu motor y edita cualquier elemento después."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um plano válido para toda a marca, baseado nos documentos de manutenção do fabricante. Verifique os itens que dependem do seu motor e edite qualquer item depois."
+          }
+        }
+      }
+    },
+    "Apple Intelligence can't read this language yet. Try reading with Claude instead." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence non legge ancora questa lingua. Prova a leggere con Claude."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence ne lit pas encore cette langue. Essayez plutôt avec Claude."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence aún no lee este idioma. Prueba a leer con Claude."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Apple Intelligence ainda não lê este idioma. Experimente ler com o Claude."
+          }
+        }
+      }
+    },
+    "Apple Intelligence is not available right now." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence non è disponibile al momento."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence n’est pas disponible pour le moment."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence no está disponible ahora mismo."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Apple Intelligence não está disponível de momento."
+          }
+        }
+      }
+    },
+    "Apple Intelligence is still downloading its model. Try again later." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence sta ancora scaricando il modello. Riprova più tardi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence télécharge encore son modèle. Réessayez plus tard."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence aún está descargando su modelo. Inténtalo más tarde."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Apple Intelligence ainda está a descarregar o modelo. Tente mais tarde."
+          }
+        }
+      }
+    },
+    "Apple Intelligence (on this iPhone)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence (su questo iPhone)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence (sur cet iPhone)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence (en este iPhone)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence (neste iPhone)"
+          }
+        }
+      }
+    },
+    "Apple Intelligence reads the pages on this iPhone: free, works offline, and nothing leaves the device. Claude is more accurate on large maintenance tables." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence legge le pagine su questo iPhone: è gratis, funziona offline e nulla lascia il dispositivo. Claude è più preciso con le tabelle di manutenzione grandi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence lit les pages sur cet iPhone : c’est gratuit, ça marche hors ligne et rien ne quitte l’appareil. Claude est plus précis sur les grands tableaux d’entretien."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence lee las páginas en este iPhone: es gratis, funciona sin conexión y nada sale del dispositivo. Claude es más preciso con tablas de mantenimiento grandes."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Apple Intelligence lê as páginas neste iPhone: é grátis, funciona offline e nada sai do dispositivo. O Claude é mais preciso em tabelas de manutenção grandes."
+          }
+        }
+      }
+    },
+    "Change photo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar foto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Changer la photo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia foto"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alterar foto"
+          }
+        }
+      }
+    },
+    "Choose photo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir foto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir une photo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli foto"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolher foto"
+          }
+        }
+      }
+    },
+    "Choose photos of the pages…" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scegli le foto delle pagine…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choisir des photos des pages…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elegir fotos de las páginas…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escolher fotografias das páginas…"
+          }
+        }
+      }
+    },
+    "Claude" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Claude"
+          }
+        }
+      }
+    },
+    "Could not find any maintenance pages in this document. Try clearer photos, or only the pages with the maintenance schedule." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non ho trovato pagine sulla manutenzione in questo documento. Prova con foto più nitide, o solo con le pagine del piano di manutenzione."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aucune page d’entretien trouvée dans ce document. Essayez des photos plus nettes, ou seulement les pages du plan d’entretien."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se encontraron páginas de mantenimiento en este documento. Prueba con fotos más nítidas, o solo con las páginas del plan de mantenimiento."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foram encontradas páginas de manutenção neste documento. Experimente fotografias mais nítidas, ou só as páginas do plano de manutenção."
+          }
+        }
+      }
+    },
+    "Couldn't download the schedule. Check your connection and try again." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile scaricare il piano. Controlla la connessione e riprova."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de télécharger le plan. Vérifiez votre connexion et réessayez."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo descargar el plan. Comprueba tu conexión e inténtalo de nuevo."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível transferir o plano. Verifique a ligação e tente novamente."
+          }
+        }
+      }
+    },
+    "Couldn't load the schedule library. Check your connection and pull down to try again." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile caricare la libreria dei piani. Controlla la connessione e trascina verso il basso per riprovare."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de charger la bibliothèque de plans. Vérifiez votre connexion et tirez vers le bas pour réessayer."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo cargar la biblioteca de planes. Comprueba tu conexión y desliza hacia abajo para reintentar."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não foi possível carregar a biblioteca de planos. Verifique a ligação e deslize para baixo para tentar novamente."
+          }
+        }
+      }
+    },
+    "Extracted automatically on this iPhone — double-check every interval against your manual." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estratto automaticamente su questo iPhone: verifica ogni intervallo con il tuo manuale."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extrait automatiquement sur cet iPhone — vérifiez chaque intervalle avec votre manuel."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extraído automáticamente en este iPhone: comprueba cada intervalo con tu manual."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extraído automaticamente neste iPhone — confirme cada intervalo com o seu manual."
+          }
+        }
+      }
+    },
+    "Keep the app open while the iPhone reads — nothing is added until you review the result." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieni l'app aperta mentre l'iPhone legge: non viene aggiunto nulla finché non rivedi il risultato."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gardez l’app ouverte pendant que l’iPhone lit — rien n’est ajouté avant que vous ayez vérifié le résultat."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén la app abierta mientras el iPhone lee: no se añade nada hasta que revises el resultado."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenha a app aberta enquanto o iPhone lê — nada é adicionado até rever o resultado."
+          }
+        }
+      }
+    },
+    "Library: %@ %@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libreria: %@ %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bibliothèque : %@ %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biblioteca: %@ %@"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biblioteca: %@ %@"
+          }
+        }
+      }
+    },
     "%@ (%lld)" : {
       "comment" : "A label that describes the maintenance status of a group of tasks. The label is pluralized based on the number of tasks.",
       "isCommentAutoGenerated" : true,
@@ -1341,6 +1805,238 @@
         }
       }
     },
+    "Loading the schedule library…" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caricamento della libreria dei piani…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chargement de la bibliothèque de plans…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargando la biblioteca de planes…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A carregar a biblioteca de planos…"
+          }
+        }
+      }
+    },
+    "Manual p. %@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuale p. %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manuel p. %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual p. %@"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manual p. %@"
+          }
+        }
+      }
+    },
+    "Reading on this iPhone needs iOS 26 and Apple Intelligence." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La lettura su questo iPhone richiede iOS 26 e Apple Intelligence."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La lecture sur cet iPhone nécessite iOS 26 et Apple Intelligence."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leer en este iPhone requiere iOS 26 y Apple Intelligence."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ler neste iPhone requer o iOS 26 e o Apple Intelligence."
+          }
+        }
+      }
+    },
+    "Reading page %lld of %lld…" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lettura pagina %lld di %lld…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lecture de la page %lld sur %lld…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leyendo la página %lld de %lld…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A ler a página %lld de %lld…"
+          }
+        }
+      }
+    },
+    "Reading stopped because the app went to the background. Keep the app open while the iPhone reads." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La lettura si è interrotta perché l'app è passata in background. Tieni l'app aperta mentre l'iPhone legge."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La lecture s’est arrêtée car l’app est passée en arrière-plan. Gardez l’app ouverte pendant que l’iPhone lit."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La lectura se detuvo porque la app pasó a segundo plano. Mantén la app abierta mientras el iPhone lee."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A leitura parou porque a app passou para segundo plano. Mantenha a app aberta enquanto o iPhone lê."
+          }
+        }
+      }
+    },
+    "Reading the maintenance pages on this iPhone (%lld of %lld)…" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lettura delle pagine di manutenzione su questo iPhone (%lld di %lld)…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lecture des pages d’entretien sur cet iPhone (%lld sur %lld)…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leyendo las páginas de mantenimiento en este iPhone (%lld de %lld)…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A ler as páginas de manutenção neste iPhone (%lld de %lld)…"
+          }
+        }
+      }
+    },
+    "Read with" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leggi con"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lire avec"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leer con"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ler com"
+          }
+        }
+      }
+    },
+    "Remove photo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quitar foto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Supprimer la photo"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rimuovi foto"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remover foto"
+          }
+        }
+      }
+    },
     "•••••••• (saved)" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2414,64 +3110,6 @@
         }
       }
     },
-    "Built-in schedules" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Planes incluidos"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Plans intégrés"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Piani integrati"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Planos incluídos"
-          }
-        }
-      }
-    },
-    "Built-in: %@ %@" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incluido: %@ %@"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Intégré : %@ %@"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Integrato: %@ %@"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Incluído: %@ %@"
-          }
-        }
-      }
-    },
     "Cancel" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2729,35 +3367,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Escolher um PDF…"
-          }
-        }
-      }
-    },
-    "Choose the owner's manual or service booklet as a PDF. The app picks the maintenance pages and Claude converts them into your schedule." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Elige el manual del propietario o el libro de mantenimiento en PDF. La app escoge las páginas de mantenimiento y Claude las convierte en tu plan."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Choisissez le manuel du propriétaire ou le carnet d’entretien en PDF. L’app sélectionne les pages d’entretien et Claude les convertit en plan."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Scegli il libretto d'uso o il libretto dei tagliandi in PDF. L'app seleziona le pagine sulla manutenzione e Claude le converte nel tuo piano."
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Escolha o manual do proprietário ou o livro de revisões em PDF. A app seleciona as páginas de manutenção e o Claude converte-as no seu plano."
           }
         }
       }
@@ -4827,35 +5436,6 @@
         }
       }
     },
-    "From a PDF" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Desde un PDF"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Depuis un PDF"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Da un PDF"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A partir de um PDF"
-          }
-        }
-      }
-    },
     "Front" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -5258,64 +5838,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ignição"
-          }
-        }
-      }
-    },
-    "Import a manual PDF" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importar un manual PDF"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importer un manuel PDF"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importa un manuale PDF"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importar um manual PDF"
-          }
-        }
-      }
-    },
-    "Import a manual PDF (AI)" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importar un manual PDF (IA)"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importer un manuel PDF (IA)"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importa un manuale PDF (IA)"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Importar um manual PDF (IA)"
           }
         }
       }
@@ -7635,35 +8157,6 @@
         }
       }
     },
-    "Optional. Used only to find or read owner's manuals. Vehicle details and manual text are sent to Anthropic when you run an import; your service history never leaves the device." : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Opcional. Solo se usa para buscar o leer manuales del propietario. Los datos del vehículo y el texto del manual se envían a Anthropic al hacer una importación; tu historial de mantenimiento nunca sale del dispositivo."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Facultatif. Sert uniquement à trouver ou lire les manuels. Les infos du véhicule et le texte du manuel sont envoyés à Anthropic lors d’un import ; votre historique d’entretien ne quitte jamais l’appareil."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Facoltativo. Usato solo per trovare o leggere i libretti d'uso. I dati del veicolo e il testo del manuale vengono inviati ad Anthropic quando avvii un'importazione; lo storico degli interventi non lascia mai il dispositivo."
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Opcional. Usado apenas para encontrar ou ler manuais do proprietário. Os dados do veículo e o texto do manual são enviados à Anthropic quando faz uma importação; o seu histórico de manutenção nunca sai do dispositivo."
-          }
-        }
-      }
-    },
     "or" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8969,6 +9462,35 @@
         }
       }
     },
+    "Save without schedule" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salva senza piano"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enregistrer sans plan"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar sin plan"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardar sem plano"
+          }
+        }
+      }
+    },
     "Scan receipt" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8994,6 +9516,35 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Digitalizar recibo"
+          }
+        }
+      }
+    },
+    "Scan the booklet…" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scansiona il libretto…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scanner le carnet…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Escanear el libro…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Digitalizar o livro…"
           }
         }
       }
@@ -9052,6 +9603,64 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Itens do plano"
+          }
+        }
+      }
+    },
+    "Schedule library" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libreria dei piani"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bibliothèque de plans"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biblioteca de planes"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biblioteca de planos"
+          }
+        }
+      }
+    },
+    "Schedule not downloaded" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Piano non scaricato"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plan non téléchargé"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plan no descargado"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plano não transferido"
           }
         }
       }
@@ -9284,6 +9893,35 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Manutenção"
+          }
+        }
+      }
+    },
+    "Service booklet %@.pdf" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libretto tagliandi %@.pdf"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carnet d’entretien %@.pdf"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Libro de mantenimiento %@.pdf"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livro de revisões %@.pdf"
           }
         }
       }
@@ -10248,6 +10886,35 @@
         }
       }
     },
+    "This iPhone doesn't support Apple Intelligence." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Questo iPhone non supporta Apple Intelligence."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cet iPhone ne prend pas en charge Apple Intelligence."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este iPhone no es compatible con Apple Intelligence."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Este iPhone não suporta o Apple Intelligence."
+          }
+        }
+      }
+    },
     "This is lower than the last known mileage (%@)." : {
       "extractionState" : "manual",
       "localizations" : {
@@ -10331,6 +10998,35 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Isto remove o plano, o histórico, o registo de quilometragem e todos os documentos guardados."
+          }
+        }
+      }
+    },
+    "Tip: photograph or scan only the maintenance pages — the iPhone reads up to about 30 pages and can take a few minutes. A copy is saved in the vehicle's documents." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consiglio: fotografa o scansiona solo le pagine sulla manutenzione: l'iPhone legge al massimo una trentina di pagine e può metterci qualche minuto. Una copia viene salvata nei documenti del veicolo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Astuce : photographiez ou scannez seulement les pages d’entretien — l’iPhone lit une trentaine de pages au plus et peut prendre quelques minutes. Une copie est enregistrée dans les documents du véhicule."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consejo: fotografía o escanea solo las páginas de mantenimiento; el iPhone lee unas 30 páginas como máximo y puede tardar unos minutos. Se guarda una copia en los documentos del vehículo."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dica: fotografe ou digitalize só as páginas de manutenção — o iPhone lê cerca de 30 páginas no máximo e pode demorar alguns minutos. É guardada uma cópia nos documentos do veículo."
           }
         }
       }
@@ -10770,6 +11466,35 @@
         }
       }
     },
+    "Turn on Apple Intelligence in the iPhone's Settings to read the manual on this iPhone." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Attiva Apple Intelligence nelle Impostazioni dell'iPhone per leggere il manuale su questo iPhone."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activez Apple Intelligence dans les Réglages de l’iPhone pour lire le manuel sur cet iPhone."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Activa Apple Intelligence en los Ajustes del iPhone para leer el manual en este iPhone."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ative o Apple Intelligence nas Definições do iPhone para ler o manual neste iPhone."
+          }
+        }
+      }
+    },
     "Type" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -10882,6 +11607,122 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Resposta inesperada da API do Claude."
+          }
+        }
+      }
+    },
+    "Upload" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carica"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subir"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregar"
+          }
+        }
+      }
+    },
+    "Upload manual or booklet (AI)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carica manuale o libretto (IA)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer manuel ou carnet (IA)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subir manual o libro de mantenimiento (IA)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregar manual ou livro de revisões (IA)"
+          }
+        }
+      }
+    },
+    "Upload the manual" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carica il manuale"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importer le manuel"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subir el manual"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregar o manual"
+          }
+        }
+      }
+    },
+    "Upload the owner's manual or the service booklet: a PDF, photos of the pages, or a scan. The app picks the maintenance pages and turns them into your schedule." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carica il libretto d'uso o il libretto dei tagliandi: un PDF, le foto delle pagine o una scansione. L'app seleziona le pagine sulla manutenzione e le trasforma nel tuo piano."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importez le manuel du propriétaire ou le carnet d’entretien : un PDF, des photos des pages ou un scan. L’app sélectionne les pages d’entretien et en fait votre plan."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sube el manual del propietario o el libro de mantenimiento: un PDF, fotos de las páginas o un escaneo. La app escoge las páginas de mantenimiento y las convierte en tu plan."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregue o manual do proprietário ou o livro de revisões: um PDF, fotografias das páginas ou uma digitalização. A app seleciona as páginas de manutenção e transforma-as no seu plano."
           }
         }
       }
@@ -11619,6 +12460,35 @@
         }
       }
     },
+    "your manual, read on this iPhone" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "il tuo manuale, letto su questo iPhone"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "votre manuel, lu sur cet iPhone"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tu manual, leído en este iPhone"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "o seu manual, lido neste iPhone"
+          }
+        }
+      }
+    },
     "Your vehicle isn't listed? Use “Find the manual online (AI)” or “Import a manual PDF (AI)”. Contributions of new schedules are welcome on GitHub." : {
       "extractionState" : "manual",
       "localizations" : {
@@ -11644,6 +12514,681 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "O seu veículo não está na lista? Use «Procurar o manual online (IA)» ou «Importar um manual PDF (IA)». Contribuições com novos planos são bem-vindas no GitHub."
+          }
+        }
+      }
+    },
+    "Fast, works on most iPhones." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veloce, funziona sulla maggior parte degli iPhone."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rapide, fonctionne sur la plupart des iPhone."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rápido, funciona en la mayoría de los iPhone."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rápido, funciona na maioria dos iPhone."
+          }
+        }
+      }
+    },
+    "More accurate. Needs an iPhone with 8 GB of memory (iPhone 15 Pro or later)." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Più preciso. Serve un iPhone con 8 GB di memoria (iPhone 15 Pro o successivi)."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plus précis. Nécessite un iPhone avec 8 Go de mémoire (iPhone 15 Pro ou ultérieur)."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Más preciso. Necesita un iPhone con 8 GB de memoria (iPhone 15 Pro o posterior)."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mais preciso. Precisa de um iPhone com 8 GB de memória (iPhone 15 Pro ou posterior)."
+          }
+        }
+      }
+    },
+    "Download the on-device model first." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarica prima il modello sul dispositivo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Téléchargez d’abord le modèle sur l’appareil."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descarga primero el modelo en el dispositivo."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descarregue primeiro o modelo no dispositivo."
+          }
+        }
+      }
+    },
+    "Loading %@…" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Caricamento di %@…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chargement de %@…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cargando %@…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A carregar %@…"
+          }
+        }
+      }
+    },
+    "%@ (on this iPhone)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (su questo iPhone)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (sur cet iPhone)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (en este iPhone)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (neste iPhone)"
+          }
+        }
+      }
+    },
+    "Reads your manual on this iPhone with a free open model (Qwen3), run by Apple's MLX. No Apple Intelligence needed: it works offline and in every country. Download it once, preferably on Wi-Fi." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legge il tuo manuale su questo iPhone con un modello aperto e gratuito (Qwen3), eseguito con MLX di Apple. Non serve Apple Intelligence: funziona offline e in ogni paese. Scaricalo una volta sola, meglio in Wi-Fi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lit votre manuel sur cet iPhone avec un modèle ouvert et gratuit (Qwen3), exécuté par MLX d’Apple. Pas besoin d’Apple Intelligence : il fonctionne hors ligne et dans tous les pays. Téléchargez-le une seule fois, de préférence en Wi-Fi."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lee tu manual en este iPhone con un modelo abierto y gratuito (Qwen3), ejecutado con MLX de Apple. No necesita Apple Intelligence: funciona sin conexión y en cualquier país. Descárgalo una sola vez, mejor con Wi-Fi."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lê o seu manual neste iPhone com um modelo aberto e gratuito (Qwen3), executado com o MLX da Apple. Não precisa do Apple Intelligence: funciona offline e em qualquer país. Descarregue-o uma só vez, de preferência por Wi-Fi."
+          }
+        }
+      }
+    },
+    "Stored on this iPhone only, outside iCloud backups." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvato solo su questo iPhone, fuori dai backup di iCloud."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stocké uniquement sur cet iPhone, hors des sauvegardes iCloud."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se guarda solo en este iPhone, fuera de las copias de iCloud."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Guardado só neste iPhone, fora das cópias de segurança do iCloud."
+          }
+        }
+      }
+    },
+    "On-device model" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modello sul dispositivo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modèle sur l’appareil"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelo en el dispositivo"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelo no dispositivo"
+          }
+        }
+      }
+    },
+    "Downloaded · %@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scaricato · %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Téléchargé · %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descargado · %@"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descarregado · %@"
+          }
+        }
+      }
+    },
+    "Download %@" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarica %@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Télécharger %@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descargar %@"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descarregar %@"
+          }
+        }
+      }
+    },
+    "Not downloaded" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non scaricato"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non téléchargé"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No descargado"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não descarregado"
+          }
+        }
+      }
+    },
+    "Optional, used only to find or read owner's manuals. With Claude, vehicle details and manual text are sent to Anthropic when you run an import; the on-device model sends nothing. Your service history never leaves the device." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Facoltativo, usato solo per trovare o leggere i manuali. Con Claude, i dati del veicolo e il testo del manuale vengono inviati ad Anthropic quando avvii un'importazione; il modello sul dispositivo non invia nulla. Lo storico degli interventi non lascia mai il dispositivo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Facultatif, utilisé seulement pour trouver ou lire les manuels. Avec Claude, les données du véhicule et le texte du manuel sont envoyés à Anthropic lors d’un import ; le modèle sur l’appareil n’envoie rien. Votre historique d’entretien ne quitte jamais l’appareil."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opcional, solo se usa para buscar o leer manuales. Con Claude, los datos del vehículo y el texto del manual se envían a Anthropic al importar; el modelo en el dispositivo no envía nada. Tu historial de mantenimiento nunca sale del dispositivo."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opcional, usado só para encontrar ou ler manuais. Com o Claude, os dados do veículo e o texto do manual são enviados à Anthropic quando importa; o modelo no dispositivo não envia nada. O seu histórico de manutenção nunca sai do dispositivo."
+          }
+        }
+      }
+    },
+    "Apple Intelligence" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apple Intelligence"
+          }
+        }
+      }
+    },
+    "Open model (on this iPhone)" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modello aperto (su questo iPhone)"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modèle ouvert (sur cet iPhone)"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelo abierto (en este iPhone)"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modelo aberto (neste iPhone)"
+          }
+        }
+      }
+    },
+    "%@ reads the pages on this iPhone: free, works offline and in every country, nothing leaves the device. Claude is more accurate on large maintenance tables." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ legge le pagine su questo iPhone: è gratis, funziona offline e in ogni paese, e nulla lascia il dispositivo. Claude è più preciso con le tabelle di manutenzione grandi."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lit les pages sur cet iPhone : c’est gratuit, ça marche hors ligne et dans tous les pays, et rien ne quitte l’appareil. Claude est plus précis sur les grands tableaux d’entretien."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ lee las páginas en este iPhone: es gratis, funciona sin conexión y en cualquier país, y nada sale del dispositivo. Claude es más preciso con tablas de mantenimiento grandes."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O %@ lê as páginas neste iPhone: é grátis, funciona offline e em qualquer país, e nada sai do dispositivo. O Claude é mais preciso em tabelas de manutenção grandes."
+          }
+        }
+      }
+    },
+    "Download a free open model once (about 1 GB) to read manuals on this iPhone, without Apple Intelligence." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarica una volta un modello aperto e gratuito (circa 1 GB) per leggere i manuali su questo iPhone, senza Apple Intelligence."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Téléchargez une fois un modèle ouvert et gratuit (environ 1 Go) pour lire les manuels sur cet iPhone, sans Apple Intelligence."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descarga una vez un modelo abierto y gratuito (alrededor de 1 GB) para leer manuales en este iPhone, sin Apple Intelligence."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descarregue uma vez um modelo aberto e gratuito (cerca de 1 GB) para ler manuais neste iPhone, sem o Apple Intelligence."
+          }
+        }
+      }
+    },
+    "Download the model…" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarica il modello…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Télécharger le modèle…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descargar el modelo…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descarregar o modelo…"
+          }
+        }
+      }
+    },
+    "Change model…" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia modello…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Changer de modèle…"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar de modelo…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mudar de modelo…"
+          }
+        }
+      }
+    },
+    "Upload the manual or service booklet (PDF, photos or scan). Claude or a model on this iPhone builds the checklist, and you review it before anything is added." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carica il manuale o il libretto dei tagliandi (PDF, foto o scansione). Claude o un modello su questo iPhone crea la checklist, e la rivedi prima che venga aggiunto qualcosa."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importez le manuel ou le carnet d’entretien (PDF, photos ou scan). Claude ou un modèle sur cet iPhone crée la liste, et vous la vérifiez avant que rien ne soit ajouté."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sube el manual o el libro de mantenimiento (PDF, fotos o escaneo). Claude o un modelo en este iPhone crea la lista y la revisas antes de que se añada nada."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Carregue o manual ou o livro de revisões (PDF, fotografias ou digitalização). O Claude ou um modelo neste iPhone cria a lista, e revê-a antes de ser adicionado algo."
+          }
+        }
+      }
+    },
+    "Needs a Claude API key, Apple Intelligence, or the free on-device model (Settings → On-device model). You can also do this later from the vehicle screen." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Serve una chiave API di Claude, Apple Intelligence o il modello gratuito sul dispositivo (Impostazioni → Modello sul dispositivo). Puoi farlo anche più tardi dalla schermata del veicolo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nécessite une clé API Claude, Apple Intelligence ou le modèle gratuit sur l’appareil (Réglages → Modèle sur l’appareil). Vous pouvez aussi le faire plus tard depuis l’écran du véhicule."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Necesita una clave API de Claude, Apple Intelligence o el modelo gratuito en el dispositivo (Ajustes → Modelo en el dispositivo). También puedes hacerlo más tarde desde la pantalla del vehículo."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Precisa de uma chave API do Claude, do Apple Intelligence ou do modelo gratuito no dispositivo (Definições → Modelo no dispositivo). Também pode fazê-lo mais tarde no ecrã do veículo."
+          }
+        }
+      }
+    },
+    "Read %lld pages on this iPhone. Nothing was sent online." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Read %lld page on this iPhone. Nothing was sent online."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Read %lld pages on this iPhone. Nothing was sent online."
+                }
+              }
+            }
+          }
+        },
+        "es" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Se leyó %lld página en este iPhone. No se envió nada en línea."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Se leyeron %lld páginas en este iPhone. No se envió nada en línea."
+                }
+              }
+            }
+          }
+        },
+        "fr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld page lue sur cet iPhone. Rien n’a été envoyé en ligne."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld pages lues sur cet iPhone. Rien n’a été envoyé en ligne."
+                }
+              }
+            }
+          }
+        },
+        "it" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Letta %lld pagina su questo iPhone. Nulla è stato inviato online."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Lette %lld pagine su questo iPhone. Nulla è stato inviato online."
+                }
+              }
+            }
+          }
+        },
+        "pt" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Foi lida %lld página neste iPhone. Nada foi enviado online."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Foram lidas %lld páginas neste iPhone. Nada foi enviado online."
+                }
+              }
+            }
           }
         }
       }

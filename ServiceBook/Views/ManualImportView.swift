@@ -1,8 +1,11 @@
 import SwiftUI
 import SwiftData
 import UniformTypeIdentifiers
+import PhotosUI
+import VisionKit
 
-/// AI import: finds the owner's manual online (or reads a PDF) and lets the user review the
+/// AI import: finds the owner's manual online, or reads a manual / service booklet the user
+/// uploads (PDF, photos or scan) with Claude or on the iPhone, and lets the user review the
 /// extracted schedule before adding it to the vehicle.
 struct ManualImportView: View {
     @Environment(\.modelContext) private var context
@@ -40,7 +43,21 @@ struct ManualImportView: View {
     @State private var savedPDFs: Set<String> = []
     @State private var downloading: String?
     @State private var pickedFile: PendingAttachment?
+    @State private var showScanner = false
+    @State private var photoItems: [PhotosPickerItem] = []
+    @AppStorage("manualReader") private var reader: ManualReader = .claude
 
+    private var localReason: String? { OnDeviceAI.unavailableReason }
+    @State private var showModel = false
+    @State private var modelReady = LocalModel.ready
+    private var readsOnDevice: Bool { mode == .pdf && reader != .claude }
+    private var canRead: Bool {
+        switch reader {
+        case .claude: hasKey
+        case .onDevice: localReason == nil
+        case .mlx: modelReady != nil
+        }
+    }
 
     private var vehicleDescription: ManualImporter.VehicleDescription {
         .init(make: vehicle.make, model: vehicle.modelName, year: vehicle.year,
@@ -57,7 +74,7 @@ struct ManualImportView: View {
                 case .failed(let message): failedView(message)
                 }
             }
-            .navigationTitle(mode == .online ? "Find the manual" : "Import a manual PDF")
+            .navigationTitle(mode == .online ? "Find the manual" : "Upload the manual")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
@@ -72,6 +89,38 @@ struct ManualImportView: View {
                 guard case .success(let url) = result, let file = AttachmentIO.read(url) else { return }
                 pickedFile = file
                 runPDF(file.data)
+            }
+            .fullScreenCover(isPresented: $showScanner) {
+                DocumentScannerView { data in
+                    showScanner = false
+                    if let data { use(data) }
+                }
+                .ignoresSafeArea()
+            }
+            .onChange(of: photoItems) { _, items in
+                guard !items.isEmpty else { return }
+                Task {
+                    var photos: [Data] = []
+                    for item in items {
+                        if let data = try? await item.loadTransferable(type: Data.self) { photos.append(data) }
+                    }
+                    photoItems = []
+                    if let pdf = PageText.pdf(fromPhotos: photos) { use(pdf) }
+                }
+            }
+            .onAppear {
+                // First time: without a Claude key, read on the iPhone when Apple Intelligence is there.
+                if UserDefaults.standard.object(forKey: "manualReader") == nil, !hasKey {
+                    if OnDeviceAI.isAvailable { reader = .onDevice } else if LocalModel.ready != nil { reader = .mlx }
+                }
+            }
+            .sheet(isPresented: $showModel, onDismiss: { modelReady = LocalModel.ready }) {
+                NavigationStack {
+                    LocalModelView()
+                        .toolbar {
+                            ToolbarItem(placement: .confirmationAction) { Button("Done") { showModel = false } }
+                        }
+                }
             }
             .sheet(isPresented: $showConnection, onDismiss: { hasKey = AppSettings.hasKey }) {
                 NavigationStack {
@@ -102,23 +151,25 @@ struct ManualImportView: View {
                 Text("Tip: the more precise the model, year and engine, the better the result. Edit the vehicle first if needed.")
             }
 
-            Section {
-                if hasKey {
-                    LabeledContent("Model", value: AppSettings.model)
-                    Button("Change connection settings") { showConnection = true }
-                } else {
-                    Text("AI import uses Claude with your own API key. Set it up once — it stays in this device's Keychain.")
-                    Button {
-                        showConnection = true
-                    } label: {
-                        Label("Set up Claude connection", systemImage: "sparkles")
+            if mode == .online || reader == .claude {
+                Section {
+                    if hasKey {
+                        LabeledContent("Model", value: AppSettings.model)
+                        Button("Change connection settings") { showConnection = true }
+                    } else {
+                        Text("AI import uses Claude with your own API key. Set it up once — it stays in this device's Keychain.")
+                        Button {
+                            showConnection = true
+                        } label: {
+                            Label("Set up Claude connection", systemImage: "sparkles")
+                        }
                     }
                 }
             }
 
             Picker("Source", selection: $mode) {
                 Text("Search online").tag(ImportMode.online)
-                Text("From a PDF").tag(ImportMode.pdf)
+                Text("Upload").tag(ImportMode.pdf)
             }
             .pickerStyle(.segmented)
             .listRowBackground(Color.clear)
@@ -138,14 +189,50 @@ struct ManualImportView: View {
                 }
             } else {
                 Section {
-                    Text("Choose the owner's manual or service booklet as a PDF. The app picks the maintenance pages and Claude converts them into your schedule.")
+                    Picker("Read with", selection: $reader) {
+                        Text("Claude").tag(ManualReader.claude)
+                        Text("Apple Intelligence").tag(ManualReader.onDevice)
+                        Text("Open model (on this iPhone)").tag(ManualReader.mlx)
+                    }
+                    if reader == .mlx {
+                        if let modelReady {
+                            Text("\(modelReady.name) reads the pages on this iPhone: free, works offline and in every country, nothing leaves the device. Claude is more accurate on large maintenance tables.")
+                                .font(.callout)
+                        } else {
+                            Text("Download a free open model once (about 1 GB) to read manuals on this iPhone, without Apple Intelligence.")
+                                .font(.callout)
+                        }
+                        Button(modelReady == nil ? "Download the model…" : "Change model…") { showModel = true }
+                    }
+                    if reader == .onDevice {
+                        if let localReason {
+                            Label(localReason, systemImage: "exclamationmark.triangle")
+                                .font(.callout).foregroundStyle(.secondary)
+                        } else {
+                            Text("Apple Intelligence reads the pages on this iPhone: free, works offline, and nothing leaves the device. Claude is more accurate on large maintenance tables.")
+                                .font(.callout)
+                        }
+                    }
+                }
+
+                Section {
+                    Text("Upload the owner's manual or the service booklet: a PDF, photos of the pages, or a scan. The app picks the maintenance pages and turns them into your schedule.")
                         .font(.callout)
                     Button {
                         showImporter = true
                     } label: {
                         Label("Choose a PDF…", systemImage: "doc.badge.plus")
                     }
-                    .disabled(!hasKey)
+                    PhotosPicker(selection: $photoItems, maxSelectionCount: 30, matching: .images) {
+                        Label("Choose photos of the pages…", systemImage: "photo.on.rectangle")
+                    }
+                    if VNDocumentCameraViewController.isSupported {
+                        Button {
+                            showScanner = true
+                        } label: {
+                            Label("Scan the booklet…", systemImage: "doc.viewfinder")
+                        }
+                    }
                     let manuals = vehicle.documents.filter(\.isPDF)
                     ForEach(manuals) { doc in
                         Button {
@@ -153,11 +240,13 @@ struct ManualImportView: View {
                         } label: {
                             Label("Use “\(doc.displayName)”", systemImage: "doc.richtext")
                         }
-                        .disabled(!hasKey)
                     }
                 } footer: {
-                    Text("A copy of the PDF is saved in the vehicle's documents.")
+                    Text(reader != .claude
+                         ? "Tip: photograph or scan only the maintenance pages — the iPhone reads up to about 30 pages and can take a few minutes. A copy is saved in the vehicle's documents."
+                         : "A copy of the PDF is saved in the vehicle's documents.")
                 }
+                .disabled(!canRead)
             }
         }
     }
@@ -197,7 +286,9 @@ struct ManualImportView: View {
             Section {
                 Button("Stop", role: .destructive) { cancel() }
             } footer: {
-                Text("You can keep the app open while Claude reads — nothing is added until you review the result.")
+                Text(readsOnDevice
+                     ? "Keep the app open while the iPhone reads — nothing is added until you review the result."
+                     : "You can keep the app open while Claude reads — nothing is added until you review the result.")
             }
         }
     }
@@ -226,7 +317,8 @@ struct ManualImportView: View {
             Section {
                 if !result.summary.isEmpty { Text(result.summary).font(.callout) }
                 if let d = result.template.disclaimer { Text(d).font(.footnote).foregroundStyle(.secondary) }
-                Label("\(result.model) · \(result.usage.summary)", systemImage: "gauge.with.dots.needle.33percent")
+                Label(result.usage == AIUsage() ? result.model : "\(result.model) · \(result.usage.summary)",
+                      systemImage: result.usage == AIUsage() ? "iphone" : "gauge.with.dots.needle.33percent")
                     .font(.caption2).foregroundStyle(.secondary)
                 ForEach(result.template.sourceURLs ?? [], id: \.self) { s in
                     if let url = URL(string: s) {
@@ -332,9 +424,27 @@ struct ManualImportView: View {
 
     private func runPDF(_ data: Data) {
         let desc = vehicleDescription
-        start { onEvent in
-            try await ManualImporter().importPDF(data: data, vehicle: desc, onEvent: onEvent)
+        switch reader {
+        case .onDevice:
+            start { onEvent in
+                try await OnDeviceImporter.importPDF(data: data, vehicle: desc, onEvent: onEvent)
+            }
+        case .mlx:
+            start { onEvent in
+                try await MLXImporter.importPDF(data: data, vehicle: desc, onEvent: onEvent)
+            }
+        case .claude:
+            start { onEvent in
+                try await ManualImporter().importPDF(data: data, vehicle: desc, onEvent: onEvent)
+            }
         }
+    }
+
+    /// Photos or a scan of the booklet, combined into one PDF: read it and keep a copy.
+    private func use(_ pdf: Data) {
+        pickedFile = PendingAttachment(filename: L("Service booklet %@.pdf", Fmt.date(Date())),
+                                       typeIdentifier: UTType.pdf.identifier, data: pdf)
+        runPDF(pdf)
     }
 
     private func start(_ work: @escaping (@escaping @Sendable (AIEvent) -> Void) async throws -> ManualImporter.Result) {
@@ -351,7 +461,7 @@ struct ManualImportView: View {
                     Task { @MainActor in handle(event) }
                 }
                 await MainActor.run {
-                    AppSettings.record(result.usage)
+                    if result.usage != AIUsage() { AppSettings.record(result.usage) }
                     show(result)
                 }
             } catch is CancellationError {

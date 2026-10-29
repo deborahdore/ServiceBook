@@ -1,6 +1,7 @@
 import SwiftUI
 import SwiftData
 import QuickLook
+import PhotosUI
 import UniformTypeIdentifiers
 
 struct VehicleDetailView: View {
@@ -35,6 +36,8 @@ struct VehicleDetailView: View {
     @State private var showDocImporter = false
     @State private var previewURL: URL?
     @State private var confirmDelete = false
+    @State private var upcomingAction: TaskAction?
+    @State private var photoItem: PhotosPickerItem?
 
     var body: some View {
         List {
@@ -107,11 +110,18 @@ struct VehicleDetailView: View {
     private var header: some View {
         let counts = vehicle.statusCounts()
         return HStack(alignment: .center, spacing: 14) {
-            Image(systemName: vehicle.kind.symbol)
-                .font(.largeTitle)
-                .foregroundStyle(.tint)
-                .frame(width: 60, height: 60)
-                .background(Color.accentColor.opacity(0.12), in: RoundedRectangle(cornerRadius: 14))
+            PhotosPicker(selection: $photoItem, matching: .images) {
+                VehicleIcon(photo: vehicle.photo, kind: vehicle.kind, size: 60)
+            }
+            .buttonStyle(.borderless)
+            .accessibilityLabel(vehicle.photo == nil ? L("Choose photo") : L("Change photo"))
+            .onChange(of: photoItem) { _, item in
+                guard let item else { return }
+                Task {
+                    if let data = await VehiclePhoto.load(item) { vehicle.photo = data }
+                    photoItem = nil
+                }
+            }
             VStack(alignment: .leading, spacing: 4) {
                 Text(Fmt.km(vehicle.currentKm)).font(.title2.weight(.semibold)).monospacedDigit()
                 if !vehicle.subtitle.isEmpty {
@@ -144,8 +154,8 @@ struct VehicleDetailView: View {
             Button { sheet = .addTask } label: { Label("Add maintenance item", systemImage: "plus.circle") }
             Menu {
                 Button { sheet = .importAI(.online) } label: { Label("Find the manual online (AI)", systemImage: "sparkle.magnifyingglass") }
-                Button { sheet = .importAI(.pdf) } label: { Label("Import a manual PDF (AI)", systemImage: "doc.viewfinder") }
-                Button { sheet = .builtIn } label: { Label("Built-in schedules", systemImage: "books.vertical") }
+                Button { sheet = .importAI(.pdf) } label: { Label("Upload manual or booklet (AI)", systemImage: "doc.viewfinder") }
+                Button { sheet = .builtIn } label: { Label("Schedule library", systemImage: "books.vertical") }
             } label: {
                 Label("Load schedule", systemImage: "list.bullet.clipboard")
             }
@@ -168,15 +178,18 @@ struct VehicleDetailView: View {
                     Text("Load the schedule from the owner's manual, or add your own items.")
                 } actions: {
                     Button("Find the manual online (AI)") { sheet = .importAI(.online) }
-                    Button("Import a manual PDF (AI)") { sheet = .importAI(.pdf) }
-                    Button("Built-in schedules") { sheet = .builtIn }
+                    Button("Upload manual or booklet (AI)") { sheet = .importAI(.pdf) }
+                    Button("Schedule library") { sheet = .builtIn }
                     Button("Add an item") { sheet = .addTask }
                 }
             }
         } else {
             ForEach(DueStatus.allCases, id: \.self) { status in
-                let group = rows.filter { $0.info.status == status }
-                if !group.isEmpty {
+                let all = rows.filter { $0.info.status == status }
+                let actions: [TaskAction] = TaskAction.allCases.filter { a in all.contains { $0.task.action == a } }
+                let filter: TaskAction? = status == .upcoming ? upcomingAction.flatMap { actions.contains($0) ? $0 : nil } : nil
+                let group = filter.map { a in all.filter { $0.task.action == a } } ?? all
+                if !all.isEmpty {
                     Section {
                         ForEach(group) { row in
                             NavigationLink(value: row.task) {
@@ -190,7 +203,22 @@ struct VehicleDetailView: View {
                             }
                         }
                     } header: {
-                        Text("\(status.label) (\(group.count))")
+                        HStack {
+                            Text("\(status.label) (\(group.count))")
+                            Spacer()
+                            if status == .upcoming && actions.count > 1 {
+                                Menu {
+                                    Picker(L("Action"), selection: $upcomingAction) {
+                                        Text(L("All")).tag(TaskAction?.none)
+                                        ForEach(actions) { Text($0.label).tag(TaskAction?.some($0)) }
+                                    }
+                                } label: {
+                                    Label(filter?.label ?? L("All"), systemImage: filter == nil ? "line.3.horizontal.decrease.circle" : "line.3.horizontal.decrease.circle.fill")
+                                        .font(.caption.weight(.medium))
+                                        .textCase(nil)
+                                }
+                            }
+                        }
                     }
                 }
             }

@@ -3,6 +3,7 @@ import SwiftData
 import QuickLook
 import VisionKit
 import PDFKit
+import PhotosUI
 import UniformTypeIdentifiers
 
 extension DueStatus {
@@ -212,6 +213,79 @@ struct DocumentScannerView: UIViewControllerRepresentable {
 
         func documentCameraViewController(_ controller: VNDocumentCameraViewController, didFailWithError error: Error) {
             onFinish(nil)
+        }
+    }
+}
+
+// MARK: - Vehicle photo
+
+/// The vehicle's icon: its photo when one is set, otherwise the symbol for its type.
+struct VehicleIcon: View {
+    let photo: Data?
+    let kind: VehicleKind
+    var size: CGFloat = 44
+
+    var body: some View {
+        if let photo, let image = UIImage(data: photo) {
+            Image(uiImage: image)
+                .resizable()
+                .scaledToFill()
+                .frame(width: size, height: size)
+                .clipShape(RoundedRectangle(cornerRadius: size * 0.23))
+        } else {
+            Image(systemName: kind.symbol)
+                .font(size >= 60 ? .largeTitle : .title2)
+                .foregroundStyle(.tint)
+                .frame(width: size, height: size)
+                .background(Color.accentColor.opacity(0.12), in: RoundedRectangle(cornerRadius: size * 0.23))
+        }
+    }
+}
+
+enum VehiclePhoto {
+    /// Loads a picked image, crops it to a square and shrinks it so the icon stays light to store.
+    static func load(_ item: PhotosPickerItem) async -> Data? {
+        guard let data = try? await item.loadTransferable(type: Data.self),
+              let image = UIImage(data: data) else { return nil }
+        let crop = min(image.size.width, image.size.height)
+        let side = min(crop, 600)
+        let k = side / crop
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = 1
+        let square = UIGraphicsImageRenderer(size: CGSize(width: side, height: side), format: format).image { _ in
+            image.draw(in: CGRect(x: (side - image.size.width * k) / 2, y: (side - image.size.height * k) / 2,
+                                  width: image.size.width * k, height: image.size.height * k))
+        }
+        return square.jpegData(compressionQuality: 0.8)
+    }
+}
+
+/// Form row to choose, change or remove the photo used as the vehicle's icon.
+struct VehiclePhotoField: View {
+    @Binding var photo: Data?
+    let kind: VehicleKind
+    @State private var item: PhotosPickerItem?
+
+    var body: some View {
+        HStack(spacing: 14) {
+            VehicleIcon(photo: photo, kind: kind, size: 60)
+            VStack(alignment: .leading, spacing: 8) {
+                PhotosPicker(selection: $item, matching: .images) {
+                    if photo == nil { Text("Choose photo") } else { Text("Change photo") }
+                }
+                if photo != nil {
+                    Button("Remove photo", role: .destructive) { photo = nil }
+                }
+            }
+            .buttonStyle(.borderless)
+        }
+        .padding(.vertical, 2)
+        .onChange(of: item) { _, newItem in
+            guard let newItem else { return }
+            Task {
+                if let data = await VehiclePhoto.load(newItem) { photo = data }
+                item = nil
+            }
         }
     }
 }

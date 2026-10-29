@@ -38,10 +38,20 @@ struct SettingsView: View {
                             }
                         }
                     }
+                    NavigationLink {
+                        LocalModelView()
+                    } label: {
+                        LabeledContent {
+                            Text(LocalModel.ready?.name ?? L("Not downloaded"))
+                                .foregroundStyle(.secondary)
+                        } label: {
+                            Label("On-device model", systemImage: "iphone")
+                        }
+                    }
                 } header: {
                     Text("AI manual import")
                 } footer: {
-                    Text("Optional. Used only to find or read owner's manuals. Vehicle details and manual text are sent to Anthropic when you run an import; your service history never leaves the device.")
+                    Text("Optional, used only to find or read owner's manuals. With Claude, vehicle details and manual text are sent to Anthropic when you run an import; the on-device model sends nothing. Your service history never leaves the device.")
                 }
 
                 Section {

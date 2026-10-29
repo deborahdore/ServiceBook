@@ -73,9 +73,13 @@ struct VehicleListView: View {
             }
             .sheet(isPresented: $showSettings) { SettingsView() }
         }
-        .onAppear { ReminderScheduler.reschedule(context: context) }
+        .onAppear {
+            ReminderScheduler.reschedule(context: context)
+            WidgetSync.update(context: context)
+        }
         .onChange(of: scenePhase) { _, phase in
             if phase == .active { ReminderScheduler.reschedule(context: context) }
+            if phase == .background { WidgetSync.update(context: context) }
         }
     }
 
@@ -83,6 +87,7 @@ struct VehicleListView: View {
         for i in offsets { context.delete(vehicles[i]) }
         try? context.save()
         ReminderScheduler.reschedule(context: context)
+        WidgetSync.update(context: context)
     }
 }
 
@@ -92,11 +97,7 @@ struct VehicleRow: View {
     var body: some View {
         let counts = vehicle.statusCounts()
         HStack(spacing: 14) {
-            Image(systemName: vehicle.kind.symbol)
-                .font(.title2)
-                .foregroundStyle(.tint)
-                .frame(width: 44, height: 44)
-                .background(Color.accentColor.opacity(0.12), in: RoundedRectangle(cornerRadius: 10))
+            VehicleIcon(photo: vehicle.photo, kind: vehicle.kind)
             VStack(alignment: .leading, spacing: 3) {
                 Text(vehicle.displayName).font(.headline)
                 Text(Fmt.km(vehicle.currentKm)).font(.subheadline).foregroundStyle(.secondary)

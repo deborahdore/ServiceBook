@@ -29,15 +29,20 @@ struct AddVehicleView: View {
     @State private var kmText = ""
     @State private var historyUnknown = false
     @State private var choice: ScheduleChoice?
+    @State private var photo: Data?
+    @State private var saving = false
+    @State private var downloadError: String?
 
     private var year: Int { yearText.intValue ?? 0 }
-    private var matches: [ScheduleTemplate] {
-        ScheduleLibrary.shared.matches(make: make, model: model, year: year, fuel: fuel)
+    private var matches: [CatalogEntry] {
+        Array(ScheduleLibrary.shared.matches(make: make, model: model, year: year, fuel: fuel, kind: kind).prefix(6))
     }
     private var hasKey: Bool { !(AppSettings.apiKey ?? "").isEmpty }
 
     private var effectiveChoice: ScheduleChoice {
-        if let choice { return choice }
+        if let choice {
+            if case .builtIn(let id) = choice, !matches.contains(where: { $0.id == id }) {} else { return choice }
+        }
         if let first = matches.first { return .builtIn(first.id) }
         return hasKey ? .online : .empty
     }
@@ -46,6 +51,7 @@ struct AddVehicleView: View {
         NavigationStack {
             Form {
                 Section("Vehicle") {
+                    VehiclePhotoField(photo: $photo, kind: kind)
                     Picker("Type", selection: $kind) {
                         ForEach(VehicleKind.allCases) { Label($0.label, systemImage: $0.symbol).tag($0) }
                     }
@@ -88,10 +94,10 @@ struct AddVehicleView: View {
                 Section {
                     Picker("Schedule", selection: Binding(get: { effectiveChoice }, set: { choice = $0 })) {
                         ForEach(matches) { t in
-                            Text("Built-in: \(t.model) \(LS(t.generation ?? ""))").tag(ScheduleChoice.builtIn(t.id))
+                            Text("Library: \(LS(t.model)) \(LS(t.generation ?? ""))").tag(ScheduleChoice.builtIn(t.id))
                         }
                         Text("Find the manual online (AI)").tag(ScheduleChoice.online)
-                        Text("Import a manual PDF (AI)").tag(ScheduleChoice.pdf)
+                        Text("Upload manual or booklet (AI)").tag(ScheduleChoice.pdf)
                         Text("Start empty").tag(ScheduleChoice.empty)
                     }
                     .pickerStyle(.inline)
@@ -100,12 +106,20 @@ struct AddVehicleView: View {
                     Text("Maintenance schedule")
                 } footer: {
                     switch effectiveChoice {
-                    case .builtIn:
-                        Text("A researched schedule from the manufacturer's documents. You can edit every item afterwards.")
-                    case .online, .pdf:
+                    case .builtIn(let id):
+                        if ScheduleLibrary.shared.entry(id)?.generic == true {
+                            Text("A brand-wide plan from the manufacturer's service documents. Check the items that depend on your engine, and edit any item afterwards.")
+                        } else {
+                            Text("A researched schedule from the manufacturer's documents. You can edit every item afterwards.")
+                        }
+                    case .online:
                         Text(hasKey
                              ? "Claude will read the owner's manual and build the checklist. You review it before anything is added."
                              : "Needs a Claude API key — add it in Settings. You can also do this later from the vehicle screen.")
+                    case .pdf:
+                        Text(hasKey || OnDeviceAI.isAvailable || LocalModel.ready != nil
+                             ? "Upload the manual or service booklet (PDF, photos or scan). Claude or a model on this iPhone builds the checklist, and you review it before anything is added."
+                             : "Needs a Claude API key, Apple Intelligence, or the free on-device model (Settings → On-device model). You can also do this later from the vehicle screen.")
                     case .empty:
                         Text("Add items yourself, or import a schedule later from the vehicle screen.")
                     }
@@ -116,9 +130,22 @@ struct AddVehicleView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) { Button("Cancel") { dismiss() } }
                 ToolbarItem(placement: .confirmationAction) {
-                    Button("Save", action: save)
-                        .disabled(make.trimmingCharacters(in: .whitespaces).isEmpty && model.trimmingCharacters(in: .whitespaces).isEmpty)
+                    if saving {
+                        ProgressView()
+                    } else {
+                        Button("Save", action: save)
+                            .disabled(make.trimmingCharacters(in: .whitespaces).isEmpty && model.trimmingCharacters(in: .whitespaces).isEmpty)
+                    }
                 }
+            }
+            .disabled(saving)
+            .task { await ScheduleLibrary.shared.refresh() }
+            .alert("Schedule not downloaded", isPresented: Binding(get: { downloadError != nil }, set: { if !$0 { downloadError = nil } })) {
+                Button("Try again") { save() }
+                Button("Save without schedule") { choice = .empty; finish(nil) }
+                Button("Cancel", role: .cancel) {}
+            } message: {
+                Text(downloadError ?? "")
             }
             .onChange(of: kind) { _, newKind in
                 if newKind == .motorcycle || newKind == .scooter { fuel = .petrol }
@@ -126,7 +153,24 @@ struct AddVehicleView: View {
         }
     }
 
+    /// Downloads the chosen catalog schedule first, then creates the vehicle.
     private func save() {
+        guard case .builtIn(let id) = effectiveChoice, let entry = ScheduleLibrary.shared.entry(id) else {
+            finish(nil)
+            return
+        }
+        saving = true
+        Task {
+            do {
+                finish(try await ScheduleLibrary.shared.template(for: entry))
+            } catch {
+                saving = false
+                downloadError = error.localizedDescription
+            }
+        }
+    }
+
+    private func finish(_ template: ScheduleTemplate?) {
         let vehicle = Vehicle(name: nickname.trimmingCharacters(in: .whitespaces),
                               make: make.trimmingCharacters(in: .whitespaces),
                               modelName: model.trimmingCharacters(in: .whitespaces),
@@ -135,6 +179,7 @@ struct AddVehicleView: View {
         vehicle.plate = plate
         vehicle.vin = vin
         vehicle.firstRegistration = hasRegistration ? registration : nil
+        vehicle.photo = photo
         context.insert(vehicle)
 
         let km = kmText.intValue ?? 0
@@ -149,10 +194,8 @@ struct AddVehicleView: View {
 
         var mode: ImportMode?
         switch effectiveChoice {
-        case .builtIn(let id):
-            if let t = ScheduleLibrary.shared.templates.first(where: { $0.id == id }) {
-                ScheduleApplier.apply(t, to: vehicle, in: context, replace: false)
-            }
+        case .builtIn:
+            if let template { ScheduleApplier.apply(template, to: vehicle, in: context, replace: false) }
         case .online: mode = .online
         case .pdf: mode = .pdf
         case .empty: break
@@ -178,6 +221,7 @@ struct EditVehicleView: View {
         NavigationStack {
             Form {
                 Section("Vehicle") {
+                    VehiclePhotoField(photo: $vehicle.photo, kind: vehicle.kind)
                     Picker("Type", selection: Binding(get: { vehicle.kind }, set: { vehicle.kind = $0 })) {
                         ForEach(VehicleKind.allCases) { Text($0.label).tag($0) }
                     }
