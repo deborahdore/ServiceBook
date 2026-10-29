@@ -12,7 +12,7 @@ struct LocalModelView: View {
         let _ = version
         Form {
             Section {
-                Text("Reads your manual on this iPhone with a free open model (Qwen3), run by Apple's MLX. No Apple Intelligence needed: it works offline and in every country. Download it once, preferably on Wi-Fi.")
+                Text("Reads your manual on this iPhone with a free open model, run by Apple's MLX. No Apple Intelligence needed: it works offline and in every country. Download it once, preferably on Wi-Fi.")
                     .font(.callout)
             }
             Section {

@@ -7,19 +7,61 @@ import Tokenizers
 /// Open models downloaded once from Hugging Face and run on the iPhone with Apple's MLX.
 /// Unlike Apple Intelligence they work on any recent iPhone and in every country.
 enum LocalModel: String, CaseIterable, Identifiable {
+    // Smallest first. Every id must have a configuration in mlx-swift-lm's LLMRegistry.
+    case tiny = "mlx-community/Qwen3-0.6B-4bit"
+    case lfm2 = "mlx-community/LFM2-1.2B-4bit"
+    case llama = "mlx-community/Llama-3.2-1B-Instruct-4bit"
     case small = "mlx-community/Qwen3-1.7B-4bit"
+    case qwen35 = "mlx-community/Qwen3.5-2B-4bit"
     case large = "mlx-community/Qwen3-4B-4bit"
 
     var id: String { rawValue }
-    var name: String { self == .small ? "Qwen3 1.7B" : "Qwen3 4B" }
-    var bytes: Int64 { self == .small ? 980_000_000 : 2_280_000_000 }
-    var size: String { ByteCountFormatter.string(fromByteCount: bytes, countStyle: .file) }
-    var detail: String {
-        self == .small ? L("Fast, works on most iPhones.")
-                       : L("More accurate. Needs an iPhone with 8 GB of memory (iPhone 15 Pro or later).")
+
+    var name: String {
+        switch self {
+        case .tiny: "Qwen3 0.6B"
+        case .lfm2: "LFM2 1.2B"
+        case .llama: "Llama 3.2 1B"
+        case .small: "Qwen3 1.7B"
+        case .qwen35: "Qwen3.5 2B"
+        case .large: "Qwen3 4B"
+        }
     }
+
+    /// Download size (weights, tokenizer and chat template).
+    var bytes: Int64 {
+        switch self {
+        case .tiny: 350_000_000
+        case .lfm2: 663_000_000
+        case .llama: 713_000_000
+        case .small: 980_000_000
+        case .qwen35: 1_750_000_000
+        case .large: 2_280_000_000
+        }
+    }
+
+    var size: String { ByteCountFormatter.string(fromByteCount: bytes, countStyle: .file) }
+
+    var detail: String {
+        switch self {
+        case .tiny: L("Smallest and fastest, for older iPhones. Finds fewer items.")
+        case .lfm2: L("Small and quick, designed by Liquid AI for phones.")
+        case .llama: L("Small, by Meta. Good with manuals in several languages.")
+        case .small: L("Fast, works on most iPhones.")
+        case .qwen35: L("Newer generation, a good balance of speed and accuracy. Needs an iPhone with 6 GB of memory (iPhone 13 Pro, iPhone 14 or later).")
+        case .large: L("More accurate. Needs an iPhone with 8 GB of memory (iPhone 15 Pro or later).")
+        }
+    }
+
     var configuration: ModelConfiguration {
-        self == .small ? LLMRegistry.qwen3_1_7b_4bit : LLMRegistry.qwen3_4b_4bit
+        switch self {
+        case .tiny: LLMRegistry.qwen3_0_6b_4bit
+        case .lfm2: LLMRegistry.lfm2_1_2b_4bit
+        case .llama: LLMRegistry.llama3_2_1B_4bit
+        case .small: LLMRegistry.qwen3_1_7b_4bit
+        case .qwen35: LLMRegistry.qwen3_5_2b_4bit
+        case .large: LLMRegistry.qwen3_4b_4bit
+        }
     }
 
     static let selectedKey = "localModel"

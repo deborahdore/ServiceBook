@@ -36,6 +36,7 @@ struct VehicleDetailView: View {
     @State private var showDocImporter = false
     @State private var previewURL: URL?
     @State private var confirmDelete = false
+    @State private var taskToDelete: MaintenanceTask?
     @State private var upcomingAction: TaskAction?
     @State private var photoItem: PhotosPickerItem?
 
@@ -99,6 +100,21 @@ struct VehicleDetailView: View {
             }
         } message: {
             Text("This removes the schedule, history, mileage log and all saved documents.")
+        }
+        .confirmationDialog(
+            "Delete “\(LS(taskToDelete?.title ?? ""))”?",
+            isPresented: Binding(get: { taskToDelete != nil }, set: { if !$0 { taskToDelete = nil } }),
+            titleVisibility: .visible,
+            presenting: taskToDelete
+        ) { task in
+            Button("Delete", role: .destructive) {
+                context.delete(task)
+                try? context.save()
+                ReminderScheduler.reschedule(context: context)
+                taskToDelete = nil
+            }
+        } message: { _ in
+            Text("Past history entries are kept. To keep the item but hide it, turn off “Show in schedule”.")
         }
         .onChange(of: sheet == nil) { _, closed in
             if closed { ReminderScheduler.reschedule(context: context) }
@@ -200,6 +216,12 @@ struct VehicleDetailView: View {
                                     Label(L("Done (completed)"), systemImage: "checkmark")
                                 }
                                 .tint(.green)
+                            }
+                            .swipeActions(edge: .trailing) {
+                                Button { taskToDelete = row.task } label: {
+                                    Label(L("Delete"), systemImage: "trash")
+                                }
+                                .tint(.red)
                             }
                         }
                     } header: {
